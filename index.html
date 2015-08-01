@@ -96,24 +96,7 @@
     margin: 0 0 0 -46px;
     background: url(http://lamcdn.net/hopesandfears.com/post_image-image/6nmbNDgl_P0Cmy3HJpry3A.gif) 0 0 no-repeat;
     opacity: 0;
-    -webkit-transform-origin: top; transform-origin: top;
-    transition: opacity .3s;
-    }
-  .poopy-sky.poopy-sky-fire .poopy-turd { -webkit-animation: poopy-turd 1s 1.55s linear 1 forwards; animation: poopy-turd 1s 1.55s linear 1 forwards; }
-  .poopy-sky.poopy-sky-fire.poopy-turd-fixed .poopy-turd {
-    position: fixed; top: 100px;
-    opacity: 1;
-    -webkit-animation: poopy-turd-shrink 7s 1s linear 1 forwards; animation: poopy-turd-shrink 7s 1s linear 1 forwards;
-    }
-  .poopy-sky.poopy-sky-fire.poopy-turd-fixed.poopy-turd-unfixed .poopy-turd {
-    -webkit-animation: none; animation: none;
-    opacity: 0;
-    }
-  .poopy-sky.poopy-sky-fire.poopy-turd-fly .poopy-turd {
-    position: absolute;
-    margin-top: 100px;
-    opacity: 1;
-    -webkit-animation: poopy-turd-fly .7s linear 1 forwards; animation: poopy-turd-fly .7s linear 1 forwards;
+    -webkit-animation: poopy-turd 5.9s 12s linear infinite forwards; animation: poopy-turd 5.9s 12s linear infinite forwards;
     }
 
   .poopy-sky a { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 100; }
@@ -160,33 +143,15 @@
 
   @-webkit-keyframes poopy-turd {
     0% { opacity: 0; }
-    15% { opacity: 1; }
+    3.75% { opacity: 1; }
+    25% { top: 80%; opacity: 1; }
     100% { top: 80%; opacity: 1; }
     }
   @keyframes poopy-turd {
     0% { opacity: 0; }
-    15% { opacity: 1; }
+    3.75% { opacity: 1; }
+    25% { top: 80%; opacity: 1; }
     100% { top: 80%; opacity: 1; }
-    }
-
-  @-webkit-keyframes poopy-turd-shrink {
-    0% { -webkit-transform: scale(1); transform: scale(1); }
-    100% { -webkit-transform: scale(.75); transform: scale(.75); }
-    }
-  @keyframes poopy-turd-shrink {
-    0% { transform: scale(1); }
-    100% { transform: scale(.75); }
-    }
-
-  @-webkit-keyframes poopy-turd-fly {
-    0% { -webkit-transform: translateY(0) scale(.75); transform: translateY(0) scale(.75); }
-    90% { opacity: 1; }
-    100% { opacity: 0; -webkit-transform: translateY(400px) scale(.75); transform: translateY(400px) scale(.75); }
-    }
-  @keyframes poopy-turd-fly {
-    0% { transform: translateY(0) scale(.75); }
-    90% { opacity: 1; }
-    100% { opacity: 0; transform: translateY(400px) scale(.75); }
     }
   </style>
 </body>
