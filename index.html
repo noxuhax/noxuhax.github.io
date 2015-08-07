@@ -1,135 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Zaglushka. Illustrations by Sergii Rodionov</title>
-</head>
-<body>
-  <div class="poopy-sky">
-    <i class="poopy-cloud poopy-cloud-bl"></i>
-    <i class="poopy-cloud poopy-cloud-br"></i>
-    <i class="poopy-cloud poopy-cloud-tl"></i>
-    <i class="poopy-cloud poopy-cloud-tr"></i>
-    <i class="poopy-plane"></i>
-    <i class="poopy-smallbird"></i>
-    <i class="poopy-pidgeon"></i>
-    <a href="http://www.hopesandfears.com/hopes/now/question/215059-what-is-the-probability-of-being-shit-on-by-a-pigeon-in-nyc"></a>
-  </div>
-  <style>
-  body {
-    padding: 0; margin: 0;
-    overflow: hidden;
-    }
-  .poopy-sky {
-    position: relative; z-index: 5;
-    display: block;
-    width: 100vw; height: 100vh;
-    background: url(http://lamcdn.net/hopesandfears.com/post_image-image/eBCIx65CdGoSaXiZI640kQ.jpg) 50% 0 / cover no-repeat;
-    }
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  /* Clouds */
-  .poopy-sky .poopy-cloud {
-    z-index: 5;
-    -webkit-animation: poopy-cloud-wiggle 10s ease-in-out infinite alternate; animation: poopy-cloud-wiggle 10s ease-in-out infinite alternate;
-    }
-  .poopy-sky .poopy-cloud.poopy-cloud-bl {
-    position: absolute; top: 57%; left: 31%;
-    width: 462px; height: 176px;
-    margin: -88px 0 0 -231px;
-    background: url(http://lamcdn.net/hopesandfears.com/post_image-image/AGcb7RkECSYYSDXv2rEigA.png) 0 0 no-repeat;
-    -webkit-animation-delay: -1s; animation-delay: -1s;
-    }
-  .poopy-sky .poopy-cloud.poopy-cloud-br {
-    position: absolute; top: 23%; right: 31%;
-    width: 430px; height: 156px;
-    margin: -78px -215px 0 0;
-    background: url(http://lamcdn.net/hopesandfears.com/post_image-image/6-5bh8s_IUAdnrPcld-Ofw.png) 0 0 no-repeat;
-    -webkit-animation-delay: 5s; animation-delay: 5s;
-    }
-  .poopy-sky .poopy-cloud.poopy-cloud-tl {
-    position: absolute; top: 48%; left: 16%;
-    width: 462px; height: 176px;
-    margin: -88px 0 0 -231px;
-    background: url(http://lamcdn.net/hopesandfears.com/post_image-image/6-5bh8s_IUAdnrPcld-Ofw.png) 0 0 no-repeat;
-    -webkit-animation-delay: 7s; animation-delay: 7s;
-    }
-  .poopy-sky .poopy-cloud.poopy-cloud-tr {
-    position: absolute; top: 18%; right: 12%;
-    width: 408px; height: 127px;
-    margin: -63px -204px 0 0;
-    background: url(http://lamcdn.net/hopesandfears.com/post_image-image/u7fDNPYFWepuuxHpw7vNyQ.png) 0 0 no-repeat;
-    -webkit-animation-delay: -2.5s; animation-delay: -2.5s;
-    }
+		<script type="text/javascript">
+		// This automatically sets the right viewport scale on mobile devices
+		(function() {
+ 		var scale = 1 / window.devicePixelRatio
+ 		document.write("<meta name=\"viewport\" content=\"width=device-width, height=device-height, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no\">")
+		})()
+		</script>
 
-  /* Plane */
-  .poopy-sky .poopy-plane {
-    position: absolute; top: 8%; left: 120%; z-index: 10;
-    width: 526px; height: 43px;
-    margin: -21px 0 0;
-    background: url(http://lamcdn.net/hopesandfears.com/post_image-image/i7yhQcfC_9vlE-Yjt06OaA.png) 0 0 no-repeat;
-    -webkit-animation: poopy-plane 20s linear infinite forwards; animation: poopy-plane 20s linear infinite forwards;
-    }
+		<link rel="apple-touch-icon" href="framer/images/icon-120.png">
+		<link rel="apple-touch-icon" href="framer/images/icon-76.png" sizes="76x76">
+		<link rel="apple-touch-icon" href="framer/images/icon-120.png" sizes="120x120">
+		<link rel="apple-touch-icon" href="framer/images/icon-152.png" sizes="152x152">
+		<link rel="apple-touch-icon" href="framer/images/icon-180.png" sizes="180x180">
+		<link rel="apple-touch-icon" href="framer/images/icon-192.png" sizes="192x192">
 
-  /* Small Bird */
-  .poopy-sky .poopy-smallbird {
-    position: absolute; top: 50%; left: 20%; z-index: 10;
-    width: 250px; height: 206px;
-    margin: -125px 0 0 -103px;
-    background: url(http://lamcdn.net/hopesandfears.com/post_image-image/q-Y-M6matLxR67XLGQwlfg.gif) 0 0 no-repeat;
-    -webkit-animation: poopy-smallbird-wiggle 15s linear infinite alternate; animation: poopy-smallbird-wiggle 15s linear infinite alternate;
-    }
+		<link rel="stylesheet" type="text/css" href="framer/style.css">
 
-  /* Pidgeon */
-  .poopy-sky .poopy-pidgeon {
-    position: absolute; top: 50%; left: 100%; z-index: 20;
-    width: 500px; height: 500px;
-    margin: -250px 0 0 0;
-    background: url(http://lamcdn.net/hopesandfears.com/post_image-image/dmLNHWnAiqfveoUj3TsVtw.gif) 0 0 no-repeat;
-    -webkit-animation: poopy-pidgeon 12s linear infinite forwards; animation: poopy-pidgeon 12s linear infinite forwards;
-    }
+		<script src="framer/coffee-script.js"></script>
+		<script src="framer/framer.js"></script>
+		<script src="framer/framer.generated.js"></script>
+		<script src="framer/framer.modules.js"></script>
+		<script src="framer/framer.init.js"></script>
 
-  /* Link */
-  .poopy-sky a { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 100; }
-
-  @-webkit-keyframes poopy-cloud-wiggle {
-    0% { -webkit-transform: translateX(0); transform: translateX(0); }
-    100% { -webkit-transform: translateX(20%); transform: translateX(20%); }
-    }
-  @keyframes poopy-cloud-wiggle {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(20%); }
-    }
-
-  @-webkit-keyframes poopy-plane {
-    0% { left: 120%; }
-    70% { left: -30%; opacity: 1; }
-    100% { left: -30%; opacity: 0; }
-    }
-  @keyframes poopy-plane {
-    0% { left: 120%; }
-    70% { left: -30%; opacity: 1; }
-    100% { left: -30%; opacity: 0; }
-    }
-
-  @-webkit-keyframes poopy-smallbird-wiggle {
-    0% { -webkit-transform: translateX(0); transform: translateX(0); }
-    100% { -webkit-transform: translateX(320%); transform: translateX(320%); }
-    }
-  @keyframes poopy-smallbird-wiggle {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(320%); }
-    }
-
-  @-webkit-keyframes poopy-pidgeon {
-    0% { left: 100%; }
-    25% { left: -500px; }
-    100% { left: -500px; }
-    }
-  @keyframes poopy-pidgeon {
-    0% { left: 100%; }
-    25% { left: -500px; }
-    100% { left: -500px; }
-    }
-  </style>
-</body>
+	</head>
+	<body>
+	</body>
 </html>
