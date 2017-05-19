@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Step 3 Payment</title>
+  <link rel="stylesheet" href="stylesheets/application.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <section class="site-header">
+    <h1 class="site-logo"><a href="#">Voyage 2 Learn</a></h1>
+    <div class="header-search">
+      <div class="search-query">
+        <input type="text" value="Ceramic courses in English" placeholder="Course themes">
+        <input type="text" value="Berlin, Germany" placeholder="Location" class="query-location">
+        <button type="submit">Search</button>
+      </div>
+    </div>
+    <div class="userpanel">
+      <div class="up-item up-logged dd-able">
+        <div class="up-item-title">
+          <img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" alt="Scuola Leonardo da Vinci" class="userpic">
+        </div>
+        <div class="dropdown">
+          <ul class="dd-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li class="dd-menu-sep"></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="up-item up-invoice new">
+        <div class="up-item-title">3</div>
+      </div>
+      <div class="up-item up-messages new">
+        <div class="up-item-title">3</div>
+      </div>
+      <div class="up-item up-currency dd-able">
+        <div class="up-item-title">USD</div>
+        <div class="dropdown">
+          <ul class="dd-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="up-item up-lang dd-able">
+        <div class="up-item-title">en</div>
+        <div class="dropdown">
+          <ul class="dd-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="payment-steps">
+    <div class="wrap">
+      <ul>
+        <li>Course Details</li>
+        <li>Confirmation</li>
+        <li class="current">Payment</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="payment-page">
+    <div class="wrap">
+      <div class="gr">
+        <div class="col col-2 conversation-list">
+          <ul>
+            <li class="message-preview">
+              <a href="#">
+                <h6 class="message-author"><img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" alt="Scuola Leonardo da Vinci" class="userpic">Scuola Leonardo da Vinci</h6>
+                <p class="message-preview-body">Gregor Samsa wakes one day to find himself hideously transformed into a monstrous insect. His family react with horror at his bizarre transformation but this slowly turns to revulsion</p>
+              </a>
+            </li>
+            <li class="message-preview">
+              <a href="#">
+                <h6 class="message-author"><img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" alt="Scuola Leonardo da Vinci" class="userpic">Scuola Leonardo da Vinci</h6>
+                <p class="message-preview-body">Gregor Samsa wakes one day to find himself hideously transformed into a monstrous insect. His family react with horror at his bizarre transformation but this slowly turns to revulsion</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-4 payment-process payment-payment-step">
+
+          <div class="payment-bit payment-bit-congrats">
+            <div class="user-achievements g-mb-10">
+              <div class="user-award">
+                <div class="award-badge green">
+                  <h6 class="award-title">Intensive summer english courses</h6>
+                  <span class="award-year">2015</span>
+                </div>
+                <p class="award-school-name">New York academy of art</p>
+              </div>
+            </div>
+            <p class="payment-congrats-message">Поздравляем, вы приобрели курс!</p>
+
+            <div class="course-dates g-mb-40">
+              <h3>Date courses</h3>
+              <div class="course-date-from">
+                <span class="pseudolabel">From</span><span class="pseudoinput">10.03.2014</span>
+              </div>
+              <div class="course-date-to">
+                <span class="pseudolabel">From</span><span class="pseudoinput">10.03.2014</span>
+              </div>
+              <div class="course-dates-total">
+                Total <strong>13 days</strong>
+              </div>
+            </div>
+
+            <div class="btn btn-border btn-gray"><span>Изменить данные</span></div>
+          </div>
+
+          <div class="payment-bit payment-bit-event payment-bit-disabled">
+            <div class="thread-timestamp">
+              <span class="time">Yesterday</span>
+            </div>
+            <div class="payment-event-school">
+              <img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" class="userpic">
+              <i class="location-icon"></i>
+              Scuola Leonardo da Vinci
+            </div>
+            <p class="payment-event-message">Школа подтвердила вашу оплату</p>
+          </div>
+
+          <div class="payment-bit payment-bit-by-card payment-bit-disabled">
+            <div class="thread-timestamp">
+              <span class="time">Yesterday</span>
+            </div>
+            <h2 class="g-mb-30">Card Details</h2>
+            <div class="card-form">
+              <div class="form-item card-number">
+                <label for="asd"><span class="label-text">Card Number</span></label>
+                <div class="form-field">
+                  <input type="text">
+                </div>
+              </div>
+              <div class="form-item card-holder">
+                <label for="asd"><span class="label-text">Card Holder</span></label>
+                <div class="form-field">
+                  <input type="text">
+                </div>
+              </div>
+              <div class="form-item card-valid-to">
+                <span class="pseudolabel"><span class="label-text">Valid to</span></span>
+                <div class="form-field">
+                  <label for="fdpo">MM</label>
+                  <input type="text">
+                </div>
+                <div class="form-field">
+                  <label for="fdpo">YY</label>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="form-item card-cvv">
+                <label for="asd"><span class="label-text">CVV</span></label>
+                <div class="form-field">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+            <div class="pay-confirm">
+              <a href="#" class="btn btn-green"><span>Pay by card</span></a>
+            </div>
+          </div>
+
+          <div class="payment-bit payment-bit-event payment-bit-disabled">
+            <div class="thread-timestamp">
+              <span class="time">Yesterday</span>
+            </div>
+            <div class="payment-event-person">
+              <img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" class="userpic">
+              Anna
+            </div>
+            <p class="payment-event-message">
+              Вы прикрепили квитанцию
+              <span class="payment-file-icon file-pdf">PDF</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</body>
+</html>

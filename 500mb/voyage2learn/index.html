@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>School page &mdash; Voyage2Learn</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.2/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="css/css.css">
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".school-navbar" data-offset="30">
+
+<nav class="navbar navbar-default navbar-fixed-top site-header">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-education g-mr-10"></span> Voyage 2 Learn</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-search" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control search-query" id="search_query" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-warning">Find</button>
+      </form>
+      <p class="navbar-text navbar-right" data-role="hide-on-search"><a href="#" class="navbar-link search-focus"><span class="glyphicon glyphicon-search"></span></a></p>
+      <ul class="nav navbar-nav navbar-right" data-role="hide-on-search">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">En / RUB <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="presentation" class="dropdown-header">Language</li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">Deutch</a></li>
+            <li><a href="#">Dansk</a></li>
+            <li><a href="#">Russian</a></li>
+            <li class="divider"></li>
+            <li role="presentation" class="dropdown-header">Currency</li>
+            <li><a href="#">USD</a></li>
+            <li><a href="#">EUR</a></li>
+            <li><a href="#">CHF</a></li>
+            <li><a href="#">RUB</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-inbox"></span> <span class="badge">4</span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Private messages <span class="label label-info">4 unread</span></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Notifications</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="minuscule">Signed in as</span> Mark Otto <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">My profile</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Settings</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Log out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+<div class="school-header g-mb-40">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 school-short-info">
+        <h1 class="g-mt-0 g-mb-10">
+          Scuola Leonardo da&nbsp;Vinci
+          <small>4.5/5</small>
+        </h1>
+        <p class="g-mb-50"><a href="#school-courses">School provides courses in Italian, Arts, Design, Fashion and more</a></p>
+        <div class="school-actions">
+          <a href="#" class="btn btn-primary g-mr-10">Write a message</a>
+          <a href="#school-courses" class="btn btn-success">Enroll now</a>
+        </div>
+      </div>
+      <div class="col-md-4 g-pt-50" class="school-testimonial-excerpt">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="media comment">
+              <div class="media-left text-center">
+                <img class="media-object g-mb-5" src="https://a1.muscache.com/ic/users/13515916/profile_pic/1395751689/original.jpg?interpolation=lanczos-none&crop=w:w;*,*&crop=h:h;*,*&resize=68:*&output-format=jpg&output-quality=70">
+                <strong class="text-muted">Laura</strong>
+              </div>
+              <div class="media-body">
+                <p>le rêve! tout était parfait ! situation du logement magnifique un plain cœur de Barcelone! Delphine et Tony sont charmants ! très attentifs au bien être des leurs hôtes</p>
+                <p class="g-mb-0"><a href="#" class="small">Continue reading</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-right more-comments"><a href="#school-testimonials">15 more reviews</a></p>
+      </div>
+    </div>
+  </div>
+  <i class="school-preview-image" style="background-image: url('img/cover.jpg');"></i>
+</div>
+
+
+
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top school-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Scuola Leonardo da Vinci Rome</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#school-details">Details</a></li>
+        <li><a href="#school-courses">Courses</a></li>
+        <li><a href="#school-photos">Photos</a></li>
+        <li><a href="#school-location">Location</a></li>
+        <li><a href="#school-testimonials">Testimonials</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+<section id="school-details">
+  <div class="container g-pb-30">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>School deatils</h1>
+        <p>Scuola Leonardo da Vinci® in Italy was founded in Florence in 1977 as an Institute of Italian Language and Culture. Since its beginning, combining language with culture was the school’s central concept and trademark. For this, teaching the Italian language at Scuola Leonardo da Vinci is heavily supported by cultural aspects including: courses (art history, Italian food, Italian cinema) and crafts (weaving, pottery, leather work, jewelry).</p>
+        <p>Still today the school promotes, along with the language, the study of Italian culture. Scuola Leonardo da Vinci has been enriched by new courses to meet the demands of the contemporary market today which points to food and wine, art, painting and restoration.</p>
+        <p>In 1984, a second location was launched in the heart of Rome; a new center with the same principles and following the same guidelines promoting language alongside culture.</p>
+        <div class="collapse" id="school_full_details">
+          <p>In 1991, a third location was established in the city of Siena, in the heart of the Chianti Region of Italy. This beautiful frame is a catalyst for the food and wine sector.</p>
+          <p>Most recently, in 2004, Scuola Leonardo da Vinci opened its doors in Milan, the city of fashion and design, on the private University campus of NABA (New Academy of Fine Arts).</p>
+          <p>In its 37 years, Scuola Leonardo da Vinci has hosted students of various nationalities from all over the world. Over the years, the Scuola Leonardo da Vinci syndicate has developed links with Universities and Colleges in the U.S. as well as South America and has participated in workshops in the United States, Japan, Korea, Northern Europe, former Eastern European countries and Russia promoting the immense historic and artistic heritage of the Italian lifestyle.</p>
+          <p>Scuola Leonardo da Vinci, in 1984, also contributed to the founding of the Accademia Italiana di Lingua (AIL), the professional association of schools, institutions and experts in the field of teaching Italian as a foreign language. The AIL created the first diploma of modern Italian which effectively tests the language abilities of the candidates; according to the guidelines of the Common European Framework of Reference for Languages ​​(CEFR). Over 14,000 candidates from Italian offices and those abroad have participated in the AIL exams.</p>
+        </div>
+        <a class="btn btn-default" data-toggle="collapse" href="#school_full_details" aria-expanded="false" aria-controls="school_full_details">Toggle full details</a>
+      </div>
+      <div class="col-md-4 g-pt-30">
+        <h4>Location</h4>
+        <p>
+          Piazza dell'Orologio 7  IT - 00186, Roma, Italia<br>
+          <a href="#school-location">View on map</a>
+        </p>
+        <h4>Accomodation</h4>
+        <p>School provides homestay, family, hotel/guesthouse, private studio/apartment, residence/campus and shared apartment for selected courses</p>
+        <h4>Other branches</h4>
+        <ul>
+          <li><a href="#">Florence</a></li>
+          <li><a href="#">Milan</a></li>
+          <li><a href="#">Seinna</a></li>
+          <li><a href="#">Viareggio</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section id="school-courses" class="g-mb-40">
+  <div class="courses-wrap">
+  <div class="container">
+    <h1 class="g-mt-0">Available courses</h1>
+
+    <div class="course-item">
+      <div class="row">
+        <div class="col-md-8">
+          <h3><a data-toggle="collapse" href="#wine_course_details" aria-expanded="false" aria-controls="wine_course_details">Wine course</a></h3>
+          <p>During the course there will also be the opportunity to visit a renowned winebar.<br>For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with.</p>
+        </div>
+        <div class="col-md-4 g-pt-10">
+          <h4>Summary</h4>
+          <ul class="list-unstyled">
+            <li><strong>Duration:</strong> 2 or 4 weeks</li>
+            <li><strong>Level:</strong> A2 min.</li>
+            <li><strong>Lessons:</strong> 1 meeting of 3 hours per week; 2 in 2 weeks or 4 in 4 weeks</li>
+            <li><strong>Base price:</strong> 400 &euro;/week</li>
+          </ul>
+        </div>
+      </div>
+      <div class="course-details collapse" id="wine_course_details">
+        <div class="row">
+          <div class="col-md-8">
+            <p>The topics dealt with by the course are:</p>
+            <ul>
+              <li>how to read the label of a bottle of Italian wine;</li>
+              <li>the classification of Italian wines (house wine or origin label, D.O.C and D.O.C.G.);</li>
+              <li>the traditional techniques of cultivation, fermentation and ageing used in Italy;</li>
+              <li>wine tasting and terminology</li>
+              <li>wine production in Italy and its consumption;</li>
+              <li>new developments and non traditional wines;</li>
+              <li>Tuscan production, the North-West (Piemonte), the North-East (Friuli, South-Tirol, and other regions, particularly in the centre and in the South).</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li><strong>Student's age:</strong> Adult</li>
+              <li><strong>Exam preparation:</strong> Business</li>
+              <li><strong>Course themes:</strong> Cooking, engineering, oil and gas, military</li>
+              <li><strong>Lesson duration:</strong> 45 min</li>
+              <li><strong>Time to start:</strong> Every monday</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="g-mt-40">Course options</h4>
+        <form class="invisiform">
+          <div class="invisiform-group">
+            <h6>Course length</h6>
+            <input type="text" id="length" placeholder="2" size="3"><label for="length">weeks</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Course format</h6>
+            <input type="radio" id="format_1" name="format"><label for="format_1">intensive</label>
+            <input type="radio" id="format_2" name="format" checked="checked"><label for="format_2">short term</label>
+            <input type="radio" id="format_3" name="format"><label for="format_3">long term</label>
+            <input type="radio" id="format_4" name="format"><label for="format_4">group course</label>
+            <input type="radio" id="format_5" name="format"><label for="format_5">one to one</label>
+            <input type="radio" id="format_6" name="format"><label for="format_6">combined: group + private</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Accomodation</h6>
+            <input type="radio" id="accomod_1" name="accomod" checked="checked"><label for="accomod_1">homestay</label>
+            <input type="radio" id="accomod_2" name="accomod"><label for="accomod_2">guesthouse</label>
+            <input type="radio" id="accomod_3" name="accomod"><label for="accomod_3">campus</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Meal</h6>
+            <input type="radio" id="meal_1" name="meal" checked="checked"><label for="meal_1">self-catering</label>
+            <input type="radio" id="meal_2" name="meal"><label for="meal_2">all inclusive</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Transfer</h6>
+            <input type="checkbox" id="transfer_1" name="transfer"><label for="transfer_1">from airport</label>
+            <input type="checkbox" id="transfer_2" name="transfer"><label for="transfer_2">to airport</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>City guide</h6>
+            <input type="radio" id="guide_2" name="guide"><label for="guide_2">yes</label>
+            <input type="radio" id="guide_1" name="guide" checked="checked"><label for="guide_1">no</label>
+          </div>
+        </form>
+        <div class="row g-mt-30 g-mb-30">
+          <div class="col-md-8 g-pt-5">
+            <div class="course-actions">
+              <a href="#" class="btn btn-success btn-sm">Enroll "Wine course" now for 900 &euro;</a> <span class="text-muted g-mr-10 g-ml-10">or</span> <a href="#" class="btn btn-default btn-sm">Contact school about it</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4>Approximate total: <strong>900 &euro;</strong></h4>
+          </div>
+        </div>
+      </div>
+      <p><a data-toggle="collapse" href="#wine_course_details" aria-expanded="false" aria-controls="wine_course_details">Show course details &amp; enroll</a></p>
+    </div>
+
+    <hr class="g-mt-30 g-mb-30">
+
+    <div class="course-item">
+      <div class="row">
+        <div class="col-md-8">
+          <h3><a data-toggle="collapse" href="#wine_course_2_details" aria-expanded="false" aria-controls="wine_course_2_details">Wine course</a></h3>
+          <p>During the course there will also be the opportunity to visit a renowned winebar.<br>For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with.</p>
+        </div>
+        <div class="col-md-4 g-pt-10">
+          <h4>Summary</h4>
+          <ul class="list-unstyled">
+            <li><strong>Duration:</strong> 2 or 4 weeks</li>
+            <li><strong>Level:</strong> A2 min.</li>
+            <li><strong>Lessons:</strong> 1 meeting of 3 hours per week; 2 in 2 weeks or 4 in 4 weeks</li>
+            <li><strong>Base price:</strong> 400 &euro;/week</li>
+          </ul>
+        </div>
+      </div>
+      <div class="course-details collapse" id="wine_course_2_details">
+        <div class="row">
+          <div class="col-md-8">
+            <p>The topics dealt with by the course are:</p>
+            <ul>
+              <li>how to read the label of a bottle of Italian wine;</li>
+              <li>the classification of Italian wines (house wine or origin label, D.O.C and D.O.C.G.);</li>
+              <li>the traditional techniques of cultivation, fermentation and ageing used in Italy;</li>
+              <li>wine tasting and terminology</li>
+              <li>wine production in Italy and its consumption;</li>
+              <li>new developments and non traditional wines;</li>
+              <li>Tuscan production, the North-West (Piemonte), the North-East (Friuli, South-Tirol, and other regions, particularly in the centre and in the South).</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li><strong>Student's age:</strong> Adult</li>
+              <li><strong>Exam preparation:</strong> Business</li>
+              <li><strong>Course themes:</strong> Cooking, engineering, oil and gas, military</li>
+              <li><strong>Lesson duration:</strong> 45 min</li>
+              <li><strong>Time to start:</strong> Every monday</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="g-mt-40">Course options</h4>
+        <form class="invisiform">
+          <div class="invisiform-group">
+            <h6>Course length</h6>
+            <input type="text" id="length" placeholder="2" size="3"><label for="length">weeks</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Course format</h6>
+            <input type="radio" id="format_1" name="format"><label for="format_1">intensive</label>
+            <input type="radio" id="format_2" name="format" checked="checked"><label for="format_2">short term</label>
+            <input type="radio" id="format_3" name="format"><label for="format_3">long term</label>
+            <input type="radio" id="format_4" name="format"><label for="format_4">group course</label>
+            <input type="radio" id="format_5" name="format"><label for="format_5">one to one</label>
+            <input type="radio" id="format_6" name="format"><label for="format_6">combined: group + private</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Accomodation</h6>
+            <input type="radio" id="accomod_1" name="accomod" checked="checked"><label for="accomod_1">homestay</label>
+            <input type="radio" id="accomod_2" name="accomod"><label for="accomod_2">guesthouse</label>
+            <input type="radio" id="accomod_3" name="accomod"><label for="accomod_3">campus</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Meal</h6>
+            <input type="radio" id="meal_1" name="meal" checked="checked"><label for="meal_1">self-catering</label>
+            <input type="radio" id="meal_2" name="meal"><label for="meal_2">all inclusive</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Transfer</h6>
+            <input type="checkbox" id="transfer_1" name="transfer"><label for="transfer_1">from airport</label>
+            <input type="checkbox" id="transfer_2" name="transfer"><label for="transfer_2">to airport</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>City guide</h6>
+            <input type="radio" id="guide_2" name="guide"><label for="guide_2">yes</label>
+            <input type="radio" id="guide_1" name="guide" checked="checked"><label for="guide_1">no</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Course length</h6>
+            <input type="text" id="length" placeholder="2" size="3"><label for="length">weeks</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Course format</h6>
+            <input type="radio" id="format_1" name="format"><label for="format_1">intensive</label>
+            <input type="radio" id="format_2" name="format" checked="checked"><label for="format_2">short term</label>
+            <input type="radio" id="format_3" name="format"><label for="format_3">long term</label>
+            <input type="radio" id="format_4" name="format"><label for="format_4">group course</label>
+            <input type="radio" id="format_5" name="format"><label for="format_5">one to one</label>
+            <input type="radio" id="format_6" name="format"><label for="format_6">combined: group + private</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Accomodation</h6>
+            <input type="radio" id="accomod_1" name="accomod" checked="checked"><label for="accomod_1">homestay</label>
+            <input type="radio" id="accomod_2" name="accomod"><label for="accomod_2">guesthouse</label>
+            <input type="radio" id="accomod_3" name="accomod"><label for="accomod_3">campus</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Meal</h6>
+            <input type="radio" id="meal_1" name="meal" checked="checked"><label for="meal_1">self-catering</label>
+            <input type="radio" id="meal_2" name="meal"><label for="meal_2">all inclusive</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Transfer</h6>
+            <input type="checkbox" id="transfer_1" name="transfer"><label for="transfer_1">from airport</label>
+            <input type="checkbox" id="transfer_2" name="transfer"><label for="transfer_2">to airport</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>City guide</h6>
+            <input type="radio" id="guide_2" name="guide"><label for="guide_2">yes</label>
+            <input type="radio" id="guide_1" name="guide" checked="checked"><label for="guide_1">no</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Transfer</h6>
+            <input type="checkbox" id="transfer_1" name="transfer"><label for="transfer_1">from airport</label>
+            <input type="checkbox" id="transfer_2" name="transfer"><label for="transfer_2">to airport</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Course length</h6>
+            <input type="text" id="length" placeholder="2" size="3"><label for="length">weeks</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Accomodation</h6>
+            <input type="radio" id="accomod_1" name="accomod" checked="checked"><label for="accomod_1">homestay</label>
+            <input type="radio" id="accomod_2" name="accomod"><label for="accomod_2">guesthouse</label>
+            <input type="radio" id="accomod_3" name="accomod"><label for="accomod_3">campus</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Meal</h6>
+            <input type="radio" id="meal_1" name="meal" checked="checked"><label for="meal_1">self-catering</label>
+            <input type="radio" id="meal_2" name="meal"><label for="meal_2">all inclusive</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Course format</h6>
+            <input type="radio" id="format_1" name="format"><label for="format_1">intensive</label>
+            <input type="radio" id="format_2" name="format" checked="checked"><label for="format_2">short term</label>
+            <input type="radio" id="format_3" name="format"><label for="format_3">long term</label>
+            <input type="radio" id="format_4" name="format"><label for="format_4">group course</label>
+            <input type="radio" id="format_5" name="format"><label for="format_5">one to one</label>
+            <input type="radio" id="format_6" name="format"><label for="format_6">combined: group + private</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>City guide</h6>
+            <input type="radio" id="guide_2" name="guide"><label for="guide_2">yes</label>
+            <input type="radio" id="guide_1" name="guide" checked="checked"><label for="guide_1">no</label>
+          </div>
+        </form>
+        <div class="row g-mt-30 g-mb-30">
+          <div class="col-md-8 g-pt-5">
+            <div class="course-actions">
+              <a href="#" class="btn btn-success btn-sm">Enroll "Wine course" now for 900 &euro;</a> <span class="text-muted g-mr-10 g-ml-10">or</span> <a href="#" class="btn btn-default btn-sm">Contact school about it</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4>Approximate total: <strong>900 &euro;</strong></h4>
+          </div>
+        </div>
+      </div>
+      <p><a data-toggle="collapse" href="#wine_course_2_details" aria-expanded="false" aria-controls="wine_course_2_details">Show course details &amp; enroll</a></p>
+    </div>
+
+    <hr class="g-mt-30 g-mb-30">
+
+    <div class="course-item">
+      <div class="row">
+        <div class="col-md-8">
+          <h3><a data-toggle="collapse" href="#wine_course__3_details" aria-expanded="false" aria-controls="wine_course__3_details">Wine course</a></h3>
+          <p>During the course there will also be the opportunity to visit a renowned winebar.<br>For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with.</p>
+        </div>
+        <div class="col-md-4 g-pt-10">
+          <h4>Summary</h4>
+          <ul class="list-unstyled">
+            <li><strong>Duration:</strong> 2 or 4 weeks</li>
+            <li><strong>Level:</strong> A2 min.</li>
+            <li><strong>Lessons:</strong> 1 meeting of 3 hours per week; 2 in 2 weeks or 4 in 4 weeks</li>
+            <li><strong>Base price:</strong> 400 &euro;/week</li>
+          </ul>
+        </div>
+      </div>
+      <div class="course-details collapse" id="wine_course__3_details">
+        <div class="row">
+          <div class="col-md-8">
+            <p>The topics dealt with by the course are:</p>
+            <ul>
+              <li>how to read the label of a bottle of Italian wine;</li>
+              <li>the classification of Italian wines (house wine or origin label, D.O.C and D.O.C.G.);</li>
+              <li>the traditional techniques of cultivation, fermentation and ageing used in Italy;</li>
+              <li>wine tasting and terminology</li>
+              <li>wine production in Italy and its consumption;</li>
+              <li>new developments and non traditional wines;</li>
+              <li>Tuscan production, the North-West (Piemonte), the North-East (Friuli, South-Tirol, and other regions, particularly in the centre and in the South).</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li><strong>Student's age:</strong> Adult</li>
+              <li><strong>Exam preparation:</strong> Business</li>
+              <li><strong>Course themes:</strong> Cooking, engineering, oil and gas, military</li>
+              <li><strong>Lesson duration:</strong> 45 min</li>
+              <li><strong>Time to start:</strong> Every monday</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="g-mt-40">Course options</h4>
+        <form class="invisiform">
+          <div class="invisiform-group">
+            <h6>Course length</h6>
+            <input type="text" id="length" placeholder="2" size="3"><label for="length">weeks</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Course format</h6>
+            <input type="radio" id="format_1" name="format"><label for="format_1">intensive</label>
+            <input type="radio" id="format_2" name="format" checked="checked"><label for="format_2">short term</label>
+            <input type="radio" id="format_3" name="format"><label for="format_3">long term</label>
+            <input type="radio" id="format_4" name="format"><label for="format_4">group course</label>
+            <input type="radio" id="format_5" name="format"><label for="format_5">one to one</label>
+            <input type="radio" id="format_6" name="format"><label for="format_6">combined: group + private</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Accomodation</h6>
+            <input type="radio" id="accomod_1" name="accomod" checked="checked"><label for="accomod_1">homestay</label>
+            <input type="radio" id="accomod_2" name="accomod"><label for="accomod_2">guesthouse</label>
+            <input type="radio" id="accomod_3" name="accomod"><label for="accomod_3">campus</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Meal</h6>
+            <input type="radio" id="meal_1" name="meal" checked="checked"><label for="meal_1">self-catering</label>
+            <input type="radio" id="meal_2" name="meal"><label for="meal_2">all inclusive</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>Transfer</h6>
+            <input type="checkbox" id="transfer_1" name="transfer"><label for="transfer_1">from airport</label>
+            <input type="checkbox" id="transfer_2" name="transfer"><label for="transfer_2">to airport</label>
+          </div>
+          <div class="invisiform-group">
+            <h6>City guide</h6>
+            <input type="radio" id="guide_2" name="guide"><label for="guide_2">yes</label>
+            <input type="radio" id="guide_1" name="guide" checked="checked"><label for="guide_1">no</label>
+          </div>
+        </form>
+        <div class="row g-mt-30 g-mb-30">
+          <div class="col-md-8 g-pt-5">
+            <div class="course-actions">
+              <a href="#" class="btn btn-success btn-sm">Enroll "Wine course" now for 900 &euro;</a> <span class="text-muted g-mr-10 g-ml-10">or</span> <a href="#" class="btn btn-default btn-sm">Contact school about it</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4>Approximate total: <strong>900 &euro;</strong></h4>
+          </div>
+        </div>
+      </div>
+      <p><a data-toggle="collapse" href="#wine_course_2_details" aria-expanded="false" aria-controls="wine_course_2_details">Show course details &amp; enroll</a></p>
+    </div>
+
+
+  </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section id="school-photos" class="g-mb-40">
+  <div class="container">
+    <h1 class="g-mb-30">School photos and videos</h1>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="school-media-gallery">
+          <div class="school-media-preview"><img src="img/cover.jpg" alt="Photo preview"></div>
+          <div class="school-media-preview"><img src="img/cover.jpg" alt="Photo preview"></div>
+          <div class="school-media-preview"><img src="img/cover.jpg" alt="Photo preview"></div>
+          <div class="school-media-preview"><img src="img/cover.jpg" alt="Photo preview"></div>
+          <div class="school-media-preview"><img src="img/cover.jpg" alt="Photo preview"></div>
+          <div class="school-media-preview"><img src="img/cover.jpg" alt="Photo preview"></div>
+          <div class="school-media-preview"><img src="img/cover.jpg" alt="Photo preview"><span class="show-more-media"><strong>See all 12 photos</strong></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section id="school-location" class="g-mb-40">
+  <div class="container">
+    <h1 class="g-mb-30">Location and nearby things</h1>
+  </div>
+  <iframe width="100%" height="500" frameborder="0" style="border:0; pointer-events: none;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkuKq8Sns7osvOlBdGQKJ3AzMTlagnndM&q=Piazza+dell'Orologio,+7,+00186"></iframe>
+</section>
+
+
+
+
+
+
+<section id="school-testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class="g-mb-20">Testimonails <a data-toggle="collapse" href="#leave_message" aria-expanded="false" aria-controls="leave_message" class="btn btn-link"><span class="glyphicon glyphicon-comment small"></span> Write yours</a></h1>
+
+        <div class="collapse" id="leave_message">
+          <div class="media comment-form">
+            <div class="media-left text-center">
+              <img class="media-object" src="https://a0.muscache.com/ic/users/24113237/profile_pic/1416855463/original.jpg?interpolation=lanczos-none&crop=w:w;*,*&crop=h:h;*,*&resize=68:*&output-format=jpg&output-quality=70">
+              <strong class="text-muted">You</strong>
+            </div>
+            <div class="media-body">
+              <form>
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail3">Message title</label>
+                  <input type="email" class="form-control input-lg" id="exampleInputEmail3" placeholder="Message title">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail3">Select course</label>
+                  <select class="form-control">
+                    <option>Select course</option>
+                    <option>Super Intensive Italian language course</option>
+                    <option>English and Golf 2015</option>
+                    <option>Dance/Steps on Broadway</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputEmail3">Your message</label>
+                  <textarea class="form-control" rows="4" placeholder="Your opinion"></textarea>
+                </div>
+              </form>
+              <div class="text-right"><a href="#" class="btn btn-primary">Send comment</a></div>
+            </div>
+          </div>
+          <hr class="g-mt-30 g-mb-30">
+        </div>
+
+
+
+        <ul class="media-list school-testimonials-list">
+          <li class="media">
+            <div class="media-left text-center">
+              <img class="media-object g-mb-5" src="https://a1.muscache.com/ic/users/13515916/profile_pic/1395751689/original.jpg?interpolation=lanczos-none&crop=w:w;*,*&crop=h:h;*,*&resize=68:*&output-format=jpg&output-quality=70">
+              <strong class="text-muted">Laura</strong>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">It was excelent!</h4>
+              <p class="text-muted">Experience with course <a href="#school-courses">Super Intensive Italian language course</a></p>
+              <p>le rêve! tout était parfait ! situation du logement magnifique un plain cœur de Barcelone! Delphine et Tony sont charmants ! très attentifs au bien être des leurs hôtes !! l'appartement est magnifique , très propre et très agréable ! un adresse a retenir a chaque fois qu'une petite escapade a Barcelone s'impose !!</p>
+              <p><a href="#" class="comment-reply"><span class="glyphicon glyphicon-share-alt"></span> Reply</a></p>
+              <div class="rating">
+                <p class="text-muted">Laura rated this school <strong class="text-primary">5/5</strong> <a data-toggle="collapse" href="#laura_full_rating" aria-expanded="false" aria-controls="laura_full_rating"><span class="glyphicon glyphicon-chevron-down"></span></a></p>
+                <ul class="collapse" id="laura_full_rating">
+                  <li>Location: <span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span></li>
+                  <li>Course quality: <span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span></li>
+                  <li>Accomodation: <span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star-empty text-muted"></span></li>
+                </ul>
+              </div>
+
+              <ul class="media-list g-mt-30">
+                <li class="media">
+                  <div class="media-left text-center">
+                    <img class="media-object g-mb-5" src="https://a0.muscache.com/ic/users/25532570/profile_pic/1420290920/original.jpg?interpolation=lanczos-none&crop=w:w;*,*&crop=h:h;*,*&resize=68:*&output-format=jpg&output-quality=70">
+                    <strong class="text-muted">Alessandro</strong>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Is teachers any good?</h4>
+                    <p>You can meet students from all over the world who came here to learn Italian language. Then you get to know Italian life: for example, I learned to use the mocha coffee pot. The teachers are young and full of joy of living. The lessons are organized in an interesting way so they never are boring. These 3 months I spent in Milan with the school were a unique experience!  I had much fun. Thank you!.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li><hr class="g-mt-30 g-mb-30"></li>
+
+          <li class="media">
+            <div class="media-left text-center">
+              <img class="media-object g-mb-5" src="https://a1.muscache.com/ic/users/13515916/profile_pic/1395751689/original.jpg?interpolation=lanczos-none&crop=w:w;*,*&crop=h:h;*,*&resize=68:*&output-format=jpg&output-quality=70">
+              <strong class="text-muted">Laura</strong>
+            </div>
+            <div class="media-body">
+              <p>le rêve! tout était parfait ! situation du logement magnifique un plain cœur de Barcelone! Delphine et Tony sont charmants ! très attentifs au bien être des leurs hôtes !! l'appartement est magnifique , très propre et très agréable ! un adresse a retenir a chaque fois qu'une petite escapade a Barcelone s'impose !!</p>
+            </div>
+          </li>
+
+          <li><hr class="g-mt-30 g-mb-30"></li>
+
+          <li class="media">
+            <div class="media-left text-center">
+              <img class="media-object g-mb-5" src="https://a1.muscache.com/ic/users/13515916/profile_pic/1395751689/original.jpg?interpolation=lanczos-none&crop=w:w;*,*&crop=h:h;*,*&resize=68:*&output-format=jpg&output-quality=70">
+              <strong class="text-muted">Laura</strong>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">It was excelent!</h4>
+              <p>le rêve! tout était parfait ! situation du logement magnifique un plain cœur de Barcelone! Delphine et Tony sont charmants ! très attentifs au bien être des leurs hôtes !! l'appartement est magnifique , très propre et très agréable ! un adresse a retenir a chaque fois qu'une petite escapade a Barcelone s'impose !!</p>
+
+              <ul class="media-list g-mt-30">
+                <li class="media">
+                  <div class="media-left text-center">
+                    <img class="media-object g-mb-5" src="https://a1.muscache.com/ic/users/13515916/profile_pic/1395751689/original.jpg?interpolation=lanczos-none&crop=w:w;*,*&crop=h:h;*,*&resize=68:*&output-format=jpg&output-quality=70">
+                    <strong class="text-muted">Laura</strong>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">It was excelent!</h4>
+                    <p>le rêve! tout était parfait ! situation du logement magnifique un plain cœur de Barcelone! Delphine et Tony sont charmants ! très attentifs au bien être des leurs hôtes !! l'appartement est magnifique , très propre et très agréable ! un adresse a retenir a chaque fois qu'une petite escapade a Barcelone s'impose !!</p>
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-left text-center">
+                    <img class="media-object g-mb-5" src="https://a1.muscache.com/ic/users/13515916/profile_pic/1395751689/original.jpg?interpolation=lanczos-none&crop=w:w;*,*&crop=h:h;*,*&resize=68:*&output-format=jpg&output-quality=70">
+                    <strong class="text-muted">Laura</strong>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">It was excelent!</h4>
+                    <p>le rêve! tout était parfait ! situation du logement magnifique un plain cœur de Barcelone! Delphine et Tony sont charmants ! très attentifs au bien être des leurs hôtes !! l'appartement est magnifique , très propre et très agréable ! un adresse a retenir a chaque fois qu'une petite escapade a Barcelone s'impose !!</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <div class="text-center">
+          <ul class="pagination pagination-sm">
+            <li class="disabled"><a href="#">«</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">»</a></li>
+          </ul>
+        </div>
+
+        <h3>Write yours</h3>
+        <div class="media comment-form">
+          <div class="media-left text-center">
+            <img class="media-object" src="https://a0.muscache.com/ic/users/24113237/profile_pic/1416855463/original.jpg?interpolation=lanczos-none&crop=w:w;*,*&crop=h:h;*,*&resize=68:*&output-format=jpg&output-quality=70">
+            <strong class="text-muted">You</strong>
+          </div>
+          <div class="media-body">
+            <form>
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail3">Message title</label>
+                <input type="email" class="form-control input-lg" id="exampleInputEmail3" placeholder="Message title">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail3">Select course</label>
+                <select class="form-control">
+                  <option>Select course</option>
+                  <option>Super Intensive Italian language course</option>
+                  <option>English and Golf 2015</option>
+                  <option>Dance/Steps on Broadway</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail3">Your message</label>
+                <textarea class="form-control" rows="4" placeholder="Your opinion"></textarea>
+              </div>
+            </form>
+            <div class="text-right"><a href="#" class="btn btn-primary">Send comment</a></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <h1 class="g-mb-20">School rating</h1>
+        <table class="table">
+          <tr>
+            <td><p class="lead g-mb-0">Overall rating</p></td>
+            <td class="text-right">
+              <p class="lead g-mb-0"><strong>4.5/5</strong></p>
+              <span class="label label-success">Good</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><hr></td>
+          </tr>
+          <tr>
+            <td>Location:</td>
+            <td class="text-right"><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span></td>
+          </tr>
+          <tr>
+            <td>Course quality:</td>
+            <td class="text-right"><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star-empty text-muted"></span></td>
+          </tr>
+          <tr>
+            <td>Accomodation:</td>
+            <td class="text-right"><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star text-warning"></span><span class="glyphicon glyphicon-star-empty text-muted"></span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<footer class="g-pb-40">
+  <hr class="g-mt-40 g-mb-50">
+  <p class="text-center">&copy; 2015 Voyage2Learn</p>
+</footer>
+
+
+
+
+
+<script type="text/javascript">
+$(window).scroll(function() {
+  if ($(this).scrollTop() > ($('.school-header').height())) {
+    $('.school-navbar').addClass('school-navbar-visible');
+  } else {
+    $('.school-navbar').removeClass('school-navbar-visible');
+  }
+});
+
+$(".search-focus").click(function(){
+  $(".search-query").focus();
+  return false;
+});
+
+$(".search-query").focus(function(){
+  $(".site-header").addClass("search-visible");
+}).blur(function(){
+  $(".site-header").removeClass("search-visible");
+});
+
+</script>
+
+</body>
+</html>

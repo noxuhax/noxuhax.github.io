@@ -1,0 +1,12 @@
+html{ font-size: 100.01%; }
+body{ font-size: 62.5%; line-height: 1.2; font-family: "Arial", sans-serif; color: #262626; }
+input, select, textarea{ font-size: 100%; }
+table{ empty-cells: show; border-collapse: collapse; border-spacing: 0; border-color: #999; font-size: 100%; }
+table tr td, table tr th{ border-color: #999; }
+h1,h2,h3,h4,h5,h6,pre,code,kbd{ font-size: 1em; }
+dl,ul,ol,li,dd,dt,h1,h2,h3,h4,h5,h6,pre,form,
+body,html,p,blockquote,table,tr,td,th,fieldset,input{ margin: 0; padding: 0; list-style: none; }
+form label{ cursor: pointer; }
+fieldset{ border: none; }
+a img,:link img,:visited img{ border: none; }
+address,abbr{ font-style: normal; }

@@ -1,0 +1,193 @@
+.courses {
+  padding: 50px 0 75px;
+  background: #F5F5F5;
+  }
+.courses .courses-title { text-align: center; color: #A2A2A2; }
+
+/* Course
+********* */
+.courses .course {
+  position: relative;
+  margin-bottom: 60px; padding: 32px 0 0;
+  background: #FFF;
+  border-bottom: 7px solid #4FC281; border-radius: 0 0 2px 2px;
+  }
+.courses .course .col:first-child { padding-left: 34px; }
+.courses .course .col:last-child { padding-right: 34px; }
+
+.courses .course .course-title { margin-bottom: 23px; }
+.courses .course .course-summary { margin-bottom: 32px; }
+
+/* Course Topics List
+********************* */
+.course .course-topics { margin-top: 20px; }
+.course .course-topics li { list-style-type: none; }
+.course .course-topics li:before {
+  content: '—';
+  margin-right: .5em;
+  color: #4FC281;
+  }
+
+/* Course Skills List
+********************* */
+.course .course-skills { margin: 33px 0 30px; }
+.course .course-skills ul {
+  list-style: none;
+  counter-reset: course-skills;
+  }
+.course .course-skills li { margin-bottom: 14px; }
+.course .course-skills li:last-child { margin-bottom: 0; }
+.course .course-skills li::before {
+  counter-increment: course-skills;
+  content: counter(course-skills);
+  display: inline-block;
+  width: 25px; height: 24px;
+  margin-right: 14px; padding-top: 1px;
+  color: #FFF; text-align: center;
+  background: #4FC281;
+  border-radius: 50%;
+  }
+
+/* Course Editorial Gallery
+*************************** */
+.inline-gallery.editorial { margin: 22px 0 52px; }
+
+/* Course UGC Gallery
+********************* */
+.course-galley-ugc h2 { margin-top: 110px; color: #A2A0A0; }
+.inline-gallery.ugc-feed { margin: 41px 0 0; }
+
+/* Course Summary Column
+************************ */
+.course-summary-column { padding-top: 61px; }
+.course-summary-column h3 { margin-bottom: 20px; }
+
+/* Course Price Blob
+******************** */
+.course-price-blob {
+  position: relative;
+  width: 107px; height: 107px;
+  text-align: center;
+  margin: 0 0 28px -8px; padding: 5px;
+  font-size: 14px;
+  background: #F4B04D;
+  border-radius: 50%;
+  box-sizing: border-box;
+  }
+.course-price-blob span {
+  position: relative; top: 50%;
+  display: block;
+  transform: translateY(-50%);
+  }
+.course-price-blob strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px; text-transform: uppercase; letter-spacing: .3px;
+  }
+
+/* Sale */
+.course-price-blob.course-price-blob-sale {
+  color: #FFF;
+  background-color: #4FC281;
+  }
+.course-price-blob.course-price-blob-sale:before {
+  content: '%';
+  position: absolute; top: 0; right: 0;
+  width: 30px; height: 30px;
+  padding: 4px 0 0 0;
+  font-weight: bold; font-size: 20px;
+  background: #398A5C;
+  border-radius: 50%;
+  box-sizing: border-box;
+  }
+.course-price-blob.course-price-blob-sale .old-price {
+  display: block;
+  font-size: .8em;
+  opacity: .6;
+  }
+
+/* Course Summary List */
+.course-summary-list li {
+  width: 220px;
+  margin-bottom: 11px;
+  font-size: 14px; line-height: 20px;
+  list-style: none;
+  }
+.course-summary-list li:last-child { margin-bottom: 0; }
+.course-summary-list strong {
+  font-weight: bold; font-size: 12px; color: #9F9F9F; text-transform: uppercase; letter-spacing: .3px;
+  }
+
+/* Course Dates
+*************** */
+.course-dates {
+  padding: 26px 25px 29px;
+  background: #F5F5F5;
+  border-radius: 2px;
+  }
+.course-dates:after { content: ''; display: table; clear: both; }
+
+.course-dates h3 { margin-bottom: 12px; }
+
+.course-dates .course-date-from,
+.course-dates .course-date-to { float: left; margin-right: 29px; }
+.course-dates label,
+.course-dates .pseudolabel {
+  margin-right: 13px;
+  font-weight: bold; font-size: 12px; color: #B3B3B3; text-transform: uppercase; letter-spacing: .5px;
+  }
+.course-dates input {
+  width: 104px; height: 37px;
+  margin: 0; padding: 0 13px;
+  font: 15px/35px "Roboto", sans-serif; color: #272828;
+  background: #FFF;
+  border: 1px solid #CDCDCD; border-radius: 2px;
+  box-sizing: border-box;
+  }
+.course-dates .pseudoinput {
+  display: inline-block;
+  width: 104px;
+  font-size: 15px; line-height: 37px;
+  }
+
+.course-dates .course-dates-total {
+  float: right;
+  height: 37px;
+  padding: 0 18px;
+  font-weight: bold; font-size: 12px; line-height: 37px; color: #B3B3B3; text-transform: uppercase; letter-spacing: .5px;
+  background: #FFF;
+  border-radius: 2px;
+  }
+.course-dates .course-dates-total strong {
+  margin-left: 10px;
+  font-weight: normal; font-size: 15px; color: #4FC281; text-transform: none; letter-spacing: 0;
+  }
+
+/* Approx Total
+*************** */
+.course-appr-total {
+  margin-bottom: 75px;
+  font-size: 18px;
+  }
+.course-appr-total strong { font-weight: normal; font-size: 35px; }
+
+/* Close Course Pop-up
+********************** */
+.courses .course .course-close {
+  position: absolute; top: 22px; right: 22px;
+  width: 18px; height: 18px;
+  text-indent: -9999em;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .3s; transition: transform .3s;
+  }
+.courses .course .course-close:before,
+.courses .course .course-close:after {
+  content: '';
+  position: absolute; top: -3px;
+  width: 3px; height: 22px;
+  background: #4FC281;
+  }
+.courses .course .course-close:before { left: 7px; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.courses .course .course-close:after { right: 8px; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+.courses .course .course-close:hover { -webkit-transform: scale(1.2); transform: scale(1.2); }

@@ -1,0 +1,41 @@
+.user-profile { background: linear-gradient(to right, #EAEAEA 33.33%, #FFF 33.33%); }
+.user-profile .wrap { background: linear-gradient(to right, #EAEAEA 300px, #FFF 300px); }
+
+/* User Feed
+************ */
+.user-feed { padding-top: 32px; }
+
+/* User Achievements */
+.user-achievements { margin-bottom: 72px; text-align: center; }
+.user-achievements .user-award:not(.col) { display: inline-block; width: 135px; vertical-align: top; }
+.user-achievements .user-award .award-badge {
+  width: 132px; height: 132px;
+  margin: 0 auto 11px; padding: 36px 32px 0;
+  font-weight: bold; font-size: 11px; line-height: 1; color: #D29E52; text-transform: uppercase;
+  background: url(../../../images/sprite-awards.png) 0 0 /auto 132px;
+  box-sizing: border-box;
+  }
+/* Colors */
+.user-achievements .user-award .award-badge.green { background-position: 0 0; }
+.user-achievements .user-award .award-badge.red { background-position: -137px 0; }
+.user-achievements .user-award .award-badge.yellow { background-position: -274px 0; }
+
+.user-achievements .user-award .award-title {
+  min-height: 44px;
+  margin-bottom: 7px;
+  overflow: hidden;
+  }
+.user-achievements .user-award .award-year {
+  display: block;
+  color: #B6B6B6;
+  }
+.user-achievements .user-award .award-school-name {
+  height: 39px;
+  font-weight: bold; font-size: 10px; line-height: 13px; color: #B3B3B3; text-align: center; text-transform: uppercase;
+  overflow: hidden;
+  }
+
+/* Comments */
+.user-feed .comment-item:first-child { border-top: none; }
+.user-feed .comment-item p,
+.user-feed .comment-item .comment-school-rating { width: 465px; }

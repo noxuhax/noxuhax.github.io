@@ -1,0 +1,313 @@
+.user-profile-editor {
+  background: linear-gradient(to right, #EAEAEA 0%, #EAEAEA 33.33%, #FFF 33.33%, #FFF 100%);
+  overflow-x: hidden;
+  }
+.user-profile-editor .wrap { background: linear-gradient(to right, #EAEAEA 0%, #EAEAEA 165px, #DADADA 165px, #DADADA 300px, #FFF 300px, #FFF 100%); }
+
+
+/* Editor Controls
+****************** */
+.user-summary .user-change-photo {
+  position: relative;
+  margin-bottom: 22px;
+  font-size: 14px; color: #ACACAC;
+  overflow: hidden;
+  }
+.user-summary .user-change-photo:before {
+  content: '';
+  display: inline-block;
+  width: 14px; height: 16px;
+  vertical-align: -3px;
+  background: url(../../../images/sprite.png) -40px -162px /300px auto;
+  }
+.user-summary .user-change-photo input {
+  display: block;
+  position: absolute; top: 0; right: 0; z-index: 2;
+  width: 300px; height: 300px;
+  opacity: 0;
+  cursor: pointer;
+  }
+
+/* Separator
+************ */
+.user-profile-editor hr {
+  height: 2px;
+  margin: 0 -3000px 0 -30px;
+  background: #CDCDCD;
+  }
+
+/* Socials
+********** */
+.user-profile-editor .btn-social {
+  padding-left: 35px;
+  font-weight: normal;
+  }
+.user-profile-editor .btn-social:before {
+  content: '';
+  position: absolute; top: 13px; left: 8px;
+  width: 16px; height: 16px;
+  background: currentcolor;
+  }
+.user-profile-editor .btn-social span { color: inherit; }
+.user-profile-editor .btn-social span:after {
+  content: '';
+  position: absolute; top: 6px; bottom: 6px; left: 35px;
+  width: 1px;
+  background: currentcolor;
+  opacity: .42;
+  }
+.user-profile-editor .btn-fb { color: #5B78D6; }
+.user-profile-editor .btn-vk { color: #5490D3; }
+.user-profile-editor .btn-insta { color: #C161B0; }
+
+/* User Editor Navigation
+************************* */
+.user-profile-editor .user-editor-nav ul { list-style: none; }
+.user-profile-editor .user-editor-nav a {
+  display: block;
+  padding: 32px 0 32px;
+  color: #424242; font-size: 18px; text-decoration: none; text-align: center;
+  transition: background .3s;
+  }
+.user-profile-editor .user-editor-nav a:hover { background: #E7E7E7; }
+.user-profile-editor .user-editor-nav .current a { background: #F4F4F4; }
+
+/* Form
+******* */
+.profile-form {
+  padding-bottom: 55px;
+  }
+.profile-form .form-item {
+  position: relative;
+  margin-right: -15px; padding-left: 165px;
+  }
+.profile-form.form-labelless .form-item {
+  padding-left: 0;
+  }
+.profile-form .form-item:after { content: ''; display: table; clear: both; }
+
+/* Label */
+.profile-form .form-item > label,
+.profile-form .form-item > .pseudolabel {
+  font-weight: bold; font-size: 12px; line-height: 15px; color: #B3B3B3; text-transform: uppercase; letter-spacing: .5px;
+  }
+.profile-form .form-item > label {
+  position: absolute; top: 0; left: 0;
+  width: 135px; min-height: 42px;
+  cursor: pointer;
+  }
+.profile-form .form-item > label:after {
+  content: '';
+  display: inline-block;
+  height: 42px;
+  vertical-align: middle;
+  }
+.profile-form .form-item > label .label-text {
+  display: inline-block;
+  vertical-align: middle;
+  }
+.profile-form .form-item > .pseudolabel {
+  position: relative;
+  display: block;
+  width: 135px;
+  margin: 0 0 14px -165px;
+  }
+.profile-form .form-item > .pseudolabel:after {
+  content: '';
+  position: absolute; top: 50%; left: 165px;
+  width: 465px; height: 1px;
+  background: #EEE;
+  }
+
+/* Text Field */
+.profile-form .form-item .form-field {
+  float: left;
+  width: 465px;
+  margin: 0 15px 19px 0;
+  }
+.profile-form .form-item .form-field.field-s { width: 145px; }
+.profile-form .form-item .form-field input[type=text],
+.profile-form .form-item .form-field input[type=email],
+.profile-form .form-item .form-field input[type=password],
+.profile-form .form-item .form-field select,
+.profile-form .form-item .form-field textarea {
+  display: block;
+  width: 100%; height: 42px;
+  padding: 0 18px;
+  font: 15px/1 "Roboto", sans-serif; color: #272828;
+  background: #FFF;
+  border: 1px solid #CDCDCD; border-radius: 2px;
+  outline: none;
+  box-sizing: border-box;
+  }
+.profile-form .form-item .form-field textarea {
+  padding-top: 14px; padding-bottom: 14px;
+  height: 100px;
+  resize: none;
+  }
+
+/* Radio Button */
+.profile-form .form-item .form-field.field-radio {
+  position: relative;
+  float: none;
+  display: inline-block;
+  width: auto; height: 23px;
+  border-top: 7px solid transparent;
+  }
+.profile-form .form-item .form-field.field-radio input {
+  position: absolute; top: 0; left: 0;
+  visibility: hidden;
+  }
+.profile-form .form-item .form-field.field-radio label {
+  display: block;
+  height: 18px;
+  padding: 5px 0 0 33px;
+  font-size: 15px; color: #272828;
+  cursor: pointer;
+  }
+.profile-form .form-item .form-field.field-radio label:before {
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 23px; height: 23px;
+  background: #FFF;
+  border: 7px solid #fff; border-radius: 50%;
+  box-shadow: 0 0 0 1px #CDCDCD;
+  box-sizing: border-box;
+  transition: background .2s;
+  }
+.profile-form .form-item .form-field.field-radio input:checked + label:before { background: #ACABAB; }
+
+/* Sublabel */
+.profile-form .form-item .form-field:not(.field-radio) label {
+  display: block;
+  margin: -7px 0 4px;
+  font-size: 15px; color: #272828;
+  cursor: pointer;
+  }
+
+/* Promo Block */
+.profile-form .form-item .form-promo-amount {
+  margin-top: -20px;
+  font-weight: bold; font-size: 68px; color: #F4B04D; letter-spacing: -2px;
+  }
+.profile-form .form-item .form-promo-amount:before,
+.profile-form .form-item .form-promo-amount:after {
+  content: '';
+  display: inline-block;
+  width: 21px; height: 20px;
+  vertical-align: 16px;
+  background: url(../../../images/sprite.png) -84px -162px /300px auto;
+  }
+
+.profile-form .form-item .promo-button-apply {
+  float: right;
+  width: 134px; height: 42px;
+  padding: 12px 15px 0;
+  font-weight: bold; font-size: 14px; color: #B2B1B1; text-align: center;
+  background: #FFF;
+  border: 1px solid #CDCDCD; border-radius: 0 2px 2px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: color .15s, background .15s, border-color .15s;
+  }
+.profile-form .form-item .promo-button-apply:hover {
+  color: #FFF;
+  background: #49BB7B;
+  border-color: transparent;
+  }
+.profile-form .form-item .promo-button-apply + input {
+  width: calc(100% - 134px) !important;
+  border-right: none !important; border-radius: 2px 0 0 2px !important;
+  }
+
+/* Error */
+.profile-form .form-item.form-item-error > label,
+.profile-form .form-item.form-item-error > .pseudolabel { color: #DB484E; }
+.profile-form .form-item.form-item-error .form-field input[type=text],
+.profile-form .form-item.form-item-error .form-field input[type=email],
+.profile-form .form-item.form-item-error .form-field input[type=password],
+.profile-form .form-item.form-item-error .form-field select,
+.profile-form .form-item.form-item-error .form-field textarea { border-color: #DB484E; }
+.profile-form .form-item.form-item-error .form-item-error-message {
+  position: absolute; bottom: -2px; left: 165px; right: 0;
+  margin: 0;
+  font-size: 11px; color: #F77F81; text-align: center;
+  }
+
+/* Skills Form
+************** */
+.profile-form.form-skills .form-item .form-field {
+  width: 307px;
+  }
+
+.profile-form.form-skills .btn-add-skill {
+  font-weight: normal;
+  background: #EDEDED;
+  }
+.profile-form.form-skills .btn-add-skill span { color: #747474; }
+.profile-form.form-skills .btn-add-skill .btn-icon { background: url(../../../images/sprite.png) -59px -162px /300px auto; }
+
+/* Card Form
+************ */
+.card-form {
+  position: relative;
+  width: 596px; height: 326px;
+  padding: 33px 0 74px;
+  }
+.card-form:before,
+.card-form:after {
+  content: '';
+  position: absolute;
+  width: 444px; height: 284px;
+  border-radius: 15px;
+  }
+.card-form:before {
+  top: 0; left: 0; z-index: 2;
+  background: #E6EBEB;
+  }
+.card-form:after {
+  top: 42px; right: 0;
+  background: #DFE2E2;
+  }
+
+/* Item */
+.card-form .form-item {
+  position: relative; z-index: 10;
+  width: 359px;
+  margin-bottom: 14px; padding-left: 40px;
+  }
+/* Label */
+.card-form .form-item label,
+.card-form .form-item .pseudolabel {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold; font-size: 12px; color: #B3B3B3; text-transform: uppercase; letter-spacing: .5px;
+  }
+/* Input */
+.card-form .form-item input {
+  display: block;
+  width: 100%; height: 42px;
+  padding: 0 18px;
+  font: 15px/1 "Roboto", sans-serif; color: #272828;
+  background: #FFF;
+  border: none; border-radius: 2px;
+  outline: none;
+  box-sizing: border-box;
+  }
+
+.card-form .card-valid-to {
+  padding-left: 190px;
+  }
+.card-form .card-valid-to .pseudolabel {
+  position: absolute; top: 33px; left: 107px;
+  }
+.card-form .card-valid-to .form-field {
+  float: left;
+  width: 90px;
+  margin-right: 28px;
+  }
+
+.card-form .card-cvv {
+  position: absolute; top: 224px; left: 423px;
+  width: 90px;
+  }

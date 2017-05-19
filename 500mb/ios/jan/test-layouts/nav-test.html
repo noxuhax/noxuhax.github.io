@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<style>
+@import url("test-layouts.css");
+@import url("http://fnt.webink.com/wfs/webink.css/?project=1c77aef5-bd8a-49ee-9b4f-8e6362bbccd4&fonts=99B90B52-FC86-D532-91E2-93D2FC4AE03D:f=FuturaPTBook-Reg,F9035255-CE32-045E-9AB2-4032D913936F:f=FuturaPTWebCondMedium,C65CFDCF-329E-C2D3-A0CE-2DE9D7D6FEF6:f=FuturaPTWebMedium,BEE048AF-F74F-572E-AC88-22BFF1F23D13:f=FuturaNewBoldRegular");
+</style>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/swipe.min.js"></script>
+<script type="text/javascript" src="js/hammer.js"></script>
+<script type="text/javascript" src="js/jquery.hammer.js"></script>
+<script type="text/javascript" src="js/dust-full-1.0.0.min.js"></script>
+<script type="text/javascript" src="js/dust-handlers.js"></script>
+<script type="text/javascript" src="js/dust-filters.js"></script>
+<script type="text/javascript" src="js/_comment.js"></script>
+<script type="text/javascript" src="js/i18n.js"></script>
+<script type="text/javascript" src="js/i18n-rules.js"></script>
+<script type="text/javascript" src="js/i18n-translations.js"></script>
+<script type="text/javascript" src="js/jquery.swiper.js"></script>
+<script type="text/javascript" src="js/comments.js"></script>
+<script type="text/javascript">
+var I18n = I18n || {};
+I18n.defaultLocale = "ru";
+I18n.locale = "ru";
+
+var LAM = {
+      DustGlobals: {
+        lazy_img: false
+      }
+    },
+    dustContext = dust.makeBase(dust.handlers || {}).push(LAM.DustGlobals);
+</script>
+</head>
+
+<body>
+<div class="outer-wrap">
+  <div class="body-moovin">
+    <div class="navigation">
+      <div class="menu">
+        <a href="#" class="button" onclick="document.getElementsByTagName('body')[0].className='nav-opened';return false;"></a>
+        <a href="#" class="hide-nav" onclick="document.getElementsByTagName('body')[0].className='';getElementById('city_picker').className='';return false;"></a>
+        <div class="nav-drop">
+          <div id="city_picker">
+            <ul class="city-list">
+              <li><a href="#" onclick="getElementById('city_picker').className='';return false;"><span>Москва</span></a></li>
+              <li><a href="/" onclick="getElementById('city_picker').className='';return false;">Петербург</a></li>
+              <li><a href="/" onclick="getElementById('city_picker').className='';return false;">Киев</a></li>
+            </ul>
+            <span class="city-picker-open" onclick="getElementById('city_picker').className='city-picker-opened';return false;"></span>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#">Ситуация</a></li>
+            <li><a href="#">Город</a></li>
+            <li><a href="#">Услуги и покупки</a></li>
+            <li><a href="#">Еда</a></li>
+            <li><a href="#">Культура</a></li>
+            <li><a href="#">Люди</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+<!--       <div class="article-cover big-picture">
+        <div class="article-preview" style="background-image: url('http://assets1.the-village.ru/assets/post-cover/37/f0/122483/post-cover-default.9182c230-9262-4196-87fe-b8db69c77cca.jpg');"></div>
+        <div class="cover-data">
+          <div class="cover-data-wrap">
+            <h2 class="article-category">Город</h2>
+            <h1 class="article-title" role="title">Квартира недели (Петербург)</h1>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="article-cover small-picture">
+        <img class="article-preview" src="http://assets3.the-village.ru/assets/post-cover/ca/cc/122425/post-cover-default.8118227c-eac5-4207-a514-6612d3f6ebdb.jpg">
+        <div class="cover-data">
+          <h2 class="article-category">Город</h2>
+          <h1 class="article-title" role="title">События недели: Концерт Пола Бэнкса, Grass Design Week и 10 новых выставок на «Винзаводе»</h1>
+        </div>
+      </div>
+<style>
+.test {
+  width: 261px; height: 120px;
+  background: url(Untitled-2.png); background-size: 261px 120px;
+  }
+.test2 {
+  width: 261px; height: 120px;
+  background: url(Untitled-3.png);
+  }
+</style>
+<div class="test"></div>
+<div class="test2"></div>
+
+      <div class="banner"><img src="http://i573.photobucket.com/albums/ss177/kitten_von_mew/USOShowBanner.jpg"></div>
+<!--
+      <div class="article-cover no-picture">
+        <h2 class="article-title"><span class="time">19:14</span> Данные «Яндекс.Пробок» будут показывать на 12 уличных экранах</h2>
+      </div> -->
+
+      <div class="article-text">
+
+        <p>Я ожидала большего. Кто-то говорит, что режиссёр Джо Райт и постановщики взглянули на Каренину под новым, не менее интересным углом, что тут в руку все аскетические и нереалистичные декорации и вообще театрализованность всего действа: мол, мы абстрагируемся от Карениной в первоначальном образе (и от эпохи в коей-то мере) и пытаемся воспринять её по-иному.</p>
+
+        <div class="post-slideshow js-slider">
+          <div>
+            <div style="display: block;"><div class="img-with-caption" style="background-image: url(pic/1/01.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/1/02.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/1/03.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/1/04.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/1/05.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/1/06.jpg)"></div></div>
+          </div>
+        </div>
+<div style="display: none;">
+        <p>Я ожидала большего. Кто-то говорит, что режиссёр Джо Райт и постановщики взглянули на Каренину под новым, не менее интересным углом, что тут в руку все аскетические и нереалистичные декорации и вообще театрализованность всего действа: мол, мы абстрагируемся от Карениной в первоначальном образе (и от эпохи в коей-то мере) и пытаемся воспринять её по-иному.</p>
+
+        <div class="post-slideshow js-slider">
+          <div>
+            <div style="display: block;"><div class="img-with-caption" style="background-image: url(pic/2/01.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/2/02.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/2/03.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/2/04.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/2/05.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/2/06.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/2/07.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/2/08.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/2/09.jpg)"></div></div>
+          </div>
+        </div>
+
+        <p>Я ожидала большего. Кто-то говорит, что режиссёр Джо Райт и постановщики взглянули на Каренину под новым, не менее интересным углом, что тут в руку все аскетические и нереалистичные декорации и вообще театрализованность всего действа: мол, мы абстрагируемся от Карениной в первоначальном образе (и от эпохи в коей-то мере) и пытаемся воспринять её по-иному.</p>
+
+        <div class="post-slideshow js-slider">
+          <div>
+            <div style="display: block;"><div class="img-with-caption" style="background-image: url(pic/3/01.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/3/02.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/3/03.jpg)"></div></div>
+          </div>
+        </div>
+
+        <p>Я ожидала большего. Кто-то говорит, что режиссёр Джо Райт и постановщики взглянули на Каренину под новым, не менее интересным углом, что тут в руку все аскетические и нереалистичные декорации и вообще театрализованность всего действа: мол, мы абстрагируемся от Карениной в первоначальном образе (и от эпохи в коей-то мере) и пытаемся воспринять её по-иному.</p>
+
+        <div class="post-slideshow js-slider">
+          <div>
+            <div style="display: block;"><div class="img-with-caption" style="background-image: url(pic/4/01.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/4/02.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/4/03.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/4/04.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/4/05.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/4/06.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/4/07.jpg)"></div></div>
+          </div>
+        </div>
+
+        <p>Я ожидала большего. Кто-то говорит, что режиссёр Джо Райт и постановщики взглянули на Каренину под новым, не менее интересным углом, что тут в руку все аскетические и нереалистичные декорации и вообще театрализованность всего действа: мол, мы абстрагируемся от Карениной в первоначальном образе (и от эпохи в коей-то мере) и пытаемся воспринять её по-иному.</p>
+
+        <div class="post-slideshow js-slider">
+          <div>
+            <div style="display: block;"><div class="img-with-caption" style="background-image: url(pic/5/01.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/5/02.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/5/03.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/5/04.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/5/05.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/5/06.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/5/07.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/5/08.jpg)"></div></div>
+          </div>
+        </div>
+
+        <p>Я ожидала большего. Кто-то говорит, что режиссёр Джо Райт и постановщики взглянули на Каренину под новым, не менее интересным углом, что тут в руку все аскетические и нереалистичные декорации и вообще театрализованность всего действа: мол, мы абстрагируемся от Карениной в первоначальном образе (и от эпохи в коей-то мере) и пытаемся воспринять её по-иному.</p>
+
+        <div class="post-slideshow js-slider">
+          <div>
+            <div style="display: block;"><div class="img-with-caption" style="background-image: url(pic/6/01.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/6/02.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/6/03.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/6/04.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/6/05.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/6/06.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/6/07.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/6/08.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/6/09.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/6/10.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/6/11.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/6/12.jpg)"></div></div>
+            <div style="display: none;"><div class="img-with-caption" style="background-image: url(pic/6/13.jpg)"></div></div>
+          </div>
+        </div>
+
+        <p>Обычный.&nbsp;То, что наши руководители в своих публичных выступлениях весьма вольно обращаются с фактами, давно уже не секрет. Но если раньше этим чаще грешил Путин, то теперь к нему, похоже, решил подтянуться и Медведев.</p>
+      <!-- 1-3 -->
+        <div class="fluid-row float">
+          <div class="fluid-block x1">
+            <p class="center mb-05"><span class="img-with-caption">
+            <img src="http://assets2.the-village.ru/assets/article_image-image/80/97/2354853/article_image-image-article.194eea61-1981-4178-8723-2706758d4074.jpg" class="" alt="" width="110" height="110">
+            </span>
+            </p>
+            <h6 class="center h6 mb-0">Кристина<br>Водорезова</h6>
+            <p class="center small mb-0">школа №1228</p>
+          </div>
+          <div class="fluid-block x3">
+            <p class="mb-0">Я ожидала большего. Кто-то говорит, что режиссёр Джо Райт и постановщики взглянули на Каренину под новым, не менее интересным углом, что тут в руку все аскетические и нереалистичные декорации и вообще театрализованность всего действа: мол, мы абстрагируемся от Карениной в первоначальном образе (и от эпохи в коей-то мере) и пытаемся воспринять её по-иному.</p>
+          </div>
+        </div>
+        <p class="sep sep-2"></p>
+
+      <!-- 2-2 -->
+        <div class="fluid-row singlerow">
+          <div class="fluid-block x2">
+            <p class="mb-0"><span class="img-with-caption">
+            <img src="http://assets0.the-village.ru/assets/article_image-image/00/09/2353569/article_image-image-article.2bc48a99-137a-4c3d-827b-870cf161ce3e.jpg" class="" alt="" width="300" height="300">
+            </span>
+            </p>
+          </div>
+          <div class="fluid-block x2">
+            <p>С 21 января в Leform начала действовать 60%-ная скидка на все вещи из осенне-зимних коллекций, кроме аксессуаров и одежды российских дизайнеров. Более подходящий момент для покупки сложных бельгийских и японских вещей, если вы собираетесь сделать это впервые, пожалуй, трудно представить.</p>
+            <p class="small mb-0"><img src="http://lookatme.ru/images/d.gif" class="inline_icon-place-b inline_icon"></p>
+            <p class="mb-0 small"><a href="https://maps.google.ru/maps?q=%D0%A3%D0%BB.+%D0%9F%D0%BE%D0%B2%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F,+35%2F28&amp;hl=ru&amp;ie=UTF8&amp;sll=55.751242,37.618422&amp;sspn=0.594337,1.889648&amp;hnear=%D0%9F%D0%BE%D0%B2%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB.,+28,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&amp;t=m&amp;z=16" target="_blank">Ул. Поварская, 35/28</a></p>
+            <p class="small mb-0">(495) 691–82–20</p>
+            <p class="small mb-0"><a href="https://maps.google.ru/maps?q=%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D0%B5%D1%80.,+7&amp;hl=ru&amp;ie=UTF8&amp;ll=55.762595,37.615793&amp;spn=0.009284,0.029526&amp;sll=55.755042,37.593052&amp;sspn=0.009286,0.029526&amp;hnear=%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D0%B5%D1%80.,+7,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+107031&amp;t=m&amp;z=16" target="_blank">Дмитровский пер., 7</a><br>(495) 660–02–80</p>
+          </div>
+        </div>
+        <p class="sep sep-2"></p>
+
+      <!-- 1-1-1-1 -->
+        <div class="fluid-row singlerow">
+          <div class="fluid-block x1">
+            <p class="center"><span class="img-with-caption">
+            <img src="http://assets3.the-village.ru/assets/article_image-image/f2/a5/2352611/article_image-image-article.8bcc87d9-d731-4aea-9a6e-2c0602419f36.jpg" class="" alt="" width="140" height="140">
+            </span>
+            </p>
+            <p class="small mb-0 center"><strong><a href="http://ragout.ru/cafe" target="_blank"><span>Ragout<br>на Олимпийском проспекте</span></a><br></strong></p>
+            <p class="small center">Москва</p>
+            <p class="small mb-05">Это наш семейный ресторан, куда мы приходим по выходным. В «Рагу» есть фантастическое детское меню, много места и отдельная комната, где можно устраивать детские праздники. Мы встречаем много знакомых с детьми именно там.&nbsp;Это хорошо тем, что в какой-то момент твой ребёнок выбирается из-за стола и сам начинает себя развлекать, играя с другими детишками. Главное, что это никого особенно не раздражает, а таких мест в Москве очень мало.</p>
+          </div>
+          <div class="fluid-block x1">
+            <p class="center"><span class="img-with-caption">
+            <img src="http://assets1.the-village.ru/assets/article_image-image/e1/1c/2352613/article_image-image-article.d9e7ac2d-4b7a-4040-babe-6a396d1144fc.jpg" class="" alt="" width="140" height="140">
+            </span>
+            </p>
+            <p class="small center mb-0"><strong><a href="http://www.ticketsbar.es/web/" target="_blank"><span>Tickets</span></a><br></strong></p>
+            <p class="center small">Барселона</p>
+            <p class="small mb-05">Это место произвело на меня фантастическое впечатление, это 100 % food experience, там нереальная молекулярная кухня.&nbsp;Повара и официанты одеты в очень красивую форму, которую можно купить прямо в ресторане — настоящий объект дизайна. В ресторане фантастическая атмосфера, уделено внимание каждой мелочи.&nbsp;Мы нашли это место случайно, а потом оказалось, что записываться на ужин сюда нужно за месяц, а нам просто повезло.</p>
+          </div>
+          <div class="fluid-block x1">
+            <p class="center"><span class="img-with-caption">
+            <img src="http://assets1.the-village.ru/assets/article_image-image/d6/6a/2352615/article_image-image-article.d10073f0-5b3e-47c7-bdfb-cf0a89ed72c0.jpg" class="" alt="" width="140" height="140">
+            </span>
+            </p>
+            <p class="small center mb-0"><span><strong><a href="http://www.themost.ru/" target="_blank">Brasserie Most</a></strong><br></span></p>
+            <p class="small center">Москва</p>
+            <p class="small mb-05">К французской кухне в целом я равнодушна, но в этом ресторане и правда очень вкусно. Есть какая-то тонкость в еде, ты насыщаешься, но нет ощущения, что стал тюфяком — это особенность кухни местного повара Режиса Тригеля.&nbsp;Мне здесь нравится абсолютно всё, что я пробовала. Краб был свежайшим и очень лёгким. Я заказывала барабульку, которая мне тоже понравилась. Есть сосиски с зелёным горошком — классическое французское блюдо. Невероятные паштеты, а на десерт — ром-баба.</p>
+          </div>
+          <div class="fluid-block x1">
+            <p class="center"><span class="img-with-caption">
+            <img src="http://assets1.the-village.ru/assets/article_image-image/a8/51/2352617/article_image-image-article.f93495d6-033f-43ef-aba7-d1b645226c7a.jpg" class="" alt="" width="140" height="140">
+            </span>
+            </p>
+            <p class="small center mb-0"><span><a href="http://www.aozzora.com/" target="_blank"><strong>Aozora</strong></a><br></span></p>
+            <p class="small center">Москва</p>
+            <p class="small">Мой муж японист, поэтому знает все лучшие японские рестораны в городе. Мы с ним иногда ходим в Aozora, там делают хорошие суси и фантастическое мороженое из зелёного чая. Повар Aozora японец, и это место очень популярно среди живущих в Москве японцев, что свидетельствует о качестве кухни.</p>
+          </div>
+        </div>
+        <p class="sep sep-2"></p>
+
+      <!-- 1-1-1-1 -->
+        <div class="fluid-row matrix">
+          <div class="fluid-block x1">
+            <p class="center mb-0"><img src="http://lookatme.ru/images/d.gif" class="inline_icon-icon-meter inline_icon"></p>
+            <p class="center xsmall mb-05">МЕТРАЖ</p>
+            <p class="center xlarge mb-0">70 м<sup>2</sup></p>
+          </div>
+          <div class="fluid-block x1">
+            <p class="center mb-0"><img src="http://lookatme.ru/images/d.gif" class="inline_icon-icon-rooms inline_icon"></p>
+            <p class="center xsmall mb-05">КОМНАТ</p>
+            <p class="center xlarge mb-0">3</p>
+          </div>
+          <div class="fluid-block x1">
+            <p class="center mb-0"><img src="http://lookatme.ru/images/d.gif" class="inline_icon-icon-storey inline_icon"></p>
+            <p class="center xsmall mb-05">ЭТАЖ</p>
+            <p class="center xlarge mb-0">3</p>
+          </div>
+          <div class="fluid-block x1">
+            <p class="center mb-0"><img src="http://lookatme.ru/images/d.gif" class="inline_icon-icon-ceiling inline_icon"></p>
+            <p class="center xsmall mb-05">ПОТОЛКИ</p>
+            <p class="center xlarge mb-0">3,95 м</p>
+          </div>
+        </div>
+        <p class="sep sep-2"></p>
+
+      <!-- 3-1 -->
+        <div class="fluid-row singlerow">
+          <div class="fluid-block x3">
+            <p class="mb-0"><span>Последние годы&nbsp;Марина Бей — новый район на юге Сингапура — развивается с предельной активностью: в нём строят отели, открывают рестораны и устраивают парки развлечений. Главный и самый амбициозный проект района — ботанический комплекс Gardens by the Bay. Это огромный парк на площади в 101 гектар. Здесь есть озёра, оранжереи и теплицы с растениями, которых не встретить в Азии. Чтобы найти экологически безвредный источник энергии для биомов, было решено построить Лес супердеревьев — экосистему, которая собирает дождевую воду и работает как огромная солнечная батарея.</span></p>
+          </div>
+          <div class="fluid-block x1">
+            <p class="mb-05 center"><span class="img-with-caption">
+            <img src="http://assets1.the-village.ru/assets/article_image-image/eb/6f/2344231/article_image-image-article.b727b75a-c182-4e0e-a689-d864ce426c27.jpg" class="" alt="" width="140" height="65">
+            </span>
+            </p>
+            <p class="condensed center mb-0">784 000 000</p>
+            <p class="center small"><strong>долларов</strong> стоило строительство Леса супердеревьев</p>
+          </div>
+        </div>
+</div>
+      </div>
+
+      <div class="widget attached" style="display: none;">
+        <h3 class="widget-title">Читайте на эту тему</h3>
+        <div class="js-slidernofs">
+          <div>
+            <div style="display: block;">
+              <div class="attached-post">
+                <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image/08/32/122299/post-image.b11423ed-10e8-4e27-8ce7-17de70a75b7a.jpg');"></div>
+                <h2><a href="#" onclick="return false;">Внешний вид: Наталья Истомина, фоторедактор</a></h2>
+              </div>
+            </div>
+
+            <div style="display: none;">
+              <div class="attached-post">
+                <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image/b4/d1/122227/post-image.131f272d-6313-4ef0-8d5c-b0d7f2087b29.jpg');"></div>
+                <h2><a href="#" onclick="return false;">Новое место: Бутербродная «Бутербро»</a></h2>
+              </div>
+            </div>
+
+            <div style="display: none;">
+              <div class="attached-post">
+                <div class="post-preview" style="background-image: url('http://assets2.the-village.ru/assets/post-image/a0/e6/122241/post-image.680ca470-1194-446d-821f-148c888daac5.jpg');"></div>
+                <h2><a href="#" onclick="return false;">События недели: Фестиваль «Арт-мейнстрим», Le Picnic Valentine's Market и концерт Chinawoman</a></h2>
+              </div>
+            </div>
+
+            <div style="display: none;">
+              <div class="attached-post">
+                <div class="post-preview" style="background-image: url('http://assets3.the-village.ru/assets/post-image/7a/1c/122287/post-image.cbf88a23-31f8-4e33-8bf4-662987a3fcea.jpg');"></div>
+                <h2><a href="#" onclick="return false;">Работа над ошибками: Гид по «Фотошопу» для чиновников</a></h2>
+              </div>
+            </div>
+
+            <div style="display: none;">
+              <div class="attached-post">
+                <div class="post-preview" style="background-image: url('http://assets3.the-village.ru/assets/post-image/f3/f7/122309/post-image.5327a6f6-b66b-4cb5-bb47-f2680dd82021.jpg');"></div>
+                <h2><a href="#" onclick="return false;">Гости столицы: Зарубежные режиссёры о российских стереотипах</a></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hype-panel">
+        <div class="hype-views">
+          <h6>Просмотры</h6>
+          <strong class="hype-views-counter">26763</strong>
+        </div>
+        <div class="hype-share">
+          <h6>Поделитесь с друзьями</h6>
+          <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.the-village.ru%2F&t=The%26s+Village" target="_blank" class="hype-share-button fb">Facebook</a>
+          <a href="http://vkontakte.ru/share.php?url=http%3A%2F%2Fwww.the-village.ru%2F&t=The%26s+Village" target="_blank" class="hype-share-button vk">Vkontakte</a>
+          <a href="http://twitter.com/share?url=http%3A%2F%2Fwww.the-village.ru%2F&text=The%26s+Village" target="_blank" class="hype-share-button tw">Twitter</a>
+        </div>
+      </div>
+
+      <div class="widget other-news" style="display: none;">
+        <h3 class="widget-title">Сегодня в городе</h3>
+        <ul class="news-list">
+          <li><a href="#"><span class="time">17:00</span> Институт Генплана поищет памятники за пределами Садового кольца</a></li>
+          <li><a href="#"><span class="time">16:29</span> В Подмосковье появится социальная сеть для общения с чиновниками</a></li>
+          <li><a href="#"><span class="time">14:42</span> Штрафы за парковку на тротуарах увеличат</a></li>
+          <li><a href="#"><span class="time">13:30</span> На Манежной площади запустили «олимпийские часы»</a></li>
+        </ul>
+        <h3 class="widget-title">Вчера в городе</h3>
+        <ul class="news-list">
+          <li><a href="#"><span class="time">17:00</span> Институт Генплана поищет памятники за пределами Садового кольца</a></li>
+          <li><a href="#"><span class="time">16:29</span> В Подмосковье появится социальная сеть для общения с чиновниками</a></li>
+          <li><a href="#"><span class="time">13:30</span> На Манежной площади запустили «олимпийские часы»</a></li>
+        </ul>
+      </div>
+
+      <div class="widget readalso">
+        <h3 class="widget-title">Интересные посты</h3>
+        <div class="js-slidernofs">
+          <div>
+            <div style="display: block;">
+              <div class="readalso-post">
+                <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image/08/32/122299/post-image.b11423ed-10e8-4e27-8ce7-17de70a75b7a.jpg');"></div>
+                <h6 class="post-flow">Люди</h6>
+                <h2>Внешний вид: Наталья Истомина, фоторедактор</h2>
+                <a href="#" class="linktopost" onclick="return false;"></a>
+              </div>
+            </div>
+
+            <div style="display: none;">
+              <div class="readalso-post">
+                <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image/b4/d1/122227/post-image.131f272d-6313-4ef0-8d5c-b0d7f2087b29.jpg');"></div>
+                <h6 class="post-flow">Еда</h6>
+                <h2>Новое место: Бутербродная «Бутербро»</h2>
+                <a href="#" class="linktopost" onclick="return false;"></a>
+              </div>
+            </div>
+
+            <div style="display: none;">
+              <div class="readalso-post">
+                <div class="post-preview" style="background-image: url('http://assets2.the-village.ru/assets/post-image/a0/e6/122241/post-image.680ca470-1194-446d-821f-148c888daac5.jpg');"></div>
+                <h6 class="post-flow">Культура</h6>
+                <h2>События недели: Фестиваль «Арт-мейнстрим», Le Picnic Valentine's Market и концерт Chinawoman</h2>
+                <a href="#" class="linktopost" onclick="return false;"></a>
+              </div>
+            </div>
+
+            <div style="display: none;">
+              <div class="readalso-post">
+                <div class="post-preview" style="background-image: url('http://assets3.the-village.ru/assets/post-image/7a/1c/122287/post-image.cbf88a23-31f8-4e33-8bf4-662987a3fcea.jpg');"></div>
+                <h6 class="post-flow">Город</h6>
+                <h2>Работа над ошибками: Гид по «Фотошопу» для чиновников</h2>
+                <a href="#" class="linktopost" onclick="return false;"></a>
+              </div>
+            </div>
+
+            <div style="display: none;">
+              <div class="readalso-post">
+                <div class="post-preview" style="background-image: url('http://assets3.the-village.ru/assets/post-image/f3/f7/122309/post-image.5327a6f6-b66b-4cb5-bb47-f2680dd82021.jpg');"></div>
+                <h6 class="post-flow">Культура</h6>
+                <h2>Гости столицы: Зарубежные режиссёры о российских стереотипах</h2>
+                <a href="#" class="linktopost" onclick="return false;"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div role="comments" data-type="Post" data-id="112583" class="comment-list"></div>
+
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+.custom_slide {
+  background: red;
+  }
+</style>
+<script type="application/x-javascript">
+  $('.js-slidernofs').swiper({
+    fullscreen: false
+  });
+  $('.js-slider').swiper({
+    custom_slide: function (swiper) {
+      swiper.slide(0);
+    }
+  });
+  Comments.prototype.load = function () {
+    // $.ajax({
+    //   // url: this.options.url + '?resource_type=' + this.resource_type + '&resource_id=' + this.resource_id + this.uri_random_component(),
+    //   url: './js/comments.json',
+    //   dataType: 'json',
+    //   success: $.proxy(this.load_success_handler, this)
+    // });
+    this.load_success_handler({"comments":[{"id":1514673,"rating":4,"parent_id":null,"full_name":"Nastya Ko","user":"nastya-ko","userpic":"http://lookatme.dev/assets/user-userpic/7c/d5/257903/user-userpic-thumb.cd96fd1d-b7f9-4022-9945-a7e1c4030e43.jpg","body":"<p>так есть захотелось</p>","datetime":"2012-03-28T15:57:15+04:00"},{"id":1514675,"rating":0,"parent_id":null,"full_name":"Luba Konf","user":"luba-konf","userpic":"http://lookatme.dev/6533130945/images/default/village/userpic-thumb.png","body":"<p>Значит после этой статьи можно не воспринимать  всерьез некоторые посты из раздела \"Еда\"?</p>","datetime":"2012-03-28T16:10:12+04:00"},{"id":1514677,"rating":0,"parent_id":1514675,"full_name":"Игорь Садреев","user":"sadreev","userpic":"http://lookatme.dev/assets/user-userpic/9c/49/261239/user-userpic-thumb.b0deffd0-3a07-4f63-a13a-f3fcb13326c1.jpg","body":"<p>Например?</p>","datetime":"2012-03-28T16:12:22+04:00"},{"id":1514683,"rating":0,"parent_id":null,"full_name":"Георгий","user":"jbravo","userpic":"http://lookatme.dev/6533130945/images/default/village/userpic-thumb.png","body":"<p> Все так и есть. Помимо этого были тренды на стейки, пан-азиатскую кухню и молекульярную гатрономию. Думаю, на очереди тренд на cuisine a la sovok. </p>","datetime":"2012-03-28T16:15:28+04:00"},{"id":1514699,"rating":5,"parent_id":null,"full_name":"dmitry pesenka","user":"pesenka","userpic":"http://lookatme.dev/assets/user-userpic/d5/91/236/user-userpic-thumb.f5f93ca3-28f2-4d8b-965f-a542a20f1407.jpg","body":"<p>ну Чентрале, предположим, не поэтому в хинкальную переделалось, а потому как у них было слабое подобие итальянской кухни по достаточно ебическим ценам и мало кто там ел. А так - все правда, спасибо, Роман. Пойду поем.</p>","datetime":"2012-03-28T17:07:15+04:00"},{"id":1514729,"rating":5,"parent_id":null,"full_name":"Elena Volova","user":"volova","userpic":"http://lookatme.dev/assets/user-userpic/4f/12/283153/user-userpic-thumb.ff5cd734-f9a3-4eea-9497-f49967f33159.jpg","body":"<p>Хорошая статья!</p><p>Как по мне тяжелая в хорошем смысле этого слова.</p><p>Написана в чрезвычайном публицистическом стиле. Читалось с удовольствием.</p>","datetime":"2012-03-28T17:43:03+04:00"},{"id":1514775,"rating":0,"parent_id":null,"full_name":"Алина Локтева","user":"alineo","userpic":"http://lookatme.dev/6533130945/images/default/village/userpic-thumb.png","body":"<p>а я ем дома! и всем советую...</p>","datetime":"2012-03-28T18:29:17+04:00"},{"id":1514777,"rating":0,"parent_id":1514775,"full_name":"Алина Локтева","user":"alineo","userpic":"http://lookatme.dev/6533130945/images/default/village/userpic-thumb.png","body":"<p>хотя это походу тоже тренд</p>","datetime":"2012-03-28T18:29:37+04:00"},{"id":1514779,"rating":0,"parent_id":1514777,"full_name":"Игорь Садреев","user":"sadreev","userpic":"http://lookatme.dev/assets/user-userpic/9c/49/261239/user-userpic-thumb.b0deffd0-3a07-4f63-a13a-f3fcb13326c1.jpg","body":"<p>Еще какой!</p>","datetime":"2012-03-28T18:31:13+04:00"},{"id":1514833,"rating":0,"parent_id":null,"full_name":"beach_bunny","user":"beach_bunny","userpic":"http://lookatme.dev/assets/user-userpic/4b/27/268469/user-userpic-thumb.7ad49a7d-f8f4-43cf-960e-de26b6b4b173.jpg","body":"<p>в ближайшем будущем - ставлю на русскую кухню)</p>","datetime":"2012-03-28T20:43:53+04:00"},{"id":1514861,"rating":0,"parent_id":null,"full_name":"Янина","user":"umka_yana","userpic":"http://lookatme.dev/assets/user-userpic/70/2a/27732/user-userpic-thumb.jpg","body":"<p>за азиатскую лапшу обидно</p>","datetime":"2012-03-28T21:53:48+04:00"},{"id":1514875,"rating":0,"parent_id":1514775,"full_name":"Алиса По","user":"vice_versa","userpic":"http://lookatme.dev/assets/user-userpic/27/2d/8003/user-userpic-thumb.jpg","body":"<p>а что плохого в том, чтобы есть не дома?)</p>","datetime":"2012-03-29T00:14:12+04:00"}],"deleted":[],"votes":{}});
+  };
+  new Comments();
+</script>
+</body>
+</html>

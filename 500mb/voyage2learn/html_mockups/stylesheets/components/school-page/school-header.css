@@ -1,0 +1,112 @@
+.school-header {
+  position: relative;
+  }
+.school-header .wrap {
+  padding-top: 52px;
+  height: 470px;
+  box-sizing: border-box;
+  }
+
+.school-header > * { position: relative; z-index: 2; }
+
+/* Header
+********* */
+.school-header h1 {
+  margin-bottom: 10px;
+  font-weight: normal; font-size: 66px; line-height: 66px; color: #FFF; text-align: center;
+  }
+.school-header h3 {
+  margin-bottom: 10px;
+  color: #FFF; text-align: center;
+  }
+
+/* Rating
+********* */
+.school-header .school-header-rating {
+  margin-bottom: 23px;
+  text-align: center;
+  }
+
+/* Actions
+********** */
+.school-header .school-header-actions { text-align: center; }
+.school-header .school-header-actions .btn {
+  min-width: 190px;
+  margin-left: 7px;
+  }
+.school-header .school-header-actions .btn:first-child { margin-left: 0; }
+
+/* Reviews
+********** */
+.school-header .school-header-reviews {
+  position: absolute; bottom: 9px; left: 165px;
+  width: 630px; height: 145px;
+  background: #FFF;
+  border-radius: 2px;
+  }
+.school-header .school-header-reviews:before {
+  content: '';
+  position: absolute; top: -8px; left: 50%;
+  margin-left: -8px;
+  border-right: 8px solid transparent; border-bottom: 8px solid #FFF; border-left: 8px solid transparent;
+  }
+
+/* Item */
+.school-header .school-header-reviews .review-item {
+  position: absolute; top: 0; left: 0; z-index: 1;
+  width: 630px;
+  padding: 25px 30px 0 135px;
+  opacity: 0;
+  box-sizing: border-box;
+  transition: opacity .2s;
+  }
+.school-header .school-header-reviews .review-item.active {
+  z-index: 2;
+  opacity: 1;
+  }
+
+/* User */
+.school-header .school-header-reviews .review-item .review-author {
+  margin-bottom: 9px;
+  font-weight: bold; font-size: 16px;
+  }
+.school-header .school-header-reviews .review-item .review-author .userpic {
+  position: absolute; top: 25px; left: 35px;
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  }
+
+/* Text */
+.school-header .school-header-reviews .review-item p {
+  max-height: 42px;
+  margin-bottom: 13px;
+  font-size: 14px; line-height: 21px;
+  overflow: hidden;
+  }
+.school-header .school-header-reviews .review-item .review-continue { font-size: 14px; color: #4FC281; text-decoration: none; }
+.school-header .school-header-reviews .review-item .review-continue:hover { color: #F4B04D; }
+
+/* All Reviews */
+.school-header .school-header-reviews .review-link-to-all {
+  position: absolute; bottom: 26px; right: 30px; z-index: 3;
+  font-size: 14px; color: #DB484E; text-decoration: none;
+  }
+.school-header .school-header-reviews .review-link-to-all:hover { color: #F4B04D; }
+
+/* Dots */
+.school-header .school-header-reviews .dotted-paginator {
+  position: absolute; top: 107px; left: 10px; z-index: 10;
+  width: 115px;
+  }
+
+/* Backdrop
+*********** */
+.school-header .school-header-bg {
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1;
+  background-position: center; background-size: cover;
+  }
+.school-header .school-header-bg:before {
+  content: '';
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0,0,0,.32);
+  }

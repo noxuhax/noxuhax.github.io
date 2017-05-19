@@ -1,0 +1,77 @@
+/* Place Types Slider
+********************* */
+.search-nearby:before,
+.search-nearby:after {
+  content: '';
+  position: absolute; top: 0; bottom: 0; z-index: 100;
+  width: 15px;
+  }
+.search-nearby:before {
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%,rgba(246,246,246,1)), color-stop(100%,rgba(246,246,246,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(246,246,246,1) 50%,rgba(246,246,246,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to right,  rgba(246,246,246,1) 50%,rgba(246,246,246,0) 100%); /* W3C */
+  }
+.search-nearby:after {
+  right: 0;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%,rgba(246,246,246,1)), color-stop(100%,rgba(246,246,246,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(right,  rgba(246,246,246,1) 50%,rgba(246,246,246,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to left,  rgba(246,246,246,1) 50%,rgba(246,246,246,0) 100%); /* W3C */
+  }
+.search-nearby .nearby-place-types {
+  height: 98px;
+  white-space: nowrap;
+  overflow: auto; -webkit-overflow-scrolling: touch;
+  }
+.search-nearby .nearby-place-types li {
+  margin: 0 15px 0 0;
+  }
+
+/* Ads
+****** */
+.ad-slider {
+  letter-spacing: -0.35em; word-spacing: -0.35em; white-space: nowrap;
+  overflow: auto; -webkit-overflow-scrolling: touch;
+  }
+.ad-slider .ad-result {
+  display: inline-block;
+/*   width: 245px; */ width: 75%;
+  margin-right: 15px;
+  letter-spacing: 0; word-spacing: 0; white-space: normal;
+  border-style: none solid solid;
+  }
+.ad-slider .ad-result:first-child { display: inline-block; }
+.ad-slider .ad-result:last-of-type { margin: 0; }
+.ad-slider .view-all { display: none; }
+.ad-slider.full .ad-result { display: inline-block!important; }
+
+/* Images Search Result Badge
+***************************** */
+.main-content .image-search-results-slider {
+  height: 110px;
+  padding-right: 20px; padding-left: 0;
+  letter-spacing: -0.35em; word-spacing: -0.35em; white-space: nowrap;
+  overflow: auto; -webkit-overflow-scrolling: touch;
+  }
+.main-content .image-search-results-slider .image-search-result {
+  float: none;
+  display: inline-block;
+  margin: 0 -7px 0 15px;
+  }
+
+/* See Also Slider
+****************** */
+.see-also-wrap {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 15px 0 0;
+  white-space: nowrap;
+  overflow: auto; -webkit-overflow-scrolling: touch;
+  }
+.see-also-wrap dt,
+.see-also-wrap dd {
+  display: inline-block;
+  }
+.see-also-wrap dd:before {
+  margin: 0 12px;
+  }

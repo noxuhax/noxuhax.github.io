@@ -1,0 +1,130 @@
+.school-summary { padding: 80px 0 50px; }
+
+/* Description
+************** */
+.school-summary h1 { margin-bottom: 27px; }
+.school-summary p { margin-bottom: 25px; }
+
+.school-summary .toggle-description span { color: inherit; }
+
+/* School Nations
+***************** */
+.school-summary .school-nations-percent {
+  width: 100%;
+  font-weight: 500; font-size: 12px; line-height: 25px; color: #949494; text-align: center; text-transform: uppercase; letter-spacing: .5px;
+  }
+.school-summary .school-nations-flags td {
+  padding: 10px 15px;
+  vertical-align: top;
+  }
+.school-summary .school-nations-flags td:first-child { border-radius: 3px 0 0 3px; }
+.school-summary .school-nations-flags td:last-child { border-radius: 0 3px 3px 0; }
+.school-summary .school-nations-flags td:nth-child(6n+1) { background: #E3E3E3; }
+.school-summary .school-nations-flags td:nth-child(6n+2) { background: #F5F5F5; }
+.school-summary .school-nations-flags td:nth-child(6n+3) { background: #D7D7D7; }
+.school-summary .school-nations-flags td:nth-child(6n+4) { background: #E7E7E7; }
+.school-summary .school-nations-flags td:nth-child(6n+5) { background: #C9C7C7; }
+.school-summary .school-nations-flags td:nth-child(6n+6),
+.school-summary .school-nations-flags td.school-nation-other { background: #F5F5F5; }
+
+.school-summary .school-nations-flags .nation-flag {
+  width: 42px; height: 25px;
+  margin: auto;
+  background: #FFF;
+  }
+
+.school-summary .school-nations-value td { padding-top: 5px; }
+
+/* Accepted Exams
+***************** */
+.school-summary .school-accepted-exams .school-exams-list li {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 14px;
+  list-style: none;
+  }
+
+/* Conviniences
+*************** */
+.school-summary .school-convinience .col {
+  padding-left: 45px;
+  font-size: 14px; line-height: 15px; color: #5E5C5C;
+  }
+.school-summary .school-convinience .col:before {
+  content: '';
+  position: absolute; top: 0; left: 0;
+  }
+.school-summary .school-convinience .col.school-conv-wifi:before {
+  width: 27px; height: 21px;
+  background: url(../../../images/sprite.png) -138px -105px / 300px auto no-repeat;
+  }
+.school-summary .school-convinience .col.school-conv-laundry:before {
+  width: 25px; height: 25px;
+  background: url(../../../images/sprite.png) -170px -105px / 300px auto no-repeat;
+  }
+
+/* Branches
+*********** */
+.school-summary .school-branches .branch-list { margin-top: 18px; }
+.school-summary .school-branches .branch-list li {
+  display: inline-block;
+  margin-left: 26px;
+  list-style: none;
+  font-size: 14px; white-space: nowrap;
+  }
+.school-summary .school-branches .branch-list li:first-child { margin-left: 0; }
+
+.school-summary .school-branches .branch-list a { color: #262626; text-decoration: none; }
+.school-summary .school-branches .branch-list a:before {
+  content: '';
+  display: inline-block;
+  width: 11px; height: 15px;
+  vertical-align: -2px;
+  background: url(../../../images/sprite.png) -281px -75px / 300px auto no-repeat; background-clip: content-box;
+  border-right: 9px solid transparent;
+  }
+.school-summary .school-branches .branch-list a:hover { color: #4FC281; }
+
+/* School Deatils Border Blocks
+******************************* */
+.school-summary .border-block h3 { margin-bottom: 14px; padding-top: 3px; }
+.school-summary .border-block p {
+  margin-bottom: 15px;
+  font-size: 14px; line-height: 22px; color: #5E5C5C;
+  }
+.school-summary .border-block li {
+  list-style: none;
+  margin-top: 7px;
+  font-size: 14px; color: #5E5C5C; line-height: 22px;
+  }
+.school-summary .border-block li:first-child { margin-top: 0; }
+
+/* Location Block
+***************** */
+.school-summary .school-location .school-location-icon {
+  width: 18px; height: 25px;
+  background: url(../../../images/sprite.png) -169px -75px / 300px auto no-repeat;
+  }
+.school-summary .school-location h3 { color: #DB484E; }
+
+/* Conditions Block
+******************* */
+.school-summary .school-conditions .school-conditions-icon {
+  width: 25px; height: 21px;
+  background: url(../../../images/sprite.png) -192px -75px / 300px auto no-repeat;
+  }
+
+/* Accomodation Block
+********************* */
+.school-summary .school-accomodation .school-accomodation-icon {
+  width: 25px; height: 21px;
+  background: url(../../../images/sprite.png) -222px -75px / 300px auto no-repeat;
+  }
+.school-summary .school-accomodation:after { border-bottom: 8px solid #F4B04D; }
+
+/* Forbid Block
+*************** */
+.school-summary .school-forbids .school-forbids-icon {
+  width: 24px; height: 24px;
+  background: url(../../../images/sprite.png) -252px -75px / 300px auto no-repeat;
+  }

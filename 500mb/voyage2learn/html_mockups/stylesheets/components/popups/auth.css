@@ -1,0 +1,179 @@
+/* Auth Popup Holder
+********************* */
+/*.auth-popup-holder { background: rgba(0,0,0,.6); }*/
+.auth-popup-holder { background: rgba(245,245,245,.6); }
+
+/* Auth Popup
+************** */
+.auth-popup {
+  width: 390px;
+  background: #FFF; background-clip: padding-box;
+  border-top: 38px solid transparent;
+  }
+
+/* Tabs
+******* */
+.auth-popup .auth-popup-tabs {
+  position: relative; top: -38px;
+  display: table;
+  width: calc(100% + 10px);
+  margin: 0 -5px -38px;
+  list-style: none;
+  }
+.auth-popup .auth-popup-tabs li {
+  display: table-cell;
+  width: 50%;
+  font-weight: bold; font-size: 12px; text-transform: uppercase; color: #8F8F8F; letter-spacing: .5px; white-space: nowrap;
+  }
+.auth-popup .auth-popup-tabs li a {
+  display: block;
+  height: 38px;
+  margin: 0 5px; padding: 7px 0 0;
+  color: inherit; text-align: center; text-decoration: none;
+  background: rgba(255,255,255,.38);
+  border-radius: 3px 3px 0 0;
+  box-sizing: border-box;
+  transition: background .3s;
+  }
+
+.auth-popup .auth-popup-tabs li a:hover { background: rgba(255,255,255,.6); }
+.auth-popup .auth-popup-tabs li.active a { background: #FFF; }
+
+/* Form
+******* */
+.auth-popup .auth-popup-form {
+  padding: 44px 45px 21px;
+  text-align: center;
+  }
+
+/* Header */
+.auth-popup h2 {
+  margin-bottom: 24px;
+  font-weight: bold; font-size: 25px; color: #000; text-transform: uppercase; letter-spacing: 1px;
+  }
+
+/* Socials */
+.auth-popup .auth-socials {
+  display: table;
+  width: calc(100% + 8px);
+  margin: 0 -4px 22px;
+  list-style: none;
+  }
+.auth-popup .auth-socials li {
+  display: table-cell;
+  width: 50%;
+  font-weight: bold; font-size: 13px; text-transform: uppercase; color: #FFF; letter-spacing: .5px;
+  }
+.auth-popup .auth-socials li a {
+  display: block;
+  height: 50px;
+  margin: 0 4px; padding: 13px 0 0;
+  color: inherit; text-decoration: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  }
+.auth-popup .auth-socials .auth-fb a { background: #466AB8; }
+.auth-popup .auth-socials .auth-tw a { background: #55ACEE; }
+
+/* HR */
+.auth-popup .auth-form-hr {
+  margin-bottom: 20px;
+  font-weight: bold; font-size: 14px; color: #B6B6B6;
+  overflow: hidden;
+  }
+.auth-popup .auth-form-hr span {
+  position: relative;
+  display: inline-block;
+  }
+.auth-popup .auth-form-hr span:before,
+.auth-popup .auth-form-hr span:after {
+  content: '';
+  position: absolute; top: 7px;
+  width: 300px; height: 1px;
+  margin: 0 15px;
+  background: #E9E9E9;
+  }
+.auth-popup .auth-form-hr span:before { left: 100%; }
+.auth-popup .auth-form-hr span:after { right: 100%; }
+
+/* Input */
+.auth-popup .form-field { margin-bottom: 8px; }
+.auth-popup .form-field input {
+  display: block;
+  width: 100%; height: 50px;
+  margin: 0; padding: 0;
+  font: 16px/50px 'Roboto', sans-serif; text-align: center;
+  background: #FFF;
+  border: 1px solid #E9E9E9; border-radius: 5px;
+  box-sizing: border-box;
+  }
+
+/* Submit */
+.auth-popup .auth-form-submit {
+  display: block;
+  width: 100%; height: 50px;
+  margin: 0 0 17px; padding: 0;
+  font: 16px/50px 'Roboto', sans-serif; color: #909090; text-align: center;
+  background: #F0F0F0;
+  border: none; border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  }
+
+/* Remember */
+.auth-popup .auth-remember {
+  float: left;
+  margin-top: -3px;
+  font-size: 11px; color: #777;
+  }
+.auth-popup .auth-remember label { cursor: pointer; }
+
+/* Forgot Password */
+.auth-popup .auth-forgot {
+  float: right;
+  font-size: 11px;
+  }
+.auth-popup .auth-forgot a { color: #4FC281; text-decoration: none; }
+.auth-popup .auth-forgot a:hover { color: #F4B04D; }
+
+/* Copy */
+.auth-popup .auth-copy {
+  clear: both;
+  padding: 16px 0 0;
+  font-size: 11px; line-height: 15px; color: #777;
+  }
+.auth-popup .auth-copy a { color: #4FC281; text-decoration: none; }
+.auth-popup .auth-copy a:hover { color: #F4B04D; }
+
+/* Action
+********* */
+.auth-popup .auth-popup-action {
+  position: relative; bottom: -5px;
+  display: block;
+  height: 44px;
+  padding-top: 21px;
+  font-weight: bold; font-size: 19px; color: #FFF; text-align: center; text-decoration: none;
+  background: #DB484E;
+  border-radius: 0 0 5px 5px;
+  }
+
+/* Close
+******** */
+.auth-popup .auth-popup-close {
+  position: absolute; top: 5px; right: -41px;
+  width: 21px; height: 21px;
+  text-indent: -999em;
+  cursor: pointer;
+  }
+.auth-popup .auth-popup-close:before,
+.auth-popup .auth-popup-close:after {
+  content: '';
+  position: absolute; top: -3px; left: 9px;
+  width: 3px; height: 26px;
+  background: #FFF;
+  transition: background .2s;
+  }
+.auth-popup .auth-popup-close:before { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.auth-popup .auth-popup-close:after { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+.auth-popup .auth-popup-close:hover:before,
+.auth-popup .auth-popup-close:hover:after { background: #DB484E; }

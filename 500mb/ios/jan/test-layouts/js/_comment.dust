@@ -1,0 +1,24 @@
+<div id="comment_{id}" role="comment" class="conversation-entry{@select key="rating"}{@lt value="-3"} negative{/lt}{@lt value="1"} zero{/lt}{/select}{?parent_id} sublevel{/parent_id}">
+  <a href="/users/{user}" class="user-badge" role="comment-user">
+    <img src{?lazy_img}="<%= z_url %>" data-original{/lazy_img}="{userpic}" width="25" height="25" alt="{user}" title="{user}" class="user-pic" />
+    <span class="user-text">
+      <span class="user-name">{full_name}</span>
+    </span>
+  </a>
+  <a href="#comment_{id}" class="comment-link">#</a>
+  <div class="entry-body">
+    {body|s}
+  </div>
+  <div class="entry-hype">
+    <ul class="post-meta g-fl">
+      <li role="comment-rating" class="item-meta meta-rating comment-rating">
+        <span>{rating}</span>
+        <i></i>
+      </li>
+    </ul>
+    <ul class="post-meta g-fr">
+      <li class="item-meta meta-posted">{datetime|dt}</li>
+    </ul>
+  </div>
+  <div class="g-line g-line-light g-mt-15 g-mb-15"></div>
+</div>

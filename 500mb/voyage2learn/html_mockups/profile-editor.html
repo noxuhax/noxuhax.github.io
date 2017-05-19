@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Editor</title>
+  <link rel="stylesheet" href="stylesheets/application.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <section class="user-profile-editor">
+    <div class="wrap">
+      <div class="gr">
+        <div class="col col-1 user-summary">
+          <img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" alt="Scuola Leonardo da Vinci" class="userpic">
+          <div class="user-gender male"></div>
+          <div class="user-change-photo">
+            <input type="file">
+            Upload new photo
+          </div>
+          <h2 class="user-fullname">Michael</h2>
+          <p class="user-age">24 years</p>
+          <div class="user-geo">Moscow, Russia</div>
+          <div class="btn btn-block btn-border g-mb-15 btn-social btn-fb"><span>Connect</span></div>
+          <div class="btn btn-block btn-border g-mb-15 btn-social btn-vk"><span>Connect</span></div>
+          <div class="btn btn-block btn-border g-mb-15 btn-social btn-insta"><span>Connect</span></div>
+          <div class="btn btn-block btn-green g-mb-15 user-save"><span>Save</span></div>
+        </div>
+        <div class="col col-1 user-editor-nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Preferences</a></li>
+            <li class="current"><a href="#">Card Details</a></li>
+            <li><a href="#">Booking Info</a></li>
+          </ul>
+        </div>
+        <div class="col col-4 user-feed">
+          <h2 class="g-mb-30">About</h2>
+          <div class="profile-form">
+            <div class="form-item form-item-error">
+              <label for="asd"><span class="label-text">Name</span></label>
+              <div class="form-field">
+                <input type="text">
+              </div>
+              <p class="form-item-error-message">Some error text</p>
+            </div>
+            <div class="form-item">
+              <label for="qwe"><span class="label-text">Password</span></label>
+              <div class="form-field">
+                <input type="text">
+              </div>
+            </div>
+            <div class="form-item">
+              <label for="zxc"><span class="label-text">Birth date</span></label>
+              <div class="form-field field-s">
+                <input type="text">
+              </div>
+              <div class="form-field field-s">
+                <input type="text">
+              </div>
+              <div class="form-field field-s">
+                <input type="text">
+              </div>
+            </div>
+            <div class="profile-form">
+              <div class="form-item">
+                <label for="zxc"><span class="label-text">Smoking</span></label>
+                <div class="form-field field-radio">
+                  <input type="radio" id="vdf1" name="vdf" checked><label for="vdf1">Yes</label>
+                </div>
+                <div class="form-field field-radio">
+                  <input type="radio" id="vdf2" name="vdf"><label for="vdf2">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-item">
+              <span class="pseudolabel"><span class="label-text">Address</span></span>
+              <div class="form-field">
+                <label for="fdpo">Street</label>
+                <input type="text">
+              </div>
+              <div class="form-field field-s">
+                <label for="fdpo">House</label>
+                <input type="text">
+              </div>
+              <div class="form-field field-s">
+                <label for="fdpo">Flat</label>
+                <input type="text">
+              </div>
+              <div class="form-field field-s">
+                <label for="fdpo">Zip</label>
+                <input type="text">
+              </div>
+              <div class="form-field">
+                <label for="fdpo">Country</label>
+                <select name="asd" id="po">
+                  <option value="asd"></option>
+                  <option value="asd">Day</option>
+                  <option value="lk">Month</option>
+                </select>
+              </div>
+            </div>
+            <h3 class="g-mt-30 g-mb-20">Language skills</h3>
+            <div class="profile-form form-labelless form-skills">
+              <div class="form-item">
+                <div class="form-field">
+                  <select name="lkj" id="lkj">
+                    <option value="">Language</option>
+                    <option value=""></option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <select name="iub" id="iub">
+                    <option value="">Level</option>
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+              <div class="btn btn-gray btn-add-skill"><i class="btn-icon btn-icon-plus"></i><span>Add another skill</span></div>
+            </div>
+            <h3 class="g-mt-30 g-mb-20">Textarea</h3>
+            <div class="profile-form">
+              <div class="form-item">
+                <label for="zxc"><span class="label-text">Textarea</span></label>
+                <div class="form-field">
+                  <textarea name="bmn" id="bnm" cols="30" rows="10"></textarea>
+                </div>
+              </div>
+            </div>
+            <h3 class="g-mt-30 g-mb-20">Medical insurance</h3>
+            <div class="profile-form form-labelless">
+              <div class="form-item">
+                <div class="form-field field-radio">
+                  <input type="radio" id="vdf1" name="vdf" checked><label for="vdf1">Yes</label>
+                </div>
+                <div class="form-field field-radio">
+                  <input type="radio" id="vdf2" name="vdf"><label for="vdf2">No</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="g-mb-40">
+          <h2 class="g-mb-30">Preferences</h2>
+          <div class="profile-form">
+            <div class="form-item">
+              <label for="ert"><span class="label-text">Currency</span></label>
+              <div class="form-field field-s">
+                <select name="asd" id="po">
+                  <option value="asd">Eur</option>
+                  <option value="lk">USD</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <hr class="g-mb-40">
+          <h2 class="g-mb-30">Card Details</h2>
+          <div class="card-form">
+            <div class="form-item card-number">
+              <label for="asd"><span class="label-text">Card Number</span></label>
+              <div class="form-field">
+                <input type="text">
+              </div>
+            </div>
+            <div class="form-item card-holder">
+              <label for="asd"><span class="label-text">Card Holder</span></label>
+              <div class="form-field">
+                <input type="text">
+              </div>
+            </div>
+            <div class="form-item card-valid-to">
+              <span class="pseudolabel"><span class="label-text">Valid to</span></span>
+              <div class="form-field">
+                <label for="fdpo">MM</label>
+                <input type="text">
+              </div>
+              <div class="form-field">
+                <label for="fdpo">YY</label>
+                <input type="text">
+              </div>
+            </div>
+            <div class="form-item card-cvv">
+              <label for="asd"><span class="label-text">CVV</span></label>
+              <div class="form-field">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <hr class="g-mb-40">
+          <h2 class="g-mb-30">Promo Codes</h2>
+          <div class="profile-form">
+            <div class="form-item">
+              <label for="ert"><span class="label-text">Ваш бонусный счет</span></label>
+              <div class="form-field">
+                <div class="form-promo-amount">
+                  25 &euro;
+                </div>
+              </div>
+            </div>
+            <div class="form-item">
+              <label for="asd"><span class="label-text">Enter promo code</span></label>
+              <div class="form-field">
+                <div class="promo-button-apply">Apply</div>
+                <input type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Step 2 Confirmation</title>
+  <link rel="stylesheet" href="stylesheets/application.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <section class="site-header">
+    <h1 class="site-logo"><a href="#">Voyage 2 Learn</a></h1>
+    <div class="header-search">
+      <div class="search-query">
+        <input type="text" value="Ceramic courses in English" placeholder="Course themes">
+        <input type="text" value="Berlin, Germany" placeholder="Location" class="query-location">
+        <button type="submit">Search</button>
+      </div>
+    </div>
+    <div class="userpanel">
+      <div class="up-item up-logged dd-able">
+        <div class="up-item-title">
+          <img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" alt="Scuola Leonardo da Vinci" class="userpic">
+        </div>
+        <div class="dropdown">
+          <ul class="dd-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li class="dd-menu-sep"></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="up-item up-invoice new">
+        <div class="up-item-title">3</div>
+      </div>
+      <div class="up-item up-messages new">
+        <div class="up-item-title">3</div>
+      </div>
+      <div class="up-item up-currency dd-able">
+        <div class="up-item-title">USD</div>
+        <div class="dropdown">
+          <ul class="dd-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="up-item up-lang dd-able">
+        <div class="up-item-title">en</div>
+        <div class="dropdown">
+          <ul class="dd-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="payment-steps">
+    <div class="wrap">
+      <ul>
+        <li>Course Details</li>
+        <li class="current">Confirmation</li>
+        <li>Payment</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="payment-page">
+    <div class="wrap">
+      <div class="gr">
+        <div class="col col-2 conversation-list">
+          <ul>
+            <li class="message-preview">
+              <a href="#">
+                <h6 class="message-author"><img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" alt="Scuola Leonardo da Vinci" class="userpic">Scuola Leonardo da Vinci</h6>
+                <p class="message-preview-body">Gregor Samsa wakes one day to find himself hideously transformed into a monstrous insect. His family react with horror at his bizarre transformation but this slowly turns to revulsion</p>
+              </a>
+            </li>
+            <li class="message-preview">
+              <a href="#">
+                <h6 class="message-author"><img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" alt="Scuola Leonardo da Vinci" class="userpic">Scuola Leonardo da Vinci</h6>
+                <p class="message-preview-body">Gregor Samsa wakes one day to find himself hideously transformed into a monstrous insect. His family react with horror at his bizarre transformation but this slowly turns to revulsion</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-4 payment-process payment-confirmation-step">
+
+          <div class="payment-bit payment-bit-pay-method">
+            <a href="#" class="btn btn-green pay-method-card"><span>Оплатить картой</span></a>
+            <div class="upload-button">
+              <input type="file">
+              <div class="upload-button-text">Прикрепить квитанцию</div>
+              <i class="upload-progress-bar"></i>
+            </div>
+            <a href="#" class="payment-reminder">Памятка об оплате</a>
+          </div>
+
+          <div class="payment-bit payment-bit-upload payment-bit-disabled">
+            <div class="thread-timestamp">
+              <span class="time">Yesterday</span>
+            </div>
+            <div class="uploading-file-type">
+              <span class="payment-file-icon file-pdf">PDF</span>
+            </div>
+            <div class="upload-button upload-button-progress">
+              <input type="file">
+              <div class="upload-button-text">Прикрепить заполненный документ</div>
+              <i class="upload-progress-bar" style="width: 35%;"></i>
+            </div>
+          </div>
+
+          <div class="payment-bit payment-bit-upload payment-bit-disabled">
+            <div class="thread-timestamp">
+              <span class="time">Yesterday</span>
+            </div>
+            <div class="uploading-file-type">
+              <span class="payment-file-icon file-pdf">PDF</span>
+            </div>
+            <div class="upload-button">
+              <input type="file">
+              <div class="upload-button-text">Прикрепить заполненный документ</div>
+              <i class="upload-progress-bar"></i>
+            </div>
+          </div>
+
+          <div class="payment-bit payment-bit-download payment-bit-disabled">
+            <div class="thread-timestamp">
+              <span class="time">Yesterday</span>
+            </div>
+            <div class="btn btn-border btn-gray pull-right g-mt-15"><i class="btn-icon btn-message"></i><span>Ask question</span></div>
+            <h6 class="message-author"><img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" alt="Scuola Leonardo da Vinci" class="userpic">Scuola Leonardo da Vinci</h6>
+            <p class="payment-download-message">Здравствуйте, Подтверждаем вашу бронь.<br>И просим вас заполнить документ с более подробными данными.</p>
+            <a href="#" class="download-file"><span class="payment-file-icon file-pdf">PDF</span></a>
+          </div>
+
+          <div class="payment-bit payment-bit-event payment-bit-disabled">
+            <div class="thread-timestamp">
+              <span class="time">Yesterday</span>
+            </div>
+            <div class="payment-event-school">
+              <img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" class="userpic">
+              <i class="location-icon"></i>
+              Scuola Leonardo da Vinci
+            </div>
+            <p class="payment-event-message">Школа подтвердила вашу бронь</p>
+          </div>
+
+          <div class="payment-bit payment-bit-event payment-bit-disabled">
+            <div class="thread-timestamp">
+              <span class="time">Yesterday</span>
+            </div>
+            <div class="payment-event-person">
+              <img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" class="userpic">
+              Anna
+            </div>
+            <p class="payment-event-message">Вы отправили запрос школе</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</body>
+</html>

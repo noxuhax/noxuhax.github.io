@@ -1,0 +1,74 @@
+/* User Summary Column
+********************** */
+.user-summary {
+  padding: 22px 0;
+  text-align: center;
+  }
+
+/* Userpic */
+.user-summary .userpic {
+  width: 120px; height: 120px;
+  margin-bottom: 20px;
+  vertical-align: top;
+  border-radius: 50%;
+  }
+
+/* Gender */
+.user-summary .user-gender {
+  position: absolute; top: 113px; right: 90px;
+  width: 29px; height: 29px;
+  background: #FFF;
+  border-radius: 50%;
+  }
+.user-summary .user-gender:after {
+  content: '';
+  display: block;
+  width: 15px; height: 15px;
+  margin: 6px auto 0;
+  }
+.user-summary .user-gender.male:after { background: url(../../../images/sprite.png) 0 -162px /300px auto; }
+.user-summary .user-gender.female:after { background: #000; }
+
+/* Name */
+.user-summary .user-fullname {
+  margin-bottom: 8px;
+  font-size: 25px;
+  }
+
+/* Age */
+.user-summary .user-age {
+  margin-bottom: 19px;
+  font-size: 14px;
+  }
+
+/* Location */
+.user-summary .user-geo {
+  margin-bottom: 32px;
+  font-size: 14px;
+  }
+.user-summary .user-geo:before {
+  content: '';
+  display: block;
+  width: 12px; height: 16px;
+  margin: 0 auto 8px;
+  background: url(../../../images/sprite.png) -63px -27px / 300px auto no-repeat;
+  }
+
+/* Socials */
+.user-summary .user-socials {
+  width: 135px;
+  margin: 0 auto 24px; padding-top: 35px;
+  list-style: none;
+  border-top: 1px solid #CCC;
+  }
+.user-summary .user-socials li {
+  display: inline-block;
+  margin: 0 3px 10px;
+  }
+.user-summary .user-socials a {
+  display: block;
+  width: 30px; height: 30px;
+  text-indent: -999em;
+  background: #FFF;
+  border-radius: 50px;
+  }

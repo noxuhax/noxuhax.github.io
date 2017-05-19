@@ -1,0 +1,208 @@
+.comments { padding: 50px 0; }
+
+.comment-list { list-style: none; }
+
+.comment-item {
+  padding-bottom: 56px;
+  border-top: 1px solid #C9C9C9;
+  }
+.comment-item:after { content: ''; display: table; clear: both; }
+
+.comment-item.comment-sublevel { margin-left: 165px; }
+
+/* Comments Header
+****************** */
+.comments .total-comments { margin-bottom: 40px; }
+.comments .comment-top-write {
+  position: absolute; top: 3px; right: 0;
+  font-size: 14px; color: #4FC281; text-decoration: none;
+  }
+.comments .comment-top-write:hover { color: #F4B04D; }
+
+/* Author
+********* */
+.comment-item .comment-author {
+  float: left;
+  width: 135px;
+  margin-right: 30px; padding-top: 28px;
+  text-align: center;
+  }
+.comment-item .comment-author,
+.comment-item .comment-author a { color: #A3A3A3; text-decoration: none; }
+.comment-item .comment-author .userpic {
+  display: block;
+  width: 85px; height: 85px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  transition: opacity .3s;
+  }
+.comment-item .comment-author a:hover { color: #4FC281; }
+.comment-item .comment-author a:hover .userpic { opacity: .45; }
+
+/* Body
+******* */
+.comment-item .comment-body {
+  display: table;
+  padding-top: 34px;
+  }
+.comment-item .comment-body:after {
+  content: '. .';
+  display: block;
+  word-spacing: 99in;
+  height: 0;
+  overflow: hidden;
+  }
+.comment-item .comment-body h3 { margin-bottom: 13px; }
+.comment-item .comment-body p {
+  margin-bottom: 17px;
+  font-size: 14px; line-height: 22px; color: #626262;
+  }
+
+/* Comment Meta
+*************** */
+.comment-item .comment-meta:after { content: ''; display: table; clear: both; }
+
+/* Course Name
+************** */
+.comment-item .comment-course-name { margin: 22px 0 8px; }
+.comment-item .comment-course-name strong {
+  float: left;
+  margin-right: 20px;
+  font-weight: bold; font-size: 12px; color: #868686; text-transform: uppercase; letter-spacing: .5px; white-space: nowrap;
+  }
+.comment-item .comment-course-name .comment-course-link {
+  font-size: 15px; color: #4FC281; text-decoration: none;
+  overflow: hidden;
+  }
+.comment-item .comment-course-name .comment-course-link:hover { color: #F4B04D; }
+
+/* Course school
+**************** */
+.comment-item .comment-school {
+  float: right;
+  padding-top: 9px;
+  font-weight: bold; font-size: 10px; color: #B3B3B3; text-transform: uppercase;
+  }
+.comment-item .comment-school a { color: #B3B3B3; text-decoration: none; }
+
+/* Course Rating
+**************** */
+.comment-item .comment-school-rating { margin-bottom: 15px; }
+.comment-item .comment-school-rating-block .bb-title { left: -18px; }
+.comment-item .comment-school-rating-block .bb-title strong { font-weight: bold; font-size: 12px; color: #868686; text-transform: uppercase; letter-spacing: .5px; white-space: nowrap; }
+.comment-item .comment-school-rating .rating-stars { margin-left: 15px; }
+
+/* Date
+******* */
+.comment-item .comment-date {
+  float: left;
+  font-size: 14px; color: #9B9B9B;
+  }
+
+/* Reply
+******** */
+.comment-item .comment-reply,
+.comment-item .comment-more { float: right; }
+.comment-item .comment-reply a,
+.comment-item .comment-more a { font-size: 14px; color: #9B9B9B; text-decoration: none; }
+.comment-item .comment-reply a:hover,
+.comment-item .comment-more a:hover { color: #4FC281; }
+
+/* Rating Column
+**************** */
+.rating-column h3 { margin-bottom: 40px; }
+.rating-column h4 { font-size: 12px; color: #868686; text-transform: uppercase; letter-spacing: .5px; }
+.rating-column .rating-stars { margin-bottom: 32px; }
+
+/* Comment Form
+*************** */
+.comment-item.comment-form h3 { font-size: 23px; }
+
+.comment-item.comment-form .comment-author { padding-top: 100px; }
+
+.comment-item.comment-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px; color: #A7A7A7;
+  cursor: pointer;
+  }
+
+.comment-item.comment-form .comment-input { margin-bottom: 14px; }
+
+/* Title */
+.comment-item.comment-form .comment-title input {
+  display: block;
+  width: 100%; height: 51px;
+  padding: 0 10px;
+  font: 18px/1 "Roboto", sans-serif;
+  background: #FFF;
+  border: 1px solid #CDCDCD; border-radius: 2px;
+  outline: none;
+  box-sizing: border-box;
+  }
+
+/* Course */
+.comment-item.comment-form .comment-course select {
+  display: block;
+  width: 100%; height: 51px;
+  font: 18px/1 "Roboto", sans-serif;
+  background: #FFF;
+  border: 1px solid #CDCDCD; border-radius: 2px;
+  outline: none;
+  box-sizing: border-box;
+  }
+.comment-item.comment-form .comment-course select[disabled="disabled"] { background: #F0F0F0; }
+
+/* Comment Text */
+.comment-item.comment-form .comment-text .comment-editor {
+  display: block;
+  width: 100%;
+  margin-bottom: 18px;
+  background: #FFF;
+  border: 1px solid #CDCDCD; border-radius: 2px;
+  outline: none;
+  box-sizing: border-box;
+  }
+
+.comment-item.comment-form .comment-text .comment-editor-bar {
+  height: 40px;
+  border-bottom: 1px solid #E1E1E1;
+  }
+.comment-item.comment-form .comment-text .comment-editor-upload {
+  position: relative;
+  float: right;
+  height: 32px;
+  padding: 8px 10px 0;
+  font-size: 14px; color: #B8B8B8;
+  overflow: hidden;
+  }
+.comment-item.comment-form .comment-text .comment-editor-upload:after {
+  content: '';
+  display: inline-block;
+  width: 18px; height: 21px;
+  margin-left: 10px;
+  vertical-align: -6px;
+  background: url(../../../images/sprite.png) -282px 0 / 300px auto no-repeat;
+  }
+.comment-item.comment-form .comment-text .comment-editor-upload:hover:after { background-position: -282px -26px; }
+.comment-item.comment-form .comment-text .comment-editor-upload input {
+  display: block;
+  position: absolute; top: 0; left: 0;
+  width: 300px; height: 300px;
+  opacity: 0;
+  cursor: pointer;
+  }
+
+.comment-item.comment-form .comment-text .comment-editor-submit { float: right; }
+
+.comment-item.comment-form .comment-text textarea {
+  display: block;
+  width: 100%; height: 180px;
+  padding: 7px 10px;
+  font: 14px/22px "Roboto", sans-serif;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  resize: none;
+  }

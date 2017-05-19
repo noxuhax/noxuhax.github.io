@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Search results</title>
+  <link rel="stylesheet" href="stylesheets/application.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <section class="search-filter" data-filter-display="full">
+    <form action="#">
+      <div class="wrap">
+        <div class="gr g-mb-40">
+          <div class="col col-5">
+            <div class="search-query">
+              <input type="text" value="Ceramic courses in English" placeholder="Course themes">
+              <input type="text" value="Berlin, Germany" placeholder="Location" class="query-location">
+              <button type="submit">Search</button>
+            </div>
+          </div>
+          <div class="col col-1">
+            <div class="search-filter-toggle-top">
+              <input type="checkbox" id="toggle-top">
+              <label for="toggle-top"><span class="toggle-label-all">All</span><i></i><span class="toggle-label-top">Top</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="gr">
+          <div class="col col-5">
+            <div class="gr search-filter-price-range">
+              <div class="col col-1">
+                <span class="range-label">Price</span>
+              </div>
+              <div class="col col-4">
+                <div class="range-control">
+                  <div class="range-highlight" style="left: 13.3%; width: 30%;">
+                    <i class="range-highlight-lower"><span>400 $</span></i>
+                    <i class="range-highlight-upper"><span>1 400 $</span></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-1">
+            <div class="filter-with-sale">
+              <input type="checkbox" id="with_sale"><label for="with_sale">With sale</label>
+            </div>
+          </div>
+        </div>
+        <ul class="results-count">
+          <li>250 schools</li>
+          <li>94 courses</li>
+        </ul>
+        <div class="search-filter-advanced-show" onclick="$('[data-filter-display=full] .search-filter-advanced').animate({height: 'toggle',opacity: 'toggle'}, '100');">Advanced Search</div>
+      </div>
+      <div class="search-filter-advanced" style="display: none;">
+        <div class="wrap">
+          <div class="invisiform">
+            <div class="gr">
+              <div class="col col-2">
+                <h6><i class="form-title-icon"></i>Course length</h6>
+                <input type="text" id="length" placeholder="2" size="3"><label for="length">weeks</label>
+              </div>
+              <div class="col col-2">
+                <h6><i class="form-title-icon"></i>Course format</h6>
+                <input type="radio" id="format_1" name="format"><label for="format_1">Intensive</label>
+                <input type="radio" id="format_2" name="format" checked="checked"><label for="format_2">Short term</label>
+                <input type="radio" id="format_3" name="format"><label for="format_3">Long term</label>
+                <input type="radio" id="format_4" name="format"><label for="format_4">Group course</label>
+                <input type="radio" id="format_5" name="format"><label for="format_5">One to one</label>
+                <input type="radio" id="format_6" name="format"><label for="format_6">Combined: group + private</label>
+              </div>
+              <div class="col col-2">
+                <h6><i class="form-title-icon"></i>Accomodation</h6>
+                <input type="radio" id="accomod_1" name="accomod" checked="checked"><label for="accomod_1">homestay</label>
+                <input type="radio" id="accomod_2" name="accomod"><label for="accomod_2">guesthouse</label>
+                <input type="radio" id="accomod_3" name="accomod"><label for="accomod_3">campus</label>
+              </div>
+            </div>
+            <div class="gr">
+              <div class="col col-2">
+                <h6><i class="form-title-icon"></i>Meal</h6>
+                <input type="radio" id="meal_1" name="meal" checked="checked"><label for="meal_1">self-catering</label>
+                <input type="radio" id="meal_2" name="meal"><label for="meal_2">all inclusive</label>
+              </div>
+              <div class="col col-2">
+                <h6><i class="form-title-icon"></i>Transfer</h6>
+                <input type="checkbox" id="transfer_1" name="transfer"><label for="transfer_1">from airport</label>
+                <input type="checkbox" id="transfer_2" name="transfer"><label for="transfer_2">to airport</label>
+              </div>
+              <div class="col col-2">
+                <h6><i class="form-title-icon"></i>City guide</h6>
+                <input type="radio" id="guide_2" name="guide"><label for="guide_2">yes</label>
+                <input type="radio" id="guide_1" name="guide" checked="checked"><label for="guide_1">no</label>
+              </div>
+            </div>
+          </div>
+          <div class="search-filter-advanced-hide" onclick="$('[data-filter-display=full] .search-filter-advanced').animate({height: 'toggle',opacity: 'toggle'}, '100');">Advanced Search</div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section class="search-filter search-filter-compact" data-filter-display="compact">
+    <form action="#">
+      <div class="wrap">
+        <div class="gr">
+          <div class="col col-3">
+            <div class="search-query">
+              <input type="text" value="Ceramic courses in English" placeholder="Course themes">
+              <input type="text" value="Berlin, Germany" placeholder="Location" class="query-location">
+              <button type="submit">Search</button>
+            </div>
+          </div>
+          <div class="col col-3">
+            <div class="search-filter-price-range">
+              <div class="range-control">
+                <div class="range-highlight" style="left: 13.3%; width: 30%;">
+                  <i class="range-highlight-lower"><span>400 $</span></i>
+                  <i class="range-highlight-upper"><span>1 400 $</span></i>
+                </div>
+              </div>
+            </div>
+            <div class="search-filter-toggle-top">
+              <input type="checkbox" id="toggle-top">
+              <label for="toggle-top"><span class="toggle-label-all">All</span><i></i><span class="toggle-label-top">Top</span></label>
+            </div>
+            <div class="search-filter-advanced-show" onclick="$('[data-filter-display=compact] .search-filter-advanced').animate({height: 'toggle',opacity: 'toggle'}, '100');">Advanced Search</div>
+          </div>
+        </div>
+      </div>
+      <div class="search-filter-advanced" style="display: none;">
+        <div class="wrap">
+          <div class="invisiform">
+            <div class="gr">
+              <div class="col col-2">
+                <h6><i class="form-title-icon"></i>Course length</h6>
+                <input type="text" id="length" placeholder="2" size="3"><label for="length">weeks</label>
+              </div>
+              <div class="col col-2">
+                <h6><i class="form-title-icon"></i>Course format</h6>
+                <input type="radio" id="format_1" name="format"><label for="format_1">Intensive</label>
+                <input type="radio" id="format_2" name="format" checked="checked"><label for="format_2">Short term</label>
+                <input type="radio" id="format_3" name="format"><label for="format_3">Long term</label>
+                <input type="radio" id="format_4" name="format"><label for="format_4">Group course</label>
+                <input type="radio" id="format_5" name="format"><label for="format_5">One to one</label>
+                <input type="radio" id="format_6" name="format"><label for="format_6">Combined: group + private</label>
+              </div>
+              <div class="col col-2">
+                <h6><i class="form-title-icon"></i>Accomodation</h6>
+                <input type="radio" id="accomod_1" name="accomod" checked="checked"><label for="accomod_1">homestay</label>
+                <input type="radio" id="accomod_2" name="accomod"><label for="accomod_2">guesthouse</label>
+                <input type="radio" id="accomod_3" name="accomod"><label for="accomod_3">campus</label>
+              </div>
+            </div>
+            <div class="gr">
+              <div class="col col-2">
+                <h6><i class="form-title-icon"></i>Meal</h6>
+                <input type="radio" id="meal_1" name="meal" checked="checked"><label for="meal_1">self-catering</label>
+                <input type="radio" id="meal_2" name="meal"><label for="meal_2">all inclusive</label>
+              </div>
+              <div class="col col-2">
+                <h6><i class="form-title-icon"></i>Transfer</h6>
+                <input type="checkbox" id="transfer_1" name="transfer"><label for="transfer_1">from airport</label>
+                <input type="checkbox" id="transfer_2" name="transfer"><label for="transfer_2">to airport</label>
+              </div>
+              <div class="col col-2">
+                <h6><i class="form-title-icon"></i>City guide</h6>
+                <input type="radio" id="guide_2" name="guide"><label for="guide_2">yes</label>
+                <input type="radio" id="guide_1" name="guide" checked="checked"><label for="guide_1">no</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section class="search-results">
+    <div class="wrap">
+      <div class="course-item-row course-item-row-promo course-item-row-sale gr">
+        <div class="col col-1">
+          <div class="course-item-preview">
+            <img src="http://dummyimage.com/135x135/bdbdbd/fff" alt="">
+            <div class="sale-label">&minus;20%</div>
+          </div>
+          <div class="course-school-rating">
+            <span class="rating-stars rating-3-5"><i></i><i></i><i></i><i></i><i></i></span>
+            <h6 class="rating-value">3.5</h6>
+          </div>
+        </div>
+        <div class="col col-4 course-description">
+          <h2 class="course-title">Course title</h2>
+          <p class="course-summary">During the course there will also be the opportunity to visit a renowned winebar.<br>For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with.</p>
+          <ul class="course-item-meta">
+            <li class="course-meta school-location">New York Academy of Art</li>
+            <li class="course-meta course-comments">15</li>
+          </ul>
+        </div>
+        <div class="col col-1 course-summary">
+          <a href="#" class="btn btn-red btn-border btn-block"><span>Booking courses</span></a>
+          <div class="course-price-text">
+            <span>
+              <strong>Base price</strong>
+              <div class="course-old-price"><del>500 &euro; / week</del></div>
+              400 &euro; / week
+            </span>
+          </div>
+          <div class="course-id">№ 000 0000</div>
+        </div>
+      </div>
+      <div class="course-item-row course-item-row-promo gr">
+        <div class="col col-1">
+          <div class="course-item-preview">
+            <img src="http://dummyimage.com/135x135/bdbdbd/fff" alt="">
+          </div>
+          <div class="course-school-rating">
+            <span class="rating-stars rating-3-5"><i></i><i></i><i></i><i></i><i></i></span>
+            <h6 class="rating-value">3.5</h6>
+          </div>
+        </div>
+        <div class="col col-4 course-description">
+          <h2 class="course-title">Course title</h2>
+          <p class="course-summary">During the course there will also be the opportunity to visit a renowned winebar.<br>For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with.</p>
+          <ul class="course-item-meta">
+            <li class="course-meta school-location">New York Academy of Art</li>
+            <li class="course-meta course-comments">15</li>
+          </ul>
+        </div>
+        <div class="col col-1 course-summary">
+          <a href="#" class="btn btn-red btn-border btn-block"><span>Booking courses</span></a>
+          <div class="course-price-text">
+            <span>
+              <strong>Base price</strong>
+              400 &euro; / week
+            </span>
+          </div>
+          <div class="course-id">№ 000 0000</div>
+        </div>
+      </div>
+
+
+      <div class="course-item-row gr">
+        <div class="col col-1">
+          <div class="course-item-preview">
+            <img src="http://dummyimage.com/135x135/bdbdbd/fff" alt="">
+          </div>
+          <div class="course-school-rating">
+            <span class="rating-stars rating-3-5"><i></i><i></i><i></i><i></i><i></i></span>
+            <h6 class="rating-value">3.5</h6>
+          </div>
+        </div>
+        <div class="col col-4 course-description">
+          <h2 class="course-title">Course title</h2>
+          <p class="course-summary">During the course there will also be the opportunity to visit a renowned winebar.<br>For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with.</p>
+          <ul class="course-item-meta">
+            <li class="course-meta school-location">New York Academy of Art</li>
+            <li class="course-meta course-comments">15</li>
+          </ul>
+        </div>
+        <div class="col col-1 course-summary">
+          <a href="#" class="btn btn-red btn-border btn-block"><span>Booking courses</span></a>
+          <div class="course-price-text">
+            <span>
+              <strong>Base price</strong>
+              400 &euro; / week
+            </span>
+          </div>
+          <div class="course-id">№ 000 0000</div>
+        </div>
+      </div>
+
+
+      <div class="course-item-row gr">
+        <div class="col col-1">
+          <div class="course-item-preview">
+            <img src="http://dummyimage.com/135x135/bdbdbd/fff" alt="">
+          </div>
+          <div class="course-school-rating">
+            <span class="rating-stars rating-3-5"><i></i><i></i><i></i><i></i><i></i></span>
+            <h6 class="rating-value">3.5</h6>
+          </div>
+        </div>
+        <div class="col col-4 course-description">
+          <h2 class="course-title">Course title</h2>
+          <p class="course-summary">During the course there will also be the opportunity to visit a renowned winebar.<br>For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with.</p>
+          <ul class="course-item-meta">
+            <li class="course-meta school-location">New York Academy of Art</li>
+            <li class="course-meta course-comments">15</li>
+          </ul>
+        </div>
+        <div class="col col-1 course-summary">
+          <a href="#" class="btn btn-red btn-border btn-block"><span>Booking courses</span></a>
+          <div class="course-price-text">
+            <span>
+              <strong>Base price</strong>
+              400 &euro; / week
+            </span>
+          </div>
+          <div class="course-id">№ 000 0000</div>
+        </div>
+      </div>
+
+      <div class="paginator paginator-dark g-mt-20 g-mb-50">
+        <a href="#" class="paginator-nav prev-page"></a>
+        <a href="#" class="page">1</a>
+        <a href="#" class="page current">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="paginator-nav next-page"></a>
+      </div>
+    </div>
+  </section>
+
+<script type="text/javascript">
+$(window).scroll(function() {
+  if ($(this).scrollTop() > ($('[data-filter-display=full]').height())) {
+    $('[data-filter-display=compact]').addClass('visible');
+  } else {
+    $('[data-filter-display=compact]').removeClass('visible');
+  }
+});
+</script>
+</body>
+</html>

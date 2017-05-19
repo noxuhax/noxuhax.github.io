@@ -1,0 +1,296 @@
+/* Margins & Paddings
+********************* */
+.g-mt-0 { margin-top: 0 !important; }
+.g-mt-5 { margin-top: 5px !important; }
+.g-mt-10 { margin-top: 10px !important; }
+.g-mt-20 { margin-top: 20px !important; }
+.g-mt-30 { margin-top: 30px !important; }
+.g-mt-40 { margin-top: 40px !important; }
+.g-mt-50 { margin-top: 50px !important; }
+
+.g-mr-0 { margin-right: 0 !important; }
+.g-mr-5 { margin-right: 5px !important; }
+.g-mr-10 { margin-right: 10px !important; }
+.g-mr-20 { margin-right: 20px !important; }
+.g-mr-30 { margin-right: 30px !important; }
+.g-mr-40 { margin-right: 40px !important; }
+.g-mr-50 { margin-right: 50px !important; }
+
+.g-mb-0 { margin-bottom: 0 !important; }
+.g-mb-5 { margin-bottom: 5px !important; }
+.g-mb-10 { margin-bottom: 10px !important; }
+.g-mb-20 { margin-bottom: 20px !important; }
+.g-mb-30 { margin-bottom: 30px !important; }
+.g-mb-40 { margin-bottom: 40px !important; }
+.g-mb-50 { margin-bottom: 50px !important; }
+
+.g-ml-0 { margin-left: 0 !important; }
+.g-ml-5 { margin-left: 5px !important; }
+.g-ml-10 { margin-left: 10px !important; }
+.g-ml-20 { margin-left: 20px !important; }
+.g-ml-30 { margin-left: 30px !important; }
+.g-ml-40 { margin-left: 40px !important; }
+.g-ml-50 { margin-left: 50px !important; }
+
+.g-pt-0 { padding-top: 0 !important; }
+.g-pt-5 { padding-top: 5px !important; }
+.g-pt-10 { padding-top: 10px !important; }
+.g-pt-20 { padding-top: 20px !important; }
+.g-pt-30 { padding-top: 30px !important; }
+.g-pt-40 { padding-top: 40px !important; }
+.g-pt-50 { padding-top: 50px !important; }
+
+.g-pb-0 { padding-bottom: 0 !important; }
+.g-pb-5 { padding-bottom: 5px !important; }
+.g-pb-10 { padding-bottom: 10px !important; }
+.g-pb-20 { padding-bottom: 20px !important; }
+.g-pb-30 { padding-bottom: 30px !important; }
+.g-pb-40 { padding-bottom: 40px !important; }
+.g-pb-50 { padding-bottom: 50px !important; }
+
+/* Styles
+********* */
+body { position: relative; padding-top: 60px; }
+
+section { margin-top: -130px; padding-top: 130px; }
+
+p a[href^="#"] { border-bottom: 1px dotted; text-decoration: none; }
+p a[href^="#"]:hover { border-bottom: none; }
+
+.minuscule { opacity: .4; }
+
+/* Site Header
+************** */
+.site-header { z-index: 999; }
+.site-header .container { position: relative; }
+
+.site-header .search-focus { border-bottom: none; }
+.site-header .navbar-search {
+  position: absolute; right: 0;
+  padding-right: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+  }
+.site-header .navbar-search input { width: 400px; }
+.site-header.search-visible .navbar-search {
+  opacity: 1;
+  pointer-events: all;
+  }
+.site-header *["data-role=hide-on-search"] {
+  transition: opacity .2s;
+  pointer-events: all;
+  }
+.site-header.search-visible *[data-role="hide-on-search"] { opacity: 0; pointer-events: none; }
+
+/* School Header
+**************** */
+.school-header {
+  position: relative; z-index: 100;
+  padding: 30px 0 50px;
+  overflow: hidden;
+  }
+.school-header:before {
+  content: '';
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 20;
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+  }
+.school-header .container { position: relative; z-index: 30; }
+.school-header .school-preview-image {
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 10;
+  background-color: rgba(0,0,0,.5); background-position: center; background-size: 120% auto;
+  }
+
+/* Info Excerpt */
+.school-header .school-short-info { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.school-header .school-short-info,
+.school-header .school-short-info a { color: #FFF; }
+.school-header .school-short-info h1 { font-size: 70px; font-weight: bold; text-shadow: 1px 1px 3px rgba(0,0,0,.3); }
+.school-header .school-short-info h1 small { color: rgba(255,255,255,.5); }
+
+/* Comment Excerpt */
+.school-header .comment .media-object { border-radius: 50%; }
+.school-header .more-comments a { color: #FFF; }
+
+/* School Navbar
+**************** */
+.school-navbar { z-index: 200; transition: top .2s; }
+.school-navbar.school-navbar-visible { top: 60px; }
+
+/* School Courses
+***************** */
+#school-courses .courses-wrap { padding: 25px 0; background: rgba(0,0,0,.02); }
+#school-courses .col-md-4 li { margin-bottom: 5px; }
+
+/* Invisible Form
+***************** */
+.invisiform {
+  margin: 0 -15px 30px;
+  letter-spacing: -.3em;
+  }
+.invisiform .invisiform-group {
+  display: inline-block;
+  width: 33.333333333%;
+  margin-bottom: 10px; padding: 0 15px 0 5px;
+  letter-spacing: 0; vertical-align: top;
+  box-sizing: border-box;
+  }
+
+/* Heading */
+.invisiform h6 {
+  margin-left: 10px;
+  font-weight: bold; text-transform: uppercase; letter-spacing: .25px;
+  }
+
+/* Radio Btns & Checkboxes */
+.invisiform input[type="radio"],
+.invisiform input[type="checkbox"] {
+  display: none;
+  }
+/*Labels*/
+.invisiform input[type="radio"] + label,
+.invisiform input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  font-weight: normal; white-space: nowrap;
+  margin-left: 10px;
+  opacity: .2;
+  transition: opacity .1s;
+  cursor: pointer;
+  }
+
+.invisiform input[type="radio"] + label:after,
+.invisiform input[type="checkbox"] + label:after {
+  content: '';
+  position: absolute; right: 0; bottom: 2px; left: 0;
+  border-bottom: 1px dotted;
+  }
+
+.invisiform input[type="radio"] + label:hover,
+.invisiform input[type="checkbox"] + label:hover { opacity: 0.5; }
+
+.invisiform input[type="radio"]:checked + label,
+.invisiform input[type="checkbox"]:checked + label { opacity: 1; }
+.invisiform input[type="radio"]:checked + label:after,
+.invisiform input[type="checkbox"]:checked + label:after { opacity: 0; }
+
+/* Text Inputs */
+.invisiform input[type="text"] {
+  margin-left: 10px;
+  padding-right: 7px; padding-left: 7px;
+  text-align: right;
+  background: transparent;
+  border: 2px solid transparent; border-bottom-color: #DCE4EC; border-radius: 2px;
+  transition: background .2s, border .2s;
+  }
+.invisiform input[type="text"]:hover { border-color: #DCE4EC; }
+.invisiform input[type="text"]:focus {
+  background: #FFF;
+  border-color: #2C3E50;
+  outline: none;
+  }
+.invisiform input[type="text"] + label {
+  margin-left: 10px;
+  display: inline-block;
+  font-weight: normal; white-space: nowrap;
+  margin-left: 10px;
+  }
+
+/* School Gallery
+***************** */
+#school-photos .school-media-gallery { margin: 0 -1px; }
+#school-photos .school-media-gallery:after { content: ""; clear: both; display: table; }
+#school-photos .school-media-gallery .school-media-preview {
+  position: relative;
+  float: left;
+  width: 25%;
+  border: 1px solid #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+  cursor: pointer;
+  }
+#school-photos .school-media-gallery .school-media-preview:nth-child(-n+3) { width: 33.3333333%; }
+#school-photos .school-media-gallery .school-media-preview img {
+  width: 100%; height: auto;
+  -webkit-transition: -webkit-transform .2s, -webkit-filter .2s; transition: transform .2s, filter .2s;
+  }
+#school-photos .school-media-gallery .school-media-preview img:hover {
+  -webkit-transform: scale(1.05); transform: scale(1.05);
+  -webkit-filter: contrast(110%); filter: contrast(110%);
+  }
+#school-photos .school-media-gallery .school-media-preview .show-more-media {
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+  color: #FFF; text-shadow: 1px 1px 3px rgba(0,0,0,.3);
+  background: rgba(0,0,0,.3);
+  transition: background .2s;
+  }
+#school-photos .school-media-gallery .school-media-preview .show-more-media:hover { background: rgba(0,0,0,.5); }
+#school-photos .school-media-gallery .school-media-preview .show-more-media strong {
+  position: absolute; top: 50%; right: 0; left: 0;
+  margin-top: -0.5em;
+  font-weight: normal; text-align: center;
+  }
+
+/* Testimonails
+*************** */
+#school-testimonials .comment-form .media-object,
+#school-testimonials .school-testimonials-list .media-object { border-radius: 50%;}
+#school-testimonials .comment-reply {
+  position: absolute; right: 15px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity .2s;
+  }
+#school-testimonials .media-body:hover .comment-reply { opacity: 1; }
+
+/* ********************
+****** Messenger ******
+******************** */
+
+/* Nav
+****** */
+.messenger-nav {
+  position: fixed; top: 80px; bottom: 30px;
+  width: 33.3333333%; max-width: 380px;
+  margin-left: -20px;
+  overflow: auto;
+  }
+
+/* Body
+******* */
+.messenger-body {
+  padding-bottom: 120px;
+  }
+
+/* Thread
+********* */
+.messenger-thread {
+  font-size: 0.9em;
+  padding-top: 20px;
+  }
+.messenger-thread .media-object { border-radius: 50%;}
+
+/* Datestamp */
+.messenger-datestamp {
+  margin: 31px 0;
+   font-weight: bold; font-size: .75em; color: #B4BCC2; text-align: center; text-transform: uppercase; letter-spacing: .5px;
+  }
+.messenger-datestamp .date {
+  display: inline-block;
+  padding: 0 2em;
+  background: #FFF;
+  }
+.messenger-datestamp hr {
+  margin: -.7em 0 0;
+  }
+
+/* Form
+******* */
+.messenger-reply {
+  position: fixed; bottom: 0;
+  height: 120px;
+  background: #FFF;
+  box-sizing: border-box;
+  }
+.messenger-reply .media-object { border-radius: 50%; }

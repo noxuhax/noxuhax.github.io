@@ -1,0 +1,65 @@
+/* Invisiform
+************* */
+.invisiform h6 {
+  margin-bottom: 20px;
+  font-weight: bold; font-size: 12px; text-transform: uppercase; letter-spacing: .5px; color: #B3B3B3;
+  }
+.invisiform h6 .form-title-icon {
+  display: inline-block;
+  width: 25px; height: 25px;
+  margin-right: 14px;
+  vertical-align: -8px;
+  background: #CCC;
+  border-radius: 50%;
+  }
+
+.invisiform .col { margin-bottom: 28px; }
+
+.invisiform label { font-size: 15px; line-height: 1; color: #000; }
+/* Radio Btns & Checkboxes */
+.invisiform input[type="radio"],
+.invisiform input[type="checkbox"] {
+  display: none;
+  }
+/*Labels*/
+.invisiform input[type="radio"] + label,
+.invisiform input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  height: 37px;
+  margin: 0 10px 14px 0; padding: 8px 15px 0;
+  font-weight: normal; white-space: nowrap;
+  background: #F5F5F5;
+  border: 3px solid #F5F5F5; border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: color .2s, background .2s, border-color .2s, opacity .2s;
+  }
+
+.invisiform input[type="radio"] + label:hover,
+.invisiform input[type="checkbox"] + label:hover { opacity: 0.8; }
+
+.invisiform input[type="radio"]:checked + label,
+.invisiform input[type="checkbox"]:checked + label { color: #4FC281; background: transparent; border-color: #EDF1F1; opacity: 1;}
+
+/* Text Inputs */
+.invisiform input[type="text"] {
+  width: 78px; height: 37px;
+  padding: 0;
+  font-size: 15px; font-family: 'Roboto', sans-serif; text-align: center;
+  background: #fff;
+  border: 1px solid #CDCDCD; border-radius: 2px;
+  transition: background .2s, border .2s;
+  }
+.invisiform input[type="text"]:hover { border-color: #DCE4EC; }
+.invisiform input[type="text"]:focus {
+  background: #FFF;
+  border-color: #2C3E50;
+  outline: none;
+  }
+.invisiform input[type="text"] + label {
+  margin-left: 10px;
+  display: inline-block;
+  font-weight: normal; white-space: nowrap;
+  margin-left: 10px;
+  }

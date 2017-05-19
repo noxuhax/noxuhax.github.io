@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School editor</title>
+  <link rel="stylesheet" href="stylesheets/semantic/semantic.css">
+  <link rel="stylesheet" href="stylesheets/components/school-editor/editor-main.css">
+  <link rel="stylesheet" href="stylesheets/components/school-editor/semantic-addon.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+</head>
+<body>
+
+  <section class="cover">
+    <div class="wrap">
+      <div class="ui transparent inverted fluid input massive g-mb-50">
+        <input type="text" placeholder="Enter school name" autofocus>
+      </div>
+      <div class="upload-cover">
+        <div class="ui big inverted button" onclick="$('.school-header-bg').fadeToggle(350);"><i class="cloud upload icon"></i> Upload cover image</div>
+      </div>
+    </div>
+    <i class="school-header-bg" style="background-image: url('http://upload.wikimedia.org/wikipedia/commons/8/82/2009-0617-Ontonagon-school.jpg');"></i>
+  </section>
+
+  <section class="school-details">
+    <div class="wrap">
+      <h1>School details</h1>
+      <div class="ui grid">
+        <div class="eleven wide column">
+          <div class="ui form">
+            <h2 class="ui dividing header g-pt-10">
+              Main info
+              <select class="ui dropdown lang-selector">
+                <option value="Ru">Ru</option>
+                <option value="En">En</option>
+              </select>
+            </h2>
+            <div class="field">
+              <label for="school_short_desc">Short school description</label>
+              <textarea name="school_short_desc" id="school_short_desc" cols="30" rows="6"></textarea>
+            </div>
+            <div class="field">
+              <label for="school_ext_desc">Extended description</label>
+              <textarea name="school_ext_desc" id="school_ext_desc" cols="30" rows="40" class="school-ext-desc"></textarea>
+            </div>
+            <h4 class="ui dividing header">Accepted exams</h4>
+            <div class="inline fields">
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>TOEFL</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>DAF</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>IELTS</label>
+                </div>
+              </div>
+            </div>
+            <h4 class="ui dividing header">Conveniences</h4>
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>Wi-fi at school</label>
+                </div>
+              </div>
+              <div class="fields">
+                <div class="four wide field g-pt-10">
+                  <div class="ui checkbox">
+                    <input type="checkbox" tabindex="0" class="hidden">
+                    <label>Laundry</label>
+                  </div>
+                </div>
+                <div class="twelve wide disabled field">
+                  <input type="text" disabled="disabled" placeholder="Laundry conditions">
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="five wide column">
+          <div class="ui form">
+            <h2 class="ui dividing header g-pt-10">
+              Location
+              <select class="ui dropdown lang-selector">
+                <option value="Ru">Ru</option>
+                <option value="En">En</option>
+              </select>
+            </h2>
+            <div class="field">
+              <label for="school_location_address">School address</label>
+              <input id="school_location_address" type="text">
+            </div>
+            <div class="field">
+              <label for="school_location_coord">Coordinates (optional)</label>
+              <input id="school_location_coord" type="text">
+            </div>
+          </div>
+          <div class="ui form">
+            <h2 class="ui dividing header g-pt-10">
+              Website address
+            </h2>
+            <div class="field">
+              <label for="school_website">URL</label>
+              <input id="school_website" type="text">
+            </div>
+          </div>
+          <div class="ui form">
+            <h2 class="ui dividing header g-pt-10">
+              Conditions
+              <select class="ui dropdown lang-selector">
+                <option value="Ru">Ru</option>
+                <option value="En">En</option>
+              </select>
+            </h2>
+            <div class="field">
+              <textarea name="school_ext_desc" id="school_ext_desc" cols="30" rows="3" placeholder="Guides, trips etc." class="school-conditions"></textarea>
+            </div>
+          </div>
+          <div class="ui form list-editor">
+            <h2 class="ui dividing header g-pt-10">
+              Restrictions
+              <select class="ui dropdown lang-selector">
+                <option value="Ru">Ru</option>
+                <option value="En">En</option>
+              </select>
+            </h2>
+            <div class="field">
+              <div class="ui checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>Smoking</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>Pets</label>
+              </div>
+            </div>
+            <div class="list-editor-item g-mb-10">
+              <div class="circular ui basic icon button">
+                <i class="remove icon"></i>
+              </div>
+              <div class="field">
+                <input type="text">
+              </div>
+            </div>
+            <div class="ui fluid blue basic button"><i class="add icon"></i>Add field</div>
+          </div>
+        </div>
+        <div class="sixteen wide column">
+          <div class="ui form">
+
+            <h4 class="ui dividing header">Nations percentage</h4>
+            <div class="ui grid nations-percentage-control">
+              <div class="three wide column">
+                <select class="ui dropdown g-mb-5">
+                  <option value="">Country</option>
+                  <option value="Ru">Russia</option>
+                  <option value="En" selected>Great Britain</option>
+                  <option value="us">USA</option>
+                  <option value="it">Italy</option>
+                </select>
+                <div class="field">
+                  <input type="text" placeholder="%" value="20%">
+                </div>
+              </div>
+              <div class="three wide column">
+                <select class="ui dropdown g-mb-5">
+                  <option value="">Country</option>
+                  <option value="Ru">Russia</option>
+                  <option value="En">Great Britain</option>
+                  <option value="us" selected>USA</option>
+                  <option value="it">Italy</option>
+                </select>
+                <div class="field">
+                  <input type="text" placeholder="%" value="20%">
+                </div>
+              </div>
+              <div class="three wide column">
+                <select class="ui dropdown g-mb-5">
+                  <option value="">Country</option>
+                  <option value="Ru" selected>Russia</option>
+                  <option value="En">Great Britain</option>
+                  <option value="us">USA</option>
+                  <option value="it">Italy</option>
+                </select>
+                <div class="field">
+                  <input type="text" placeholder="%" value="20%">
+                </div>
+              </div>
+              <div class="three wide column">
+                <select class="ui dropdown g-mb-5">
+                  <option value="">Country</option>
+                  <option value="Ru">Russia</option>
+                  <option value="En">Great Britain</option>
+                  <option value="us">USA</option>
+                  <option value="it">Italy</option>
+                </select>
+                <div class="disabled field">
+                  <input type="text" disabled="disabled" placeholder="%">
+                </div>
+              </div>
+              <div class="three wide column">
+                <select class="ui dropdown g-mb-5">
+                  <option value="">Country</option>
+                  <option value="Ru">Russia</option>
+                  <option value="En">Great Britain</option>
+                  <option value="us">USA</option>
+                  <option value="it">Italy</option>
+                </select>
+                <div class="disabled field">
+                  <input type="text" disabled="disabled" placeholder="%">
+                </div>
+              </div>
+              <div class="one wide column">
+                <h4 class="g-mb-15">Other</h4>
+                <div class="nations-percentage-other">40%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="eleven wide column">
+          <div class="ui form">
+            <h4 class="ui dividing header">Other branches</h4>
+            <div class="ui form list-editor">
+              <div class="list-editor-item g-mb-10">
+                <div class="circular ui basic icon button">
+                  <i class="remove icon"></i>
+                </div>
+                <div class="field">
+                  <input type="text">
+                </div>
+              </div>
+              <div class="ui blue basic button"><i class="add icon"></i>Add school</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="ui dividing header g-pt-30">School photos</h2>
+      <div class="ui fluid blue big button g-mb-15"><i class="cloud upload icon"></i> Upload photos</div>
+      <div class="ui medium images gallery-editor">
+        <div class="ui image">
+          <img src="http://dummyimage.com/300x200/bdbdbd/fff">
+          <div class="circular ui basic icon button"><i class="remove icon"></i></div>
+        </div>
+        <div class="ui image">
+          <img src="http://dummyimage.com/300x200/bdbdbd/fff">
+          <div class="circular ui basic icon button"><i class="remove icon"></i></div>
+        </div>
+        <div class="ui image">
+          <img src="http://dummyimage.com/300x200/bdbdbd/fff">
+          <div class="circular ui basic icon button"><i class="remove icon"></i></div>
+        </div>
+        <div class="ui image">
+          <img src="http://dummyimage.com/300x200/bdbdbd/fff">
+          <div class="circular ui basic icon button"><i class="remove icon"></i></div>
+        </div>
+        <div class="ui image">
+          <img src="http://dummyimage.com/300x200/bdbdbd/fff">
+          <div class="circular ui basic icon button"><i class="remove icon"></i></div>
+        </div>
+        <div class="ui image">
+          <img src="http://dummyimage.com/300x200/bdbdbd/fff">
+          <div class="circular ui basic icon button"><i class="remove icon"></i></div>
+        </div>
+        <div class="ui image">
+          <img src="http://dummyimage.com/300x200/bdbdbd/fff">
+          <div class="circular ui basic icon button"><i class="remove icon"></i></div>
+        </div>
+        <div class="ui image">
+          <img src="http://dummyimage.com/300x200/bdbdbd/fff">
+          <div class="circular ui basic icon button"><i class="remove icon"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ui divider"></div>
+
+  <section class="course-editor" style="display: none;">
+    <div class="wrap">
+      <h1>Edit course &quot;Some course name&quot;</h1>
+      <div class="ui segment">
+        <div class="ui grid">
+          <div class="eleven wide column">
+            <div class="ui form">
+              <h2 class="ui dividing header g-pt-10">
+                Basic course info
+                <select class="ui dropdown lang-selector">
+                  <option value="Ru">Ru</option>
+                  <option value="En">En</option>
+                </select>
+              </h2>
+              <div class="field">
+                <label>Course name</label>
+                <input type="text">
+              </div>
+              <div class="field">
+                <label for="school_short_desc">Course description</label>
+                <textarea name="school_short_desc" id="school_short_desc" cols="30" rows="6"></textarea>
+              </div>
+            </div>
+            <div class="ui form list-editor">
+              <h2 class="ui dividing header g-pt-10">
+                The topics dealt with by the course are
+                <select class="ui dropdown lang-selector">
+                  <option value="Ru">Ru</option>
+                  <option value="En">En</option>
+                </select>
+              </h2>
+              <div class="list-editor-item g-mb-10">
+                <div class="circular ui basic icon button">
+                  <i class="remove icon"></i>
+                </div>
+                <div class="field">
+                  <input type="text">
+                </div>
+              </div>
+
+              <div class="list-editor-item g-mb-10">
+                <div class="circular ui basic icon button">
+                  <i class="remove icon"></i>
+                </div>
+                <div class="field">
+                  <input type="text">
+                </div>
+              </div>
+
+              <div class="list-editor-item g-mb-10">
+                <div class="circular ui basic icon button">
+                  <i class="remove icon"></i>
+                </div>
+                <div class="field">
+                  <input type="text">
+                </div>
+              </div>
+
+              <div class="list-editor-item g-mb-10">
+                <div class="circular ui basic icon button">
+                  <i class="remove icon"></i>
+                </div>
+                <div class="field">
+                  <input type="text">
+                </div>
+              </div>
+
+              <div class="ui fluid blue basic button"><i class="add icon"></i>Add field</div>
+            </div>
+
+            <div class="ui form list-editor">
+              <h2 class="ui dividing header g-pt-10">
+                You recieve
+                <select class="ui dropdown lang-selector">
+                  <option value="Ru">Ru</option>
+                  <option value="En">En</option>
+                </select>
+              </h2>
+              <div class="list-editor-item g-mb-10">
+                <div class="circular ui basic icon button">
+                  <i class="remove icon"></i>
+                </div>
+                <div class="field">
+                  <input type="text">
+                </div>
+              </div>
+
+              <div class="list-editor-item g-mb-10">
+                <div class="circular ui basic icon button">
+                  <i class="remove icon"></i>
+                </div>
+                <div class="field">
+                  <input type="text">
+                </div>
+              </div>
+
+              <div class="list-editor-item g-mb-10">
+                <div class="circular ui basic icon button">
+                  <i class="remove icon"></i>
+                </div>
+                <div class="field">
+                  <input type="text">
+                </div>
+              </div>
+
+              <div class="list-editor-item g-mb-10">
+                <div class="circular ui basic icon button">
+                  <i class="remove icon"></i>
+                </div>
+                <div class="field">
+                  <input type="text">
+                </div>
+              </div>
+
+              <div class="ui fluid blue basic button"><i class="add icon"></i>Add field</div>
+            </div>
+          </div>
+          <div class="five wide column">
+            <div class="ui form">
+              <h2 class="ui dividing header g-pt-10">Base price</h2>
+              <div class="field">
+                <label>Value</label>
+                <div class="three fields">
+                  <div class="field">
+                    <input id="school_location_address" type="text">
+                  </div>
+                  <div class="field">
+                    <select class="ui dropdown">
+                      <option value="eur">eur</option>
+                      <option value="usd">usd</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <select class="ui dropdown">
+                      <option value="week">week</option>
+                      <option value="day">day</option>
+                      <option value="whole">whole</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <h4 class="ui dividing header g-mt-0">Sale</h4>
+              <div class="two fields">
+                <div class="field g-pt-5">
+                  <div class="ui checkbox">
+                    <input type="checkbox" id="asdf">
+                    <label for="asdf">Course on sale</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui mini input">
+                    <input type="text" placeholder="Sale amount, %">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui form">
+              <h2 class="ui dividing header g-pt-10">Additional info</h2>
+              <div class="field">
+                <label>Duration <a href="#" class="pull-right"><i class="remove icon"></i>remove</a></label>
+                <input type="text">
+              </div>
+              <div class="field">
+                <label>Level <a href="#" class="pull-right"><i class="remove icon"></i>remove</a></label>
+                <select class="ui dropdown">
+                  <option value="a1">A1</option>
+                  <option value="b1">B1</option>
+                  <option value="c1">C1</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Duration <a href="#" class="pull-right"><i class="remove icon"></i>remove</a></label>
+                <input type="text">
+              </div>
+              <div class="ui grid">
+                <div class="eight wide column">
+                  <div class="field">
+                    <select class="ui dropdown">
+                      <option value="week">Choose option</option>
+                      <option value="day">Level</option>
+                      <option value="whole">Duration</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="eight wide column">
+                  <div class="ui fluid blue basic button"><i class="add icon"></i>Add field</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui grid form">
+          <h2 class="ui dividing header g-pt-10">Course options</h2>
+          <div class="sixteen wide column">
+            <h4>Add option</h4>
+            <div class="ui grid">
+              <div class="eight wide column">
+                <div class="field">
+                  <select class="ui dropdown">
+                    <option value="week">Choose option</option>
+                    <option value="day">Level</option>
+                    <option value="whole">Duration</option>
+                  </select>
+                </div>
+              </div>
+              <div class="four wide column">
+                <div class="ui fluid blue basic button"><i class="add icon"></i>Add option</div>
+              </div>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <h4 class="ui dividing header g-mt-0">Course format <a href="#" class="g-ml-20"><i class="remove icon"></i>remove</a></h4>
+            <div class="two fields">
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" id="asdf" checked>
+                  <label for="asdf">Intensive</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui mini input">
+                  <input type="text" placeholder="Option price">
+                </div>
+              </div>
+            </div>
+            <div class="two fields">
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" id="qwe">
+                  <label for="qwe">Short term</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui mini input">
+                  <input type="text" placeholder="Option price">
+                </div>
+              </div>
+            </div>
+            <div class="two fields">
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" id="wer">
+                  <label for="wer">Long term</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui mini input">
+                  <input type="text" placeholder="Option price">
+                </div>
+              </div>
+            </div>
+            <div class="two fields">
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" id="ert">
+                  <label for="ert">Summer camp</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui mini input">
+                  <input type="text" placeholder="Option price">
+                </div>
+              </div>
+            </div>
+            <div class="two fields">
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" id="rty">
+                  <label for="rty">Group course</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui mini input">
+                  <input type="text" placeholder="Option price">
+                </div>
+              </div>
+            </div>
+            <div class="two fields">
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" id="tyu">
+                  <label for="tyu">One to one</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui mini input">
+                  <input type="text" placeholder="Option price">
+                </div>
+              </div>
+            </div>
+            <div class="two fields">
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" id="yui">
+                  <label for="yui">Combined: group + private</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui mini input">
+                  <input type="text" placeholder="Option price">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <h4 class="ui dividing header g-mt-0">Accomodation <a href="#" class="g-ml-20"><i class="remove icon"></i>remove</a></h4>
+            <div class="two fields">
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" id="asdf">
+                  <label for="asdf">Homestay</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui mini input">
+                  <input type="text" placeholder="Option price">
+                </div>
+              </div>
+            </div>
+            <div class="two fields">
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" id="qwe">
+                  <label for="qwe">Guesthouse</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui mini input">
+                  <input type="text" placeholder="Option price">
+                </div>
+              </div>
+            </div>
+            <div class="two fields">
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" id="wer">
+                  <label for="wer">Campus</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui mini input">
+                  <input type="text" placeholder="Option price">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <h4 class="ui dividing header g-mt-0">Transfer <a href="#" class="g-ml-20"><i class="remove icon"></i>remove</a></h4>
+            <div class="two fields">
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" id="qwe">
+                  <label for="qwe">From Airport</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui mini input">
+                  <input type="text" placeholder="Option price">
+                </div>
+              </div>
+            </div>
+            <div class="two fields">
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" id="wer">
+                  <label for="wer">To airport</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui mini input">
+                  <input type="text" placeholder="Option price">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="ui dividing header g-pt-10">Course photos</h2>
+        <div class="ui fluid blue big button g-mb-15"><i class="cloud upload icon"></i> Upload photos</div>
+        <div class="ui medium images gallery-editor">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="course-list">
+    <div class="wrap">
+      <h1>School courses</h1>
+      <div class="ui fluid blue big button g-mb-15" onclick="$('.course-editor').fadeToggle(350);"><i class="add icon"></i> Create course</div>
+      <div class="ui cards course-list">
+        <div class="card">
+          <div class="content">
+            <div class="header">Wine course</div>
+            <div class="meta">
+              <span class="category"><strong>Base price</strong> 300 &euro;</span>
+            </div>
+            <div class="description">
+              During the course there will also be the opportunity to visit a renowned winebar.
+              For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with.
+            </div>
+          </div>
+          <div class="ui bottom attached button"><i class="edit icon"></i>Edit course</div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="header">Wine course</div>
+            <div class="meta">
+              <span class="category"><strong>Base price</strong> 300 &euro;</span>
+            </div>
+            <div class="description">
+              During the course there will also be the opportunity to visit a renowned winebar.
+              For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with.
+            </div>
+          </div>
+          <div class="ui bottom attached button"><i class="edit icon"></i>Edit course</div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="header">Wine course</div>
+            <div class="meta">
+              <span class="category"><strong>Base price</strong> 300 &euro;</span>
+            </div>
+            <div class="description">
+              During the course there will also be the opportunity to visit a renowned winebar.
+              For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with.
+            </div>
+          </div>
+          <div class="ui bottom attached button"><i class="edit icon"></i>Edit course</div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="header">Wine course</div>
+            <div class="meta">
+              <span class="category"><strong>Base price</strong> 300 &euro;</span>
+            </div>
+            <div class="description">
+              During the course there will also be the opportunity to visit a renowned winebar.
+              For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with.
+            </div>
+          </div>
+          <div class="ui bottom attached button"><i class="edit icon"></i>Edit course</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

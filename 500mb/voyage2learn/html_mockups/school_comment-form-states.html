@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>School page</title>
+  <link rel="stylesheet" href="stylesheets/application.css">
+  <style>
+  .rating-details div.star {
+    position: absolute;
+    top: 3px;
+    right: 0px;
+  }
+  </style>
+</head>
+<body>
+  <section class="g-pt-50 g-pb-50" style="background: #fafafa;">
+    <div class="wrap">
+      <h1 class="g-mb-20">Начальное состояние</h1>
+      <p class="g-mb-0">Текущий пользователь не проходил ни одного курса в этой школе, либо оставил оценки ко всем пройденным курсам<br>Добавился <code>div.g-fr</code> вокруг кнопки комментирования для единообразия с формой ответа на комментарий (см. ниже)</p>
+    </div>
+  </section>
+  <section class="comments">
+    <div class="wrap">
+      <div class="gr">
+        <div class="col col-4">
+          <h3 class="total-comments">No reviews</h3>
+          <a href="#" class="comment-top-write">Write your review</a>
+          <ul class="comment-list">
+            <li class="comment-item comment-form">
+              <h3 class="comment-author"><a href="#"><img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" class="userpic"></a></h3>
+              <div class="comment-body">
+                <h3>Write your review</h3>
+                <form action="#">
+                  <div class="comment-input comment-title"><label for="comment_title">Title</label><input type="text" id="comment_title"></div>
+                  <div class="comment-input comment-text">
+                    <label for="comment_text">Comment</label>
+                    <div class="comment-editor">
+                      <div class="comment-editor-bar">
+                        <div class="comment-editor-upload">Attach<input type="file"></div>
+                      </div>
+                      <textarea name="comment_text" id="comment_text" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="g-fr">
+                      <div class="btn btn-green comment-editor-submit"><span>Comment</span></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section class="g-pt-50 g-pb-50" style="background: #fafafa;">
+    <div class="wrap">
+      <h1 class="g-mb-20">Прошедший обучение 1</h1>
+      <p class="g-mb-0">Текущий пользователь прошел один курс в этой школе<br>Оставляет первый комментарий этой школе</p>
+    </div>
+  </section>
+  <section class="comments">
+    <div class="wrap">
+      <div class="gr">
+        <div class="col col-4">
+          <h3 class="total-comments">No reviews</h3>
+          <a href="#" class="comment-top-write">Write your review</a>
+          <ul class="comment-list">
+            <li class="comment-item comment-form">
+              <h3 class="comment-author"><a href="#"><img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" class="userpic"></a></h3>
+              <div class="comment-body">
+                <h3>Write your review</h3>
+                <form action="#">
+                  <div class="comment-input comment-title"><label for="comment_title">Title</label><input type="text" id="comment_title"></div>
+                  <div class="comment-input comment-course">
+                    <label>Сourse you finished</label>
+                    <h4>Super intensive Italian language course</h4>
+                  </div>
+                  <div class="comment-input g-pt-10 g-pb-10">
+                    <label>Your school rating</label>
+                    <ul class="rating-details">
+                      <li><i class="rating-icon rating-icon-location"></i>Location <div data-dimension="location" class="star" data-rating="2.5" data-id="2" data-classname="School" data-disable-after-rate="false" data-readonly="false" data-enable-half="false" data-half-show="true" data-star-count="5" data-star-path="" data-star-on="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-off="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-half="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-cancel="false" data-cancel-place="left" data-cancel-hint="Cancel current rating!" data-cancel-on="/images/cancel-on.png" data-cancel-off="/images/cancel-off.png" data-no-rated-message="I'am readOnly and I haven't rated yet!" data-space="false" data-single="false" data-target="" data-target-text="" data-target-type="hint" data-target-format="{score}" data-target-score="" style="cursor: pointer;"><img alt="1" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="1">&nbsp;<img alt="2" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2">&nbsp;<img alt="3" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2.5">&nbsp;<img alt="4" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="4">&nbsp;<img alt="5" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="5"><input name="score" type="hidden" value="2.5"></div> </li>
+                      <li><i class="rating-icon rating-icon-quality"></i>Course quality <div data-dimension="course_quality" class="star" data-rating="2.0" data-id="2" data-classname="School" data-disable-after-rate="false" data-readonly="false" data-enable-half="false" data-half-show="true" data-star-count="5" data-star-path="" data-star-on="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-off="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-half="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-cancel="false" data-cancel-place="left" data-cancel-hint="Cancel current rating!" data-cancel-on="/images/cancel-on.png" data-cancel-off="/images/cancel-off.png" data-no-rated-message="I'am readOnly and I haven't rated yet!" data-space="false" data-single="false" data-target="" data-target-text="" data-target-type="hint" data-target-format="{score}" data-target-score="" style="cursor: pointer;"><img alt="1" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="1">&nbsp;<img alt="2" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2">&nbsp;<img alt="3" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="3">&nbsp;<img alt="4" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="4">&nbsp;<img alt="5" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="5"><input name="score" type="hidden" value="2"></div> </li>
+                      <li><i class="rating-icon rating-icon-accomodation"></i>Accomodation <div data-dimension="accomodation" class="star" data-rating="5.0" data-id="2" data-classname="School" data-disable-after-rate="false" data-readonly="false" data-enable-half="false" data-half-show="true" data-star-count="5" data-star-path="" data-star-on="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-off="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-half="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-cancel="false" data-cancel-place="left" data-cancel-hint="Cancel current rating!" data-cancel-on="/images/cancel-on.png" data-cancel-off="/images/cancel-off.png" data-no-rated-message="I'am readOnly and I haven't rated yet!" data-space="false" data-single="false" data-target="" data-target-text="" data-target-type="hint" data-target-format="{score}" data-target-score="" style="cursor: pointer;"><img alt="1" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="1">&nbsp;<img alt="2" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2">&nbsp;<img alt="3" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="3">&nbsp;<img alt="4" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="4">&nbsp;<img alt="5" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="5"><input name="score" type="hidden" value="5"></div> </li>
+                      <li><i class="rating-icon rating-icon-infrastructure"></i>School infrastructure <div data-dimension="school_infrastructure" class="star" data-rating="3.0" data-id="2" data-classname="School" data-disable-after-rate="false" data-readonly="false" data-enable-half="false" data-half-show="true" data-star-count="5" data-star-path="" data-star-on="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-off="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-half="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-cancel="false" data-cancel-place="left" data-cancel-hint="Cancel current rating!" data-cancel-on="/images/cancel-on.png" data-cancel-off="/images/cancel-off.png" data-no-rated-message="I'am readOnly and I haven't rated yet!" data-space="false" data-single="false" data-target="" data-target-text="" data-target-type="hint" data-target-format="{score}" data-target-score="" style="cursor: pointer;"><img alt="1" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="1">&nbsp;<img alt="2" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2">&nbsp;<img alt="3" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="3">&nbsp;<img alt="4" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="4">&nbsp;<img alt="5" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="5"><input name="score" type="hidden" value="3"></div> </li>
+                    </ul>
+                  </div>
+                  <div class="comment-input comment-text">
+                    <label for="comment_text">Comment</label>
+                    <div class="comment-editor">
+                      <div class="comment-editor-bar">
+                        <div class="comment-editor-upload">Attach<input type="file"></div>
+                      </div>
+                      <textarea name="comment_text" id="comment_text" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="g-fr">
+                      <div class="btn btn-green comment-editor-submit"><span>Comment</span></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section class="g-pt-50 g-pb-50" style="background: #fafafa;">
+    <div class="wrap">
+      <h1 class="g-mb-20">Прошедший обучение 2</h1>
+      <p class="g-mb-0">Текущий пользователь прошел больше одного курса в этой школе<br>Оставляет первый комментарий этой школе</p>
+    </div>
+  </section>
+  <section class="comments">
+    <div class="wrap">
+      <div class="gr">
+        <div class="col col-4">
+          <h3 class="total-comments">No reviews</h3>
+          <a href="#" class="comment-top-write">Write your review</a>
+          <ul class="comment-list">
+            <li class="comment-item comment-form">
+              <h3 class="comment-author"><a href="#"><img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" class="userpic"></a></h3>
+              <div class="comment-body">
+                <h3>Write your review</h3>
+                <form action="#">
+                  <div class="comment-input comment-title"><label for="comment_title">Title</label><input type="text" id="comment_title"></div>
+                  <div class="comment-input comment-course">
+                    <label for="comemnt_course">Сourse you finished</label>
+                    <select name="comemnt_course" id="comemnt_course">
+                      <option value="asd">Super intensive Italian language course</option>
+                      <option value="asdf">Another course name</option>
+                    </select>
+                  </div>
+                  <div class="comment-input g-pt-10 g-pb-10">
+                    <label>Your school rating</label>
+                    <ul class="rating-details">
+                      <li><i class="rating-icon rating-icon-location"></i>Location <div data-dimension="location" class="star" data-rating="2.5" data-id="2" data-classname="School" data-disable-after-rate="false" data-readonly="false" data-enable-half="false" data-half-show="true" data-star-count="5" data-star-path="" data-star-on="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-off="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-half="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-cancel="false" data-cancel-place="left" data-cancel-hint="Cancel current rating!" data-cancel-on="/images/cancel-on.png" data-cancel-off="/images/cancel-off.png" data-no-rated-message="I'am readOnly and I haven't rated yet!" data-space="false" data-single="false" data-target="" data-target-text="" data-target-type="hint" data-target-format="{score}" data-target-score="" style="cursor: pointer;"><img alt="1" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="1">&nbsp;<img alt="2" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2">&nbsp;<img alt="3" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2.5">&nbsp;<img alt="4" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="4">&nbsp;<img alt="5" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="5"><input name="score" type="hidden" value="2.5"></div> </li>
+                      <li><i class="rating-icon rating-icon-quality"></i>Course quality <div data-dimension="course_quality" class="star" data-rating="2.0" data-id="2" data-classname="School" data-disable-after-rate="false" data-readonly="false" data-enable-half="false" data-half-show="true" data-star-count="5" data-star-path="" data-star-on="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-off="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-half="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-cancel="false" data-cancel-place="left" data-cancel-hint="Cancel current rating!" data-cancel-on="/images/cancel-on.png" data-cancel-off="/images/cancel-off.png" data-no-rated-message="I'am readOnly and I haven't rated yet!" data-space="false" data-single="false" data-target="" data-target-text="" data-target-type="hint" data-target-format="{score}" data-target-score="" style="cursor: pointer;"><img alt="1" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="1">&nbsp;<img alt="2" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2">&nbsp;<img alt="3" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="3">&nbsp;<img alt="4" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="4">&nbsp;<img alt="5" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="5"><input name="score" type="hidden" value="2"></div> </li>
+                      <li><i class="rating-icon rating-icon-accomodation"></i>Accomodation <div data-dimension="accomodation" class="star" data-rating="5.0" data-id="2" data-classname="School" data-disable-after-rate="false" data-readonly="false" data-enable-half="false" data-half-show="true" data-star-count="5" data-star-path="" data-star-on="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-off="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-half="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-cancel="false" data-cancel-place="left" data-cancel-hint="Cancel current rating!" data-cancel-on="/images/cancel-on.png" data-cancel-off="/images/cancel-off.png" data-no-rated-message="I'am readOnly and I haven't rated yet!" data-space="false" data-single="false" data-target="" data-target-text="" data-target-type="hint" data-target-format="{score}" data-target-score="" style="cursor: pointer;"><img alt="1" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="1">&nbsp;<img alt="2" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2">&nbsp;<img alt="3" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="3">&nbsp;<img alt="4" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="4">&nbsp;<img alt="5" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="5"><input name="score" type="hidden" value="5"></div> </li>
+                      <li><i class="rating-icon rating-icon-infrastructure"></i>School infrastructure <div data-dimension="school_infrastructure" class="star" data-rating="3.0" data-id="2" data-classname="School" data-disable-after-rate="false" data-readonly="false" data-enable-half="false" data-half-show="true" data-star-count="5" data-star-path="" data-star-on="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-off="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-half="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-cancel="false" data-cancel-place="left" data-cancel-hint="Cancel current rating!" data-cancel-on="/images/cancel-on.png" data-cancel-off="/images/cancel-off.png" data-no-rated-message="I'am readOnly and I haven't rated yet!" data-space="false" data-single="false" data-target="" data-target-text="" data-target-type="hint" data-target-format="{score}" data-target-score="" style="cursor: pointer;"><img alt="1" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="1">&nbsp;<img alt="2" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2">&nbsp;<img alt="3" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="3">&nbsp;<img alt="4" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="4">&nbsp;<img alt="5" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="5"><input name="score" type="hidden" value="3"></div> </li>
+                    </ul>
+                  </div>
+                  <div class="comment-input comment-text">
+                    <label for="comment_text">Comment</label>
+                    <div class="comment-editor">
+                      <div class="comment-editor-bar">
+                        <div class="comment-editor-upload">Attach<input type="file"></div>
+                      </div>
+                      <textarea name="comment_text" id="comment_text" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="g-fr">
+                      <div class="btn btn-green comment-editor-submit"><span>Comment</span></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section class="g-pt-50 g-pb-50" style="background: #fafafa;">
+    <div class="wrap">
+      <h1 class="g-mb-20">Оставлявший оценку/отзыв</h1>
+      <p class="g-mb-0">Уже комментировал ранее, оставив отзыв<br>Курс, на который он оставлял отзыв лочится в селекте «Сourse you finished»</p>
+    </div>
+  </section>
+  <section class="comments">
+    <div class="wrap">
+      <div class="gr">
+        <div class="col col-4">
+          <h3 class="total-comments">No reviews</h3>
+          <a href="#" class="comment-top-write">Write your review</a>
+          <ul class="comment-list">
+            <li class="comment-item comment-form">
+              <h3 class="comment-author"><a href="#"><img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" class="userpic"></a></h3>
+              <div class="comment-body">
+                <h3>Write your review</h3>
+                <form action="#">
+                  <div class="comment-input comment-title"><label for="comment_title">Title</label><input type="text" id="comment_title"></div>
+                  <div class="comment-input comment-course">
+                    <label for="comemnt_course">Сourse you finished</label>
+                    <select name="comemnt_course" id="comemnt_course">
+                      <option value="asd" disabled="disabled">Super intensive Italian language course</option>
+                      <option value="asdf">Another course name</option>
+                    </select>
+                  </div>
+                  <div class="comment-input g-pt-10 g-pb-10">
+                    <label>Your school rating</label>
+                    <ul class="rating-details">
+                      <li><i class="rating-icon rating-icon-location"></i>Location <div data-dimension="location" class="star" data-rating="2.5" data-id="2" data-classname="School" data-disable-after-rate="false" data-readonly="false" data-enable-half="false" data-half-show="true" data-star-count="5" data-star-path="" data-star-on="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-off="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-half="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-cancel="false" data-cancel-place="left" data-cancel-hint="Cancel current rating!" data-cancel-on="/images/cancel-on.png" data-cancel-off="/images/cancel-off.png" data-no-rated-message="I'am readOnly and I haven't rated yet!" data-space="false" data-single="false" data-target="" data-target-text="" data-target-type="hint" data-target-format="{score}" data-target-score="" style="cursor: pointer;"><img alt="1" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="1">&nbsp;<img alt="2" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2">&nbsp;<img alt="3" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2.5">&nbsp;<img alt="4" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="4">&nbsp;<img alt="5" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="5"><input name="score" type="hidden" value="2.5"></div> </li>
+                      <li><i class="rating-icon rating-icon-quality"></i>Course quality <div data-dimension="course_quality" class="star" data-rating="2.0" data-id="2" data-classname="School" data-disable-after-rate="false" data-readonly="false" data-enable-half="false" data-half-show="true" data-star-count="5" data-star-path="" data-star-on="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-off="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-half="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-cancel="false" data-cancel-place="left" data-cancel-hint="Cancel current rating!" data-cancel-on="/images/cancel-on.png" data-cancel-off="/images/cancel-off.png" data-no-rated-message="I'am readOnly and I haven't rated yet!" data-space="false" data-single="false" data-target="" data-target-text="" data-target-type="hint" data-target-format="{score}" data-target-score="" style="cursor: pointer;"><img alt="1" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="1">&nbsp;<img alt="2" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2">&nbsp;<img alt="3" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="3">&nbsp;<img alt="4" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="4">&nbsp;<img alt="5" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="5"><input name="score" type="hidden" value="2"></div> </li>
+                      <li><i class="rating-icon rating-icon-accomodation"></i>Accomodation <div data-dimension="accomodation" class="star" data-rating="5.0" data-id="2" data-classname="School" data-disable-after-rate="false" data-readonly="false" data-enable-half="false" data-half-show="true" data-star-count="5" data-star-path="" data-star-on="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-off="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-half="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-cancel="false" data-cancel-place="left" data-cancel-hint="Cancel current rating!" data-cancel-on="/images/cancel-on.png" data-cancel-off="/images/cancel-off.png" data-no-rated-message="I'am readOnly and I haven't rated yet!" data-space="false" data-single="false" data-target="" data-target-text="" data-target-type="hint" data-target-format="{score}" data-target-score="" style="cursor: pointer;"><img alt="1" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="1">&nbsp;<img alt="2" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2">&nbsp;<img alt="3" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="3">&nbsp;<img alt="4" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="4">&nbsp;<img alt="5" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="5"><input name="score" type="hidden" value="5"></div> </li>
+                      <li><i class="rating-icon rating-icon-infrastructure"></i>School infrastructure <div data-dimension="school_infrastructure" class="star" data-rating="3.0" data-id="2" data-classname="School" data-disable-after-rate="false" data-readonly="false" data-enable-half="false" data-half-show="true" data-star-count="5" data-star-path="" data-star-on="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-off="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-star-half="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" data-cancel="false" data-cancel-place="left" data-cancel-hint="Cancel current rating!" data-cancel-on="/images/cancel-on.png" data-cancel-off="/images/cancel-off.png" data-no-rated-message="I'am readOnly and I haven't rated yet!" data-space="false" data-single="false" data-target="" data-target-text="" data-target-type="hint" data-target-format="{score}" data-target-score="" style="cursor: pointer;"><img alt="1" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="1">&nbsp;<img alt="2" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="2">&nbsp;<img alt="3" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="3">&nbsp;<img alt="4" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="4">&nbsp;<img alt="5" src="http://voyage2learn.com/assets/star-off-6aaeebdaab93d594c005d366ce0d94fba02e7a07fd03557dbee8482f04a91c22.png" title="5"><input name="score" type="hidden" value="3"></div> </li>
+                    </ul>
+                  </div>
+                  <div class="comment-input comment-text">
+                    <label for="comment_text">Comment</label>
+                    <div class="comment-editor">
+                      <div class="comment-editor-bar">
+                        <div class="comment-editor-upload">Attach<input type="file"></div>
+                      </div>
+                      <textarea name="comment_text" id="comment_text" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="g-fr">
+                      <div class="btn btn-green comment-editor-submit"><span>Comment</span></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <section class="g-pt-50 g-pb-50" style="background: #fafafa;">
+    <div class="wrap">
+      <h1 class="g-mb-20">Ответ на чужой отзыв</h1>
+      <p class="g-mb-0">Добавил визуальную вложенность, поменял отступ у юзерпика (добавляется класс <code>.g-pt-50</code>), добавил отступ между кнопками, изменил копирайт на кнопках</p>
+    </div>
+  </section>
+  <section class="comments">
+    <div class="wrap">
+      <div class="gr">
+        <div class="col col-4">
+          <h3 class="total-comments">No reviews</h3>
+          <a href="#" class="comment-top-write">Write your review</a>
+          <ul class="comment-list">
+            <li class="comment-item">
+              <h3 class="comment-author"><a href="#"><img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" class="userpic">Albert</a></h3>
+              <div class="comment-body">
+                <h3>It was great!</h3>
+                <p>Last November, a spacecraft which had traveled 6.4 billion miles over ten years successfully landed on a comet. A COMET. This means we can now do ANYTHING, which is why I am writing you today with a list of suggestions, nay, improvements that I hope you will consider implementing in future DSLRs.</p>
+                <div class="comment-meta">
+                  <div class="comment-date">12.05.12</div>
+                  <div class="comment-reply"><a href="#">Reply</a></div>
+                </div>
+              </div>
+            </li>
+            <li class="comment-item comment-sublevel comment-form">
+              <h3 class="comment-author g-pt-50"><a href="#"><img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" class="userpic"></a></h3>
+              <div class="comment-body">
+                <form action="#">
+                  <div class="comment-input comment-title"><label for="comment_title">Title</label><input type="text" id="comment_title"></div>
+                  <div class="comment-input comment-text">
+                    <label for="comment_text">Comment</label>
+                    <div class="comment-editor">
+                      <div class="comment-editor-bar">
+                        <div class="comment-editor-upload">Attach<input type="file"></div>
+                      </div>
+                      <textarea name="comment_text" id="comment_text" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="g-fr">
+                      <div class="btn btn-green comment-editor-submit g-ml-10"><span>Reply</span></div>
+                      <div class="btn btn-red comment-editor-submit js-comment-cancel"><span>Cancel</span></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="g-pt-50 g-pb-50" style="background: #fafafa;">
+    <div class="wrap">
+      <h1 class="g-mb-20">Отображение рейтинга</h1>
+      <p class="g-mb-0">Вывод рейтинга школы + оценка в комментарии юзера</p>
+    </div>
+  </section>
+  <section class="comments">
+    <div class="wrap">
+      <div class="gr">
+        <div class="col col-4">
+          <h3 class="total-comments">3 reviews</h3>
+          <a href="#" class="comment-top-write">Write your review</a>
+          <ul class="comment-list">
+            <li class="comment-item">
+              <h3 class="comment-author"><a href="#"><img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" class="userpic">Albert</a></h3>
+              <div class="comment-body">
+                <h3>It was great!</h3>
+                <p>Last November, a spacecraft which had traveled 6.4 billion miles over ten years successfully landed on a comet. A COMET. This means we can now do ANYTHING, which is why I am writing you today with a list of suggestions, nay, improvements that I hope you will consider implementing in future DSLRs.</p>
+                <div class="comment-meta">
+                  <div class="comment-course-name">
+                    <strong>Experience with course</strong>
+                    <a href="#" class="comment-course-link">Super intensive Italian language course</a>
+                  </div>
+                  <div class="comment-school-rating">
+                    <div class="border-block comment-school-rating-block">
+                      <div class="bb-title">
+                        <strong>Albert rated this school <span class="rating-stars rating-3-5"><i></i><i></i><i></i><i></i><i></i></span></strong>
+                      </div>
+                      <div class="bb-body">
+                        <ul class="rating-details">
+                          <li><i class="rating-icon rating-icon-location"></i>Location<strong>4/5</strong></li>
+                          <li><i class="rating-icon rating-icon-quality"></i>Course quality<strong>2/5</strong></li>
+                          <li><i class="rating-icon rating-icon-accomodation"></i>Accomodation<strong>2/5</strong></li>
+                          <li><i class="rating-icon rating-icon-infrastructure"></i>School infrastructure<strong>1/5</strong></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment-date">12.05.12</div>
+                  <div class="comment-reply"><a href="#">Reply</a></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-2 rating-column">
+          <h3>School rating</h3>
+          <h4>Overall rating</h4>
+          <span class="rating-stars rating-big rating-1-5"><i></i><i></i><i></i><i></i><i></i></span>
+          <ul class="rating-details">
+            <li><i class="rating-icon rating-icon-location"></i>Location<strong>4.5/5</strong></li>
+            <li><i class="rating-icon rating-icon-quality"></i>Course quality<strong>2.3/5</strong></li>
+            <li><i class="rating-icon rating-icon-accomodation"></i>Accomodation<strong>2/5</strong></li>
+            <li><i class="rating-icon rating-icon-infrastructure"></i>School infrastructure<strong>1/5</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

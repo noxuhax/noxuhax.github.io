@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Text page</title>
+  <link rel="stylesheet" href="stylesheets/application.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <section class="text-page">
+    <div class="wrap">
+      <div class="gr">
+        <div class="col col-1 text-page-nav">
+          <ul class="text-page-menu">
+            <li><a href="#">Lifehacks</a></li>
+            <li class="current"><a href="#">Help&FAQ</a></li>
+            <li><a href="#">Communnity</a></li>
+          </ul>
+        </div>
+        <div class="col col-5 text-page-content">
+          <div class="text-content">
+            <div class="text-accordion">
+              <article class="accordion-block">
+                <h2>Heading</h2>
+                <div class="accordion-content">
+                  <p>During the course there will also be the opportunity to visit a renowned winebar. For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with...</p>
+                  <p>Will also be the opportunity to visit a renowned winebar. For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with...</p>
+                </div>
+              </article>
+              <article class="accordion-block">
+                <h2>Heading</h2>
+                <div class="accordion-content">
+                  <p>During the course there will also be the opportunity to visit a renowned winebar. For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with...</p>
+                </div>
+              </article>
+              <article class="accordion-block">
+                <h2>Heading</h2>
+                <div class="accordion-content">
+                  <p>Will also be the opportunity to visit a renowned winebar. For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with...</p>
+                </div>
+              </article>
+            </div>
+            <h2>Heading</h2>
+            <p>During the course there will also be the opportunity to visit a renowned winebar. For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with...</p>
+            <p>Will also be the opportunity to visit a renowned winebar. For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with...</p>
+            <h2>Another heading</h2>
+            <p>During the course there will also be the opportunity to visit a renowned winebar. For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with...</p>
+            <h2>More headers</h2>
+            <p>During the course there will also be the opportunity to visit a renowned winebar. For a better understanding, tables, maps and other visual support materials will be used. Topics such as how to match wine and food together, and comparing Italian wines to foreign wines, will be dealt with...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+$(".accordion-block h2").click(function() {
+  $(this).parent().toggleClass("accordion-block-opened");
+  $(this).next().slideToggle();
+});
+  </script>
+</body>
+</html>

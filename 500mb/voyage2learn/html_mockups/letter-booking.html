@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notification Mailer</title>
+  <style>
+
+body,
+.letter-bg {
+  color: #242424;
+  background: #F4B04D;
+  border: 1px solid #F4B04D;
+  }
+
+.letter-wrap {
+  width: 100%; max-width: 690px;
+  margin: auto;
+  }
+
+.letter-header { text-align: center; }
+.letter-header a { text-decoration: none; }
+
+.notification-holder {
+  background: #FFF;
+  border-radius: 2px;
+  }
+
+.notification-table { font-size: 10px; line-height: 1; }
+.notification-table .header { font: normal 18px/25px 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #2D2D2D; vertical-align: top; }
+.notification-table .text { font: normal 14px/23px 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #2D2D2D; vertical-align: top; }
+.notification-table .text a { color: #4FC281; text-decoration: underline; }
+.notification-table .button {
+  font: normal 18px/25px 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #FFF; line-height: 40px; text-align: center;
+  background: #4FC281;
+  }
+.notification-table .button a { color: #FFF; text-decoration: none; }
+
+.message-footer { font: normal 12px/18px 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #9E712E; text-align: center; }
+.message-footer a { color: #9E712E; text-decoration: underline; }
+  </style>
+</head>
+<body>
+<div class="letter-bg">
+  <table align="center" class="letter-wrap" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+      <td width="5%"></td>
+      <td>
+        <table cellspacing="0" cellpadding="0" width="100%">
+          <tr>
+            <td class="spacer" height="25"></td>
+          </tr>
+          <tr>
+            <td class="letter-header"><a href="#"><img src="images/mailer-logo.png" height="22"></a></td>
+          </tr>
+          <tr>
+            <td class="spacer" height="20"></td>
+          </tr>
+        </table>
+        <div class="notification-holder">
+          <table class="notification-table" cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+              <td class="spacer" colspan="5" height="25"></td>
+            </tr>
+            <!-- vv cut here if there is no need in title -->
+            <tr>
+              <td class="spacer" width="30"></td>
+              <td class="header">
+                Jushua Aaronson just booked a course!
+              </td>
+              <td class="spacer" width="30"></td>
+            </tr>
+            <tr>
+              <td class="spacer" colspan="5" height="10"></td>
+            </tr>
+            <!-- ^^ cut here if there is no need in title -->
+            <tr>
+              <td class="spacer" width="30"></td>
+              <td class="text">
+                Congratulations, you have a new student.
+              </td>
+              <td class="spacer" width="30"></td>
+            </tr>
+            <!-- vv use this .spacer to separate paragraphs if needed -->
+            <tr>
+              <td class="spacer" colspan="5" height="15"></td>
+            </tr>
+            <!-- ^^ use this .spacer to separate paragraphs if needed -->
+            <tr>
+              <td class="spacer" width="30"></td>
+              <td class="text">
+                <strong>Joshua Aaronson</strong> just booked himself a place on a <strong>Wine making course</strong> you provide.<br>
+                His course dates are <strong>15 Jul 2016 — 25 Jul 2016</strong>.<br>
+                Total payment is <strong>900 &euro;</strong>
+              </td>
+              <td class="spacer" width="30"></td>
+            </tr>
+            <!-- vv use this .spacer to separate paragraphs if needed -->
+            <tr>
+              <td class="spacer" colspan="5" height="15"></td>
+            </tr>
+            <!-- ^^ use this .spacer to separate paragraphs if needed -->
+            <tr>
+              <td class="spacer" width="30"></td>
+              <td class="text">
+                <a href="#">Proceed to our system</a> to get more details.
+              </td>
+              <td class="spacer" width="30"></td>
+            </tr>
+            <!-- vv use this .spacer to separate paragraphs if needed -->
+            <tr>
+              <td class="spacer" colspan="5" height="35"></td>
+            </tr>
+            <!-- ^^ use this .spacer to separate paragraphs if needed -->
+            <tr>
+              <td class="spacer" width="30"></td>
+              <td>
+                <table cellspacing="0" cellpadding="0" width="100%">
+                  <tr>
+                    <td class="spacer" width="150"></td>
+                    <td class="button" height="40">
+                      <a href="#">Go to Dashboard</a>
+                    </td>
+                    <td class="spacer" width="150"></td>
+                  </tr>
+                </table>
+              </td>
+              <td class="spacer" width="30"></td>
+            </tr>
+            <tr>
+              <td class="spacer" colspan="5" height="40"></td>
+            </tr>
+          </table>
+        </div>
+        <table cellspacing="0" cellpadding="0" width="100%">
+          <tr>
+            <td class="spacer" height="25"></td>
+          </tr>
+          <tr>
+            <td class="message-footer">Yours, Voyage2learn</td>
+          </tr>
+          <tr>
+            <td class="spacer" height="40"></td>
+          </tr>
+        </table>
+      </td>
+      <td width="5%"></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

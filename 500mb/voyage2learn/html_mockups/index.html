@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Voyage2learn</title>
+  <link rel="stylesheet" href="stylesheets/application.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <section class="site-header site-header-transparent">
+    <h1 class="site-logo"><a href="#">Voyage 2 Learn</a></h1>
+    <div class="userpanel">
+      <div class="up-item up-logged dd-able">
+        <div class="up-item-title">
+          <img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" alt="Scuola Leonardo da Vinci" class="userpic">
+        </div>
+        <div class="dropdown">
+          <ul class="dd-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li class="dd-menu-sep"></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="up-item up-invoice">
+        <div class="up-item-title">3</div>
+      </div>
+      <div class="up-item up-messages">
+        <div class="up-item-title">3</div>
+      </div>
+      <div class="up-item up-admin">
+        <a href="#" class="up-item-title"></a>
+      </div>
+      <div class="up-item up-currency dd-able">
+        <div class="up-item-title">USD</div>
+        <div class="dropdown">
+          <ul class="dd-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="up-item up-lang dd-able">
+        <div class="up-item-title">en</div>
+        <div class="dropdown">
+          <ul class="dd-menu">
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+            <li><a href="#">Menu Item</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="index-header">
+    <div class="wrap">
+      <h1>The power of two:<br>Learn and travel simultaneously</h1>
+      <div class="btn btn-fat btn-border btn-orange learn-more-btn" onclick="learnMore();"><span>Learn more</span></div>
+      <div class="gr">
+        <div class="col col-4 col-offset-1">
+          <div class="search-query">
+            <input type="text" value="Ceramic courses in English" placeholder="Course themes" onclick="$('.search-query').toggleClass('suggested');">
+            <input type="text" value="Berlin, Germany" placeholder="Location" class="query-location">
+            <button type="submit">Search</button>
+            <div class="search-suggest">
+              <h6>Skill &amp; Language</h6>
+              <ul>
+                <li><a href="#">Vine course in English</a></li>
+                <li class="active"><a href="#">Dance course in English</a></li>
+                <li><a href="#">Ceramic course in English</a></li>
+              </ul>
+              <h6>Language &amp; Skill</h6>
+              <ul>
+                <li><a href="#">English courses on calligraphy</a></li>
+                <li><a href="#">English courses on design</a></li>
+                <li><a href="#">English courses on fashion</a></li>
+              </ul>
+              <h6>Schools &amp; Country</h6>
+              <ul>
+                <li><a href="#">Oxford in England</a></li>
+                <li><a href="#">Cambridge in England</a></li>
+                <li><a href="#">Instituto Europeo in England</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <i class="index-header-bg" style="background-image: url('http://www.monumentvalleygame.com/images/background.jpg');"></i>
+  </section>
+
+  <section class="learn-more" style="display: none;">
+    <div class="wrap">
+      <h1>Идеи полезных путешествий.<br>Учитесь новому в новом месте.</h1>
+      <p class="preamble">Voyage2learn превращает путешественников в первооткрывателей. Вернитесь из поездки с чеканным немецким произношением, этюдником собственных акварелей или опытом бизнес-администрирования — удобная система поиска поможет найти среди десятков отпускных курсов самый подходящий для вас. Организационные вопросы мы возьмём на себя, чтобы у вас осталось достаточно свободного времени подготовиться к первому образовательному путешествию. Попробуйте новый способ проводить отпуск — узнавать мир за любимым делом, и открывайте для себя не только страны, но и возможности вместе с Voyage2learn.</p>
+      <div class="learn-more-features gr">
+        <article class="col col-2">
+          <i class="learn-more-pic pic-2_0"></i>
+          <h2>Откройте для себя<br>путешествия 2.0</h2>
+          <p>Привозите из поездок знания <br>вместе с впечатлениями. Учитесь интересным вещам и узнавайте мир лучше и глубже, чем туристы <br>и самостоятельные путешественники</p>
+        </article>
+        <article class="col col-2">
+          <i class="learn-more-pic pic-criteria"></i>
+          <h2>Выбирайте учебный курс<br>по десятку критериев</h2>
+          <p>Определитесь, чему вам интересно научиться, — языку или навыку, <br>а затем выберите школу и учебный курс, подходящие по месту и цене обучения, графику занятий или даже наполнению меню</p>
+        </article>
+        <article class="col col-2">
+          <i class="learn-more-pic pic-plan"></i>
+          <h2>Планируйте поездку<br>прямо на Voyage2learn</h2>
+          <p>Задавайте вопросы координаторам, уточняйте детали путешествия <br>и оплачивайте обучение в одной вкладке браузера. Копии всех важных документов — приглашения, счёта, ваучера, сохраняются <br>в личном кабинете, чтобы вы могли обратиться к ним в любое время.</p>
+        </article>
+      </div>
+      <a href="#" class="btn btn-fat btn-border more-info-btn"><span>More about project</span></a>
+    </div>
+    <i class="learn-more-close" onclick="learnMore();">Close</i>
+  </section>
+
+  <section class="hot-courses">
+    <div class="wrap">
+      <div class="gr">
+        <div class="col col-2">
+          <div class="hot-course-item hot-best-offer">
+            <a href="#" class="hot-course-link"></a>
+            <h2 class="hot-course-title"><span>Fashion design course</span></h2>
+            <p class="hot-course-school">Scuola Leonardo da Vinci</p>
+            <div class="hot-course-badge">
+              <i></i>
+              <div class="hot-course-badge-title">Best Offer</div>
+            </div>
+            <div class="hot-course-rating">
+              <span class="rating-stars rating-3-5"><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+            <i class="hot-course-bg" style="background-image: url('http://www.brewsteracademy.org/Customized/uploads/Summer%20Programs/Brewster_Academy_Summer_Session_English_class.jpg');"></i>
+          </div>
+        </div>
+        <div class="col col-2">
+          <div class="hot-course-item hot-top-rated">
+            <a href="#" class="hot-course-link"></a>
+            <h2 class="hot-course-title"><span>Short course</span></h2>
+            <p class="hot-course-school">Scuola Leonardo da Vinci</p>
+            <div class="hot-course-badge">
+              <i></i>
+              <div class="hot-course-badge-title">Top Rated</div>
+            </div>
+            <div class="hot-course-rating">
+              <span class="rating-stars rating-3-5"><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+            <i class="hot-course-bg" style="background-image: url('http://www.brewsteracademy.org/Customized/uploads/Summer%20Programs/Brewster_Academy_Summer_Session_English_class.jpg');"></i>
+          </div>
+        </div>
+        <div class="col col-2">
+          <div class="hot-course-item hot-best-price">
+            <a href="#" class="hot-course-link"></a>
+            <h2 class="hot-course-title"><span>Fashion design course</span></h2>
+            <p class="hot-course-school">Scuola Leonardo da Vinci</p>
+            <div class="hot-course-badge">
+              <i></i>
+              <div class="hot-course-badge-title">Best Price</div>
+            </div>
+            <div class="hot-course-rating">
+              <span class="rating-stars rating-3-5"><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+            <i class="hot-course-bg" style="background-image: url('http://www.brewsteracademy.org/Customized/uploads/Summer%20Programs/Brewster_Academy_Summer_Session_English_class.jpg');"></i>
+          </div>
+        </div>
+      </div>
+      <div class="gr">
+        <div class="col col-2">
+          <div class="hot-course-item hot-best-offer">
+            <a href="#" class="hot-course-link"></a>
+            <h2 class="hot-course-title"><span>Fashion design course</span></h2>
+            <p class="hot-course-school">Scuola Leonardo da Vinci</p>
+            <div class="hot-course-badge">
+              <i></i>
+              <div class="hot-course-badge-title">Best Offer</div>
+            </div>
+            <div class="hot-course-rating">
+              <span class="rating-stars rating-3-5"><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+            <i class="hot-course-bg" style="background-image: url('http://www.brewsteracademy.org/Customized/uploads/Summer%20Programs/Brewster_Academy_Summer_Session_English_class.jpg');"></i>
+          </div>
+        </div>
+        <div class="col col-2">
+          <div class="hot-course-item hot-top-rated">
+            <a href="#" class="hot-course-link"></a>
+            <h2 class="hot-course-title"><span>Short course</span></h2>
+            <p class="hot-course-school">Scuola Leonardo da Vinci</p>
+            <div class="hot-course-badge">
+              <i></i>
+              <div class="hot-course-badge-title">Top Rated</div>
+            </div>
+            <div class="hot-course-rating">
+              <span class="rating-stars rating-3-5"><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+            <i class="hot-course-bg" style="background-image: url('http://www.brewsteracademy.org/Customized/uploads/Summer%20Programs/Brewster_Academy_Summer_Session_English_class.jpg');"></i>
+          </div>
+        </div>
+        <div class="col col-2">
+          <div class="hot-course-item hot-best-price">
+            <a href="#" class="hot-course-link"></a>
+            <h2 class="hot-course-title"><span>Fashion design course</span></h2>
+            <p class="hot-course-school">Scuola Leonardo da Vinci</p>
+            <div class="hot-course-badge">
+              <i></i>
+              <div class="hot-course-badge-title">Best Price</div>
+            </div>
+            <div class="hot-course-rating">
+              <span class="rating-stars rating-3-5"><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+            <i class="hot-course-bg" style="background-image: url('http://www.brewsteracademy.org/Customized/uploads/Summer%20Programs/Brewster_Academy_Summer_Session_English_class.jpg');"></i>
+          </div>
+        </div>
+      </div>
+      <div class="g-pt-20 text-center">
+        <a href="#" class="btn btn-fat btn-red btn-border more-courses-btn"><span>Show more courses</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="index-fb g-pt-25 g-pb-25">
+    <div class="wrap">
+      <div class="v2l-like">
+        <img src="http://dummyimage.com/50x50/bdbdbd/fff" alt="" class="v2l-userpic">
+        <h6 class="v2l-like-title">Voyage2learn</h6>
+        <div class="v2l-like-button">FB Code</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="latest-comments">
+    <div class="wrap">
+      <h1>Comments</h1>
+      <div class="comments-slider">
+        <div class="gr">
+          <div class="col col-2">
+            <div class="comment-slider-item">
+              <h3 class="comment-slider-author">
+                <img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" alt="" class="userpic">
+                Jonathan Bottle
+              </h3>
+              <h2>Such a great course!</h2>
+              <p>Gregor Samsa wakes one day to find himself hideously transformed into a monstrous insect. His family react with horror at his bizarre transformation but this slowly turns to revulsion - and then monstrous</p>
+              <div class="comment-slider-readmore"><a href="#">Read More</a></div>
+              <ul class="comment-slider-meta">
+                <li class="course-meta school-location">New York Academy of Art</li>
+              </ul>
+              <div class="comment-slider-rating">
+                <span class="rating-stars rating-3-5"><i></i><i></i><i></i><i></i><i></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col col-2">
+            <div class="comment-slider-item">
+              <h3 class="comment-slider-author">
+                <img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" alt="" class="userpic">
+                Jonathan Bottle
+              </h3>
+              <h2>Such a great course!</h2>
+              <p>Gregor Samsa wakes one day to find himself hideously transformed into a monstrous insect. His family react with horror at his bizarre transformation but this slowly turns to revulsion - and then monstrous</p>
+              <div class="comment-slider-readmore"><a href="#">Read More</a></div>
+              <ul class="comment-slider-meta">
+                <li class="course-meta school-location">New York Academy of Art</li>
+              </ul>
+              <div class="comment-slider-rating">
+                <span class="rating-stars rating-3-5"><i></i><i></i><i></i><i></i><i></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col col-2">
+            <div class="comment-slider-item">
+              <h3 class="comment-slider-author">
+                <img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg" alt="" class="userpic">
+                Jonathan Bottle
+              </h3>
+              <h2>Such a great course!</h2>
+              <p>Gregor Samsa wakes one day to find himself hideously transformed into a monstrous insect. His family react with horror at his bizarre transformation but this slowly turns to revulsion - and then monstrous</p>
+              <div class="comment-slider-readmore"><a href="#">Read More</a></div>
+              <ul class="comment-slider-meta">
+                <li class="course-meta school-location">New York Academy of Art</li>
+              </ul>
+              <div class="comment-slider-rating">
+                <span class="rating-stars rating-3-5"><i></i><i></i><i></i><i></i><i></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dotted-paginator">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+        </div>
+        <div class="comments-slider-controls">
+          <a href="#" class="slider-control slider-control-back">Back</a>
+          <a href="#" class="slider-control slider-control-forward">Forward</a>
+        </div>
+      </div>
+      <div class="g-pt-50 text-center">
+        <a href="#" class="btn btn-fat btn-gray btn-border write-yours-btn"><span>Write yours</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-footer">
+    <div class="wrap">
+      <div class="gr">
+        <div class="col col-1">
+          <h3>Company</h3>
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Imprint</a></li>
+            <li><a href="#">Privacy &amp; confidential</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col col-1">
+          <h3>For Students</h3>
+          <ul class="footer-links">
+            <li><a href="#">Visa info</a></li>
+            <li><a href="#">Lifehacks</a></li>
+            <li><a href="#">Help &amp; FAQ</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+        <div class="col col-1">
+          <h3>For Schools</h3>
+          <ul class="footer-links">
+            <li><a href="#">Why do you need this</a></li>
+            <li><a href="#">Help &amp; FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col col-3 text-right">
+          <ul class="footer-social-links">
+            <li class="social-tw"><a href="#">Twitter</a></li>
+            <li class="social-vk"><a href="#">VK</a></li>
+            <li class="social-insta"><a href="#">Instagram</a></li>
+            <li class="social-fb"><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-likes">FB Code</div>
+      <p class="footer-copyright">&copy; 2015 Voyage2learn</p>
+    </div>
+  </section>
+
+  <script>
+function learnMore() {
+  var toggleDelay;
+  if ($("section.learn-more").is(":visible")) {
+    toggleDelay = 0;
+  } else {
+    toggleDelay = 200;
+    $('html, body').animate({ scrollTop: $("section.index-header").outerHeight() - 115 }, toggleDelay * 1.5);
+  }
+  $("section.learn-more").delay(toggleDelay).slideToggle(300);
+};
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+.school-map { padding: 56px 0 0; }
+
+.school-map h2 { margin-bottom: 30px; }
+
+.school-map .poi-map { border: 7px #F4B04D; border-style: solid none; }
+.school-map .poi-map > * { display: block; }

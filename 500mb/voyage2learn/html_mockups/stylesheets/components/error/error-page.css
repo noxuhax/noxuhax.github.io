@@ -1,0 +1,45 @@
+/* Error Header
+*************** */
+.error-header .wrap {
+  position: relative;
+  height: 505px;
+  padding: 45px 0 0;
+  box-sizing: border-box;
+  }
+
+/* Error Code */
+.error-header h1 {
+  position: relative; z-index: 1;
+  margin-bottom: -10px;
+  font-weight: bold; font-size: 460px; color: #DCDDBE; text-align: center;
+  pointer-events: none;
+  -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;
+  }
+
+/* Error Illustration */
+.error-header .error-illustration {
+  position: absolute; top: 0; left: 0; z-index: 5;
+  pointer-events: none;
+  -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;
+  }
+
+/* Search */
+.error-header .search-form-holder {
+  position: absolute; top: 54%; right: 0; left: 0; z-index: 10;
+  transform: translateY(-50%);
+  }
+
+.error-header .search-query:before {
+  content: '';
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+  border: 1px solid #DBDBDB; border-right: none; border-radius: 2px 0 0 2px;
+  pointer-events: none;
+  }
+
+/* Error Description
+******************** */
+.error-desc { padding-bottom: 100px; }
+.error-desc p {
+  margin-bottom: 40px;
+  font-size: 19px; color: #484848;
+  }

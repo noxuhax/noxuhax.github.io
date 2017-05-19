@@ -1,0 +1,39 @@
+/* Generic Popup
+**************** */
+.generic-popup {
+  width: 510px;
+  padding: 65px 45px;
+  text-align: center;
+  background: #FFF;
+  border: 3px solid #F5F5F5; border-radius: 2px;
+  box-sizing: border-box;
+  }
+
+.generic-popup h2 {
+  margin-bottom: 22px;
+  color: #DB484E;
+  }
+
+.generic-popup p { margin-bottom: 24px; }
+
+.generic-popup .generic-popup-action { padding-top: 7px; }
+
+/* Close */
+.generic-popup .generic-popup-close {
+  position: absolute; top: 18px; right: 18px;
+  width: 18px; height: 18px;
+  text-indent: -999em;
+  cursor: pointer;
+  transition: opacity .2s;
+  }
+.generic-popup .generic-popup-close:hover { opacity: 0.7; }
+
+.generic-popup .generic-popup-close:before,
+.generic-popup .generic-popup-close:after {
+  content: '';
+  position: absolute; top: -2px; left: 7px;
+  width: 4px; height: 22px;
+  background: #C8CBCD;
+  }
+.generic-popup .generic-popup-close:before { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.generic-popup .generic-popup-close:after { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }

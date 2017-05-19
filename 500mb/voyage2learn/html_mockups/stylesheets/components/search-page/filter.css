@@ -1,0 +1,244 @@
+.search-filter {
+  padding: 40px 0 0;
+  font-size: 16px;
+  background: #F5F5F5;
+  border-bottom: 3px solid #EAEAEA;
+  }
+.search-filter .wrap {
+  position: relative;
+  padding-bottom: 9px;
+  }
+.search-filter .wrap:after { content: ''; clear: both; display: table; }
+
+/* All/Top Toggle
+***************** */
+.search-filter .search-filter-toggle-top {
+  padding-top: 14px;
+  font-weight: bold; font-size: 11px; color: #C8C8C8; text-align: right; text-transform: uppercase; letter-spacing: .3px;
+  }
+.search-filter .search-filter-toggle-top input {
+  position: absolute; top: 0; left: 0;
+  clip: rect(0,0,0,0);
+  pointer-events: none;
+  opacity: 0;
+  }
+.search-filter .search-filter-toggle-top label span { cursor: pointer; }
+.search-filter .search-filter-toggle-top i {
+  position: relative;
+  display: inline-block;
+  width: 32px; height: 15px;
+  margin: 0 7px; padding: 1px;
+  text-indent: -999em; vertical-align: -5px;
+  background: #D8D8D8;
+  border-radius: 8px;
+  transition: background .3s;
+  cursor: pointer;
+  }
+.search-filter .search-filter-toggle-top i:before {
+  content: '';
+  display: block;
+  width: 15px; height: 15px;
+  background: #FFF;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .3s; transition: transform .3s;
+  }
+.search-filter .search-filter-toggle-top input:not(:checked) + label .toggle-label-all,
+.search-filter .search-filter-toggle-top input:checked + label .toggle-label-top { color: #4FC281; pointer-events: none; }
+.search-filter .search-filter-toggle-top input:checked + label i { background: #4FC281; }
+.search-filter .search-filter-toggle-top input:checked + label i:before { -webkit-transform: translateX(17px); transform: translateX(17px); }
+
+/* Price Range
+************** */
+.search-filter .search-filter-price-range { margin-bottom: 50px; }
+
+.search-filter .search-filter-price-range .range-label { color: #595959; }
+
+.search-filter .search-filter-price-range .range-control {
+  position: relative; top: 3px;
+  height: 3px;
+  background: #D8D8D8;
+  -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+  }
+.search-filter .search-filter-price-range .range-control .range-highlight {
+  position: absolute; top: 0;
+  height: 3px;
+  background: #4FC281;
+  }
+.search-filter .search-filter-price-range .range-control .range-highlight i {
+  position: absolute; top: -4px;
+  padding-top: 21px;
+  font-style: normal; font-weight: bold; font-size: 11px; color: #7C7C7C;
+  cursor: ew-resize;
+  transition: color .2s;
+  }
+.search-filter .search-filter-price-range .range-control .range-highlight-lower {
+  left: 0;
+  -webkit-transform: translateX(-50%); transform: translateX(-50%);
+  }
+.search-filter .search-filter-price-range .range-control .range-highlight-upper {
+  right: 0;
+  -webkit-transform: translateX(50%); transform: translateX(50%);
+  }
+.search-filter .search-filter-price-range .range-control .range-highlight i:before {
+  content: '';
+  position: absolute; top: 0; left: 50%;
+  width: 11px; height: 11px;
+  font-style: normal; text-indent: -999em;
+  background: #4FC281;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%); transform: translateX(-50%);
+  transition: background .2s;
+  }
+.search-filter .search-filter-price-range .range-control .range-highlight i:hover { color: #DB484E; }
+.search-filter .search-filter-price-range .range-control .range-highlight i:hover:before { background: #DB484E; }
+
+/* With Sale Filter
+******************* */
+.search-filter .filter-with-sale {
+  position: relative;
+  padding-left: 41px;
+  }
+.search-filter .filter-with-sale input { display: none; }
+.search-filter .filter-with-sale label {
+  color: #595959;
+  cursor: pointer;
+  }
+.search-filter .filter-with-sale label:before {
+  content: '';
+  position: absolute; top: -4px; left: 0;
+  width: 23px; height: 23px;
+  border: 1px solid #CDCDCD; border-radius: 2px;
+  }
+.search-filter .filter-with-sale label:after {
+  content: '';
+  position: absolute; top: -1px; left: 8px;
+  width: 7px; height: 12px;
+  border: 2px #4FC281; border-style: none solid solid none;
+  -webkit-transform: rotate(45deg); transform: rotate(45deg);
+  opacity: 0;
+  }
+.search-filter .filter-with-sale input:checked ~ label:after { opacity: 1; }
+
+
+/* Results Counter
+****************** */
+.search-filter .results-count {
+  float: right;
+  color: rgba(0,0,0,.32);
+  }
+.search-filter .results-count li {
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 16px; line-height: 1;
+  }
+
+/* Advanced Search Show Btn
+*************************** */
+.search-filter .search-filter-advanced-show {
+  float: left;
+  font-size: 16px; line-height: 1; color: rgba(0,0,0,.32);
+  cursor: pointer;
+  transition: color .2s;
+  }
+.search-filter .search-filter-advanced-show:after {
+  content: '';
+  display: inline-block;
+  width: 10px; height: 6px;
+  margin-left: 14px;
+  vertical-align: 2px;
+  background: url(../../../images/sprite.png) -274px -105px / 300px auto no-repeat;
+  }
+.search-filter .search-filter-advanced-show:hover { color: rgba(0,0,0,.5); }
+.search-filter .search-filter-advanced-show:hover:after { background-position: -274px -116px; }
+
+/* Advanced Search Fields
+************************* */
+.search-filter .search-filter-advanced {
+  position: relative; top: -35px;
+  clear: both;
+  min-height: 5px;
+  margin-bottom: -38px; padding-top: 30px;
+  background: #EAEAEA;
+  border-bottom: 3px solid #F5F5F5;
+  }
+
+.search-filter .search-filter-advanced .invisiform input[type="radio"]:checked + label,
+.search-filter .search-filter-advanced .invisiform input[type="checkbox"]:checked + label { border-color: #FCFCFC; }
+
+.search-filter .search-filter-advanced .search-filter-advanced-hide {
+  float: left;
+  font-size: 16px; line-height: 1; color: rgba(0,0,0,.64);
+  cursor: pointer;
+  transition: color .2s;
+  }
+.search-filter .search-filter-advanced .search-filter-advanced-hide:hover { color: rgba(0,0,0,1); }
+.search-filter .search-filter-advanced .search-filter-advanced-hide:after {
+  content: '';
+  display: inline-block;
+  width: 10px; height: 6px;
+  margin-left: 14px;
+  vertical-align: 2px;
+  background: url(../../../images/sprite.png) -274px -127px / 300px auto no-repeat;
+  }
+
+
+/* **************************** Compact ****************************
+******************************************************************** */
+.search-filter.search-filter-compact {
+  position: fixed; top: 0; right: 0; left: 0; z-index: 999;
+  padding: 9px 0 10px;
+  background: #EAEAEA;
+  border: none;
+  -webkit-transform: translateY(-63px); transform: translateY(-63px);
+  -webkit-transition: -webkit-transform .3s; transition: transform .3s;
+  }
+.search-filter.search-filter-compact.visible { -webkit-transform: translateY(0); transform: translateY(0); }
+
+.search-filter.search-filter-compact .wrap { padding: 0; }
+
+/* Query
+******** */
+.search-filter.search-filter-compact .search-query input { width: 57%; }
+.search-filter.search-filter-compact .search-query .query-location { left: 57%; width: 43%; }
+.search-filter.search-filter-compact .search-query button[type="submit"] { background: #FFF; }
+.search-filter.search-filter-compact .search-query button[type="submit"]:after { background-position: -193px -135px; }
+.search-filter.search-filter-compact .search-query button[type="submit"]:hover:after { background-position: -218px -135px; }
+
+/* Price Range
+************** */
+.search-filter.search-filter-compact .search-filter-price-range {
+  float: left;
+  width: 59%;
+  margin-bottom: 0; padding-top: 13px;
+  }
+.search-filter.search-filter-compact .search-filter-price-range .range-control .range-highlight i { font-size: 10px; }
+
+/* All/Top Toggle
+***************** */
+.search-filter.search-filter-compact .search-filter-toggle-top {
+  float: left;
+  margin-left: 40px;
+  }
+
+/* Advanced Search Show Btn
+*************************** */
+.search-filter.search-filter-compact .search-filter-advanced-show {
+  float: right;
+  width: 33px;
+  text-indent: -999em;
+  }
+.search-filter.search-filter-compact .search-filter-advanced-show:after {
+  display: block;
+  width: 33px; height: 16px;
+  margin: 0;
+  background: url(../../../images/sprite.png) -200px -105px / 300px auto no-repeat;
+  }
+.search-filter.search-filter-compact .search-filter-advanced-show:hover:after { background-position: -237px -105px; }
+
+/* Advanced Search Fields
+************************* */
+.search-filter.search-filter-compact .search-filter-advanced {
+  top: 0;
+  min-height: 0;
+  margin-bottom: -10px;
+  }

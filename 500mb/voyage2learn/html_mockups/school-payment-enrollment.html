@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School dashboard — Sort by course</title>
+  <link rel="stylesheet" href="stylesheets/semantic/semantic.css">
+  <link rel="stylesheet" href="stylesheets/components/payment/payment.css">
+  <link rel="stylesheet" href="stylesheets/components/school-payment/dashboard.css">
+  <link rel="stylesheet" href="stylesheets/components/school-editor/semantic-addon.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+</head>
+<body>
+
+  <section class="school-dashboard-header g-pb-0">
+    <div class="wrap">
+      <h1 class="text-center">Scuola Leonardo Da Vinci <a href="#"><i class="edit icon"></i></a></h1>
+    </div>
+  </section>
+
+  <section class="school-dashbord-enrollments g-mb-50">
+    <div class="wrap">
+      <div class="ui grid">
+        <div class="five wide column">
+          <div class="ui divided link items g-pt-50">
+            <a href="school-payment-enrollment.html" class="item current">
+              <div class="ui avatar circular image">
+                <img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg">
+              </div>
+              <div class="middle aligned content">
+                <div class="header g-mt-5"><div class="ui red empty circular label"></div> Stevie Feliciano</div>
+              </div>
+              <div class="extra">
+                <div class="ui right floated">
+                  <i class="caret right icon"></i>
+                </div>
+              </div>
+            </a>
+            <a href="school-payment-enrollment.html" class="item">
+              <div class="ui avatar circular image">
+                <img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg">
+              </div>
+              <div class="middle aligned content">
+                <div class="header g-mt-5">Stevie Feliciano</div>
+              </div>
+            </a>
+            <a href="school-payment-enrollment.html" class="item">
+              <div class="ui avatar circular image">
+                <img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg">
+              </div>
+              <div class="middle aligned content">
+                <div class="header g-mt-5">Stevie Feliciano</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="eleven wide column">
+          <div class="ui very padded segment">
+            <div class="ui grid">
+              <div class="eight wide column">
+                <div class="ui items g-mb-0">
+                  <div class="item">
+                    <div class="ui tiny circular image">
+                      <a href="#"><img src="http://logopond.com/avatar/104380/triangulate-userpic-200x200.jpg"></a>
+                    </div>
+                    <div class="middle aligned content">
+                      <div class="description g-mt-0">
+                      <h5 class="g-mb-5"><a href="#">Stevie Feliciano</a></h5>
+                        Italy<br>
+                        <a href="#" class="mini labeled icon ui button g-mt-5"><i class="mail outline icon"></i> Send message</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <i class="angle right icon enrollment-indicator"></i>
+              </div>
+              <div class="eight wide column">
+                <div class="ui items g-mb-0">
+                  <div class="item">
+                    <div class="ui tiny image">
+                      <a href="#"><img src="http://dummyimage.com/135x135/bdbdbd/fff"></a>
+                    </div>
+                    <div class="middle aligned content">
+                      <div class="description g-mt-0">
+                      <h5 class="g-mb-5"><a href="#">Vine making workshop</a></h5>
+                        May 12, 2016&nbsp;&minus;<br>June 12, 2016
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui grid">
+              <div class="eleven wide column">
+                <h3>Course options:</h3>
+                <p>
+                  <strong>Accomodation:</strong> homestay,
+                  <strong>Accomodation:</strong> homestay,
+                  <strong>Accomodation:</strong> homestay
+                </p>
+              </div>
+              <div class="five wide column">
+                <h3>Total:</h3>
+                <p>900 &euro;</p>
+              </div>
+            </div>
+
+            <div class="payment-process">
+              <div class="payment-bit text-center payment-bit--disabled"> <!-- 3rd step (card) -->
+                <div class="thread-timestamp">
+                  <span class="time">Yesterday</span>
+                </div>
+                <h2>
+                  Congratulations! Everything is settled.
+                </h2>
+              </div>
+              <div class="payment-bit text-center payment-bit-disabled"> <!-- 3rd step (card) -->
+                <div class="thread-timestamp">
+                  <span class="time">Yesterday</span>
+                </div>
+                <p>
+                  Steve sent paid with card<br>(XXXX-XXXX-XXXX-4054)
+                </p>
+                <a href="#" class="medium blue ui button">Confirm payment</a>
+              </div>
+              <div class="payment-bit text-center payment-bit-disabled"> <!-- 3rd step (receipt) -->
+                <div class="thread-timestamp">
+                  <span class="time">Yesterday</span>
+                </div>
+                <p>
+                  Steve sent payment receipt: <a href="#" class="mini labeled icon ui button g-ml-10 payment-download-button"><i class="download icon"></i>Download (pdf)</a>
+                </p>
+                <a href="#" class="medium blue ui button">Confirm payment</a>
+              </div>
+              <div class="payment-bit text-center payment-bit-disabled"> <!-- 2nd step after confirmation -->
+                <div class="thread-timestamp">
+                  <span class="time">Yesterday</span>
+                </div>
+                <p>
+                  Steve sent finished query: <a href="#" class="mini labeled icon ui button g-ml-10 payment-download-button"><i class="download icon"></i>Download (pdf)</a>
+                </p>
+                <p>We will notify you when student will complete payment</p>
+              </div>
+              <div class="payment-bit text-center payment-bit-disabled"> <!-- 2nd step -->
+                <div class="thread-timestamp">
+                  <span class="time">Yesterday</span>
+                </div>
+                <p>
+                  Steve sent finished query: <a href="#" class="mini labeled icon ui button g-ml-10 payment-download-button"><i class="download icon"></i>Download (pdf)</a>
+                </p>
+                <a href="#" class="medium blue ui button">Accept &amp; procced to payment</a>
+              </div>
+              <div class="payment-bit text-center payment-bit-disabled"> <!-- 1st step after Comfirm button -->
+                <div class="thread-timestamp">
+                  <span class="time">Yesterday</span>
+                </div>
+                <p>
+                  You confirmed Steve's enrollment.<br>
+                  We will notify you when his query will be finished.
+                </p>
+              </div>
+              <div class="payment-bit text-center payment-bit-disabled"> <!-- first step -->
+                <div class="thread-timestamp">
+                  <span class="time">Yesterday</span>
+                </div>
+                <p>
+                  Steve enrolled this course
+                </p>
+                <a href="#" class="medium blue ui button">Confirm</a>
+                <a href="#" class="medium labeled icon ui button"><i class="upload icon"></i>Confirm &amp; send additional query (pdf)</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+@import url(components/reset.css);
+@import url(components/common.css);
+@import url(components/site-header.css);
+@import url(components/invisiform.css);
+@import url(components/micro-messenger.css);
+@import url(components/course-promo.css);
+@import url(components/page-footer.css);
+@import url(components/popup.css);
+
+/* Main Page */
+@import url(components/index/index-header.css);
+@import url(components/index/learn-more.css);
+@import url(components/index/hot-courses.css);
+@import url(components/index/socials.css);
+@import url(components/index/latest-comments.css);
+
+/* School Page */
+@import url(components/school-page/school-header.css);
+@import url(components/school-page/school-details.css);
+@import url(components/school-page/courses.css);
+@import url(components/school-page/course-list.css);
+@import url(components/school-page/school-gallery.css);
+@import url(components/school-page/school-map.css);
+@import url(components/school-page/comments.css);
+
+/* Search Results */
+@import url(components/search-page/filter.css);
+@import url(components/search-page/search-results.css);
+
+/* Messenger */
+@import url(components/messenger/messenger.css);
+
+/* Payment */
+@import url(components/payment/payment.css);
+
+/* Profile */
+@import url(components/profile/profile.css);
+@import url(components/profile/summary.css);
+@import url(components/profile/editor.css);
+
+/* Text Page */
+@import url(components/text-page/text-page.css);
+
+/* Error Pages */
+@import url(components/error/error-page.css);
+
+/* Popups */
+@import url(components/popups/auth.css);
+@import url(components/popups/generic.css);
+@import url(components/popups/flash.css);
+
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic);

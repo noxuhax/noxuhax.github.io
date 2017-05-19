@@ -1,0 +1,118 @@
+.hot-courses {
+  padding: 55px 0 65px;
+  background: #F5F5F5;
+  }
+
+/* Item
+******* */
+.hot-course-item {
+  position: relative;
+  height: 300px;
+  margin-bottom: 24px; padding: 38px 20px 20px;
+  color: #FFF; text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 2px;
+  }
+
+/* Bar */
+.hot-course-item:after {
+  content: '';
+  position: absolute; right: 0; bottom: 0; left: 0; z-index: 4;
+  height: 4px;
+  }
+.hot-course-item.hot-best-offer:after { background: #F4B04D; }
+.hot-course-item.hot-top-rated:after { background: #4FC281; }
+.hot-course-item.hot-best-price:after { background: #DB484E; }
+
+
+.hot-course-item > * { position: relative; z-index: 2; }
+
+/* Link */
+.hot-course-item .hot-course-link {
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 5;
+  }
+
+/* Title */
+.hot-course-item .hot-course-title {
+  position: relative;
+  height: 56px;
+  margin-bottom: 10px;
+  font-size: 28px; line-height: 28px;
+  overflow: hidden;
+  }
+.hot-course-item .hot-course-title span {
+  position: absolute; right: 0; bottom: 0; left: 0;
+  }
+
+/* School Name */
+.hot-course-item .hot-course-school {
+  font-size: 14px;
+  margin-bottom: 5px;
+  }
+
+/* Hot Badge */
+.hot-course-item .hot-course-badge {
+  display: inline-block;
+  width: 87px; height: 87px;
+  margin-bottom: 23px; padding-top: 50px;
+  font-weight: bold; font-size: 11px; text-transform: uppercase; letter-spacing: .5px; vertical-align: top;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: color .3s, background .3s;
+  }
+.hot-course-item .hot-course-badge:before,
+.hot-course-item .hot-course-badge:after {
+  content: '';
+  position: absolute; top: 19px; left: 50%;
+  height: 25px;
+  background: url(../../../images/sprite.png) 0 0 / 300px auto no-repeat;
+  transition: opacity .3s;
+  }
+.hot-course-item .hot-course-badge:after { opacity: 0; }
+.hot-course-item.hot-best-offer .hot-course-badge { background: #F4B04D; }
+.hot-course-item.hot-best-offer .hot-course-badge:before,
+.hot-course-item.hot-best-offer .hot-course-badge:after { width: 21px; margin-left: -10px; }
+.hot-course-item.hot-best-offer .hot-course-badge:before { background-position: 0 -47px; }
+.hot-course-item.hot-best-offer .hot-course-badge:after { background-position: 0 -77px; }
+.hot-course-item.hot-top-rated .hot-course-badge { background: #4FC281; }
+.hot-course-item.hot-top-rated .hot-course-badge:before,
+.hot-course-item.hot-top-rated .hot-course-badge:after { width: 25px; margin-left: -12px; }
+.hot-course-item.hot-top-rated .hot-course-badge:before { background-position: -26px -47px; }
+.hot-course-item.hot-top-rated .hot-course-badge:after { background-position: -26px -77px; }
+.hot-course-item.hot-best-price .hot-course-badge { background: #DB484E; }
+.hot-course-item.hot-best-price .hot-course-badge:before,
+.hot-course-item.hot-best-price .hot-course-badge:after { width: 13px; margin-left: -6px; }
+.hot-course-item.hot-best-price .hot-course-badge:before { background-position: -56px -47px; }
+.hot-course-item.hot-best-price .hot-course-badge:after { background-position: -56px -77px; }
+
+/* Rating */
+.hot-course-item .hot-course-rating .rating-stars {
+  vertical-align: top;
+  }
+
+/* Backdrop */
+.hot-course-item .hot-course-bg {
+  position: absolute; top: 0; right: 0; bottom: 4px; left: 0; z-index: 1;
+  background-position: center; background-size: cover;
+  }
+.hot-course-item .hot-course-bg:after {
+  content: '';
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+  background: #0A0D26;
+  opacity: .57;
+  transition: opacity .3s;
+  }
+
+/* Hover */
+.hot-course-item:hover .hot-course-badge { background: #FFF; }
+.hot-course-item:hover .hot-course-badge:before { opacity: 0; }
+.hot-course-item:hover .hot-course-badge:after { opacity: 1; }
+.hot-course-item.hot-best-offer:hover .hot-course-badge { color: #F4B04D; }
+.hot-course-item.hot-top-rated:hover .hot-course-badge { color: #4FC281; }
+.hot-course-item.hot-best-price:hover .hot-course-badge { color: #DB484E; }
+.hot-course-item:hover .hot-course-bg:after { opacity: .74; }
+
+/* More Courses Btn */
+.hot-courses .more-courses-btn { width: 221px; }
+.hot-courses .more-courses-btn span { color: inherit; }

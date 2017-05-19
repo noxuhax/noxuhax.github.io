@@ -1,0 +1,20 @@
+/* Generic Popup
+**************** */
+.flash-popup {
+  width: 400px;
+  padding: 49px 45px 28px;
+  text-align: center;
+  background: #F4B04D;
+  border-radius: 2px;
+  box-sizing: border-box;
+  }
+
+.flash-popup h2 {
+  margin-bottom: 22px;
+  color: #FFF;
+  }
+
+.flash-popup p {
+  margin-bottom: 24px;
+  color: #2D2D2D;
+  }

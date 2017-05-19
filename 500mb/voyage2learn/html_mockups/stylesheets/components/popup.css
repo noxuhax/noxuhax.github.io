@@ -1,0 +1,35 @@
+.vtl-popup-holder {
+  position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 9999;
+  text-align: center; letter-spacing: -.3em; white-space: nowrap;
+  overflow-x: hidden; overflow-y: auto;
+  -webkit-animation: v2l-popup-holder-appear .6s forwards; animation: v2l-popup-holder-appear .6s forwards;
+  }
+.vtl-popup-holder:after {
+  content: '';
+  display: inline-block;
+  height: 100vh;
+  vertical-align: middle;
+  }
+
+.vtl-popup-holder .vtl-popup {
+  display: inline-block;
+  text-align: left; vertical-align: middle; letter-spacing: 0; white-space: normal;
+  -webkit-animation: v2l-popup-appear .4s forwards; animation: v2l-popup-appear .4s forwards;
+  }
+
+@-webkit-keyframes v2l-popup-holder-appear {
+  0% { opacity: 0; }
+  35% { opacity: 1; }
+  }
+@keyframes v2l-popup-holder-appear {
+  0% { opacity: 0; }
+  35% { opacity: 1; }
+  }
+@-webkit-keyframes v2l-popup-appear {
+  0% { -webkit-transform: translateY(100px); opacity: 0; }
+  35% { -webkit-transform: translateY(-20px); opacity: 1; }
+  }
+@keyframes v2l-popup-appear {
+  0% { transform: translateY(100px); opacity: 0; }
+  35% { transform: translateY(-20px); opacity: 1; }
+  }

@@ -1,0 +1,204 @@
+.site-header {
+  position: relative; z-index: 9999;
+  height: 46px;
+  background: #EAEAEA;
+  }
+
+/* Logo
+******* */
+.site-header .site-logo {
+  position: absolute; top: 12px; left: 21px;
+  width: 133px; height: 22px;
+  background: url(../../images/sprite.png) 0 0 / 300px auto no-repeat;
+  }
+.site-header .site-logo a {
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+  text-indent: -999em;
+  }
+
+/* Search
+********* */
+.site-header .header-search {
+  width: 960px;
+  margin: auto; padding: 5px 0;
+  }
+.site-header .header-search .search-query {
+  width: calc(629px - 36px);
+  height: 36px;
+  margin-right: 36px;
+  }
+.site-header .header-search .search-query input {
+  height: 36px;
+  line-height: 36px;
+  }
+.site-header .header-search .search-query button[type="submit"] {
+  right: -36px;
+  width: 36px; height: 36px;
+  background: #FFF;
+  }
+.site-header .header-search .search-query button[type="submit"]:after {
+  width: 20px; height: 20px;
+  margin: -10px 0 0 -10px;
+  background: url(../../images/sprite.png) -193px -135px / 300px auto no-repeat;
+  }
+.site-header .header-search .search-query button[type="submit"]:hover:after { background-position: -218px -135px; }
+
+/* Userpanel
+************ */
+.site-header .userpanel {
+  position: absolute; top: 0; right: 0;
+  }
+
+/* Userpanel Item */
+.site-header .up-item {
+  position: relative;
+  float: left;
+  height: 46px;
+  font-size: 15px; line-height: 46px; color: #000;
+  }
+
+.site-header .up-item .up-item-title {
+  display: block;
+  padding: 0 11px;
+  font-size: 12px; color: rgba(0,0,0,.58); text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity .2s;
+  }
+.site-header .up-item:hover .up-item-title { opacity: .64; }
+
+/* User */
+.site-header .userpanel .up-logged .up-item-title { padding-top: 8px; }
+.site-header .userpanel .up-logged .userpic {
+  display: block;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  }
+
+/* Invoice */
+.site-header .userpanel .up-invoice .up-item-title:before {
+  content: '';
+  display: inline-block;
+  width: 18px; height: 14px;
+  margin-right: 5px;
+  vertical-align: -2px;
+  background: url(../../images/sprite.png) -150px -135px / 300px auto no-repeat;
+  }
+.site-header .userpanel .up-invoice.new .up-item-title:before { background-position: -150px -154px; }
+
+/* Messages */
+.site-header .userpanel .up-messages .up-item-title:before {
+  content: '';
+  display: inline-block;
+  width: 15px; height: 13px;
+  margin-right: 5px;
+  vertical-align: -3px;
+  background: url(../../images/sprite.png) -173px -135px / 300px auto no-repeat;
+  }
+.site-header .userpanel .up-messages.new .up-item-title:before { background-position: -173px -154px; }
+
+/* Admin */
+.site-header .userpanel .up-admin .up-item-title:before {
+  content: '';
+  display: inline-block;
+  width: 16px; height: 16px;
+  vertical-align: -3px;
+  background: url(../../images/sprite.png) -269px -135px / 300px auto no-repeat;
+  }
+
+/* Admin, Currency & Languages */
+.site-header .userpanel .up-admin,
+.site-header .userpanel .up-currency,
+.site-header .userpanel .up-lang { border-left: 1px solid rgba(255,255,255,.6); }
+
+/* Dropdown
+*********** */
+.site-header .dd-able .up-item-title { padding-right: 30px; }
+.site-header .dd-able .up-item-title:after {
+  content: '';
+  position: absolute; top: 21px; right: 10px;
+  width: 7px; height: 4px;
+  background: url(../../images/sprite.png) -138px -135px / 300px auto no-repeat;
+  }
+.site-header .dd-able .dropdown {
+  position: absolute; top: 100%; right: -15px; z-index: 9999;
+  min-width: 197px;
+  border-top: 16px solid transparent;
+  pointer-events: none;
+  }
+
+.site-header .dd-able .dropdown .dd-menu {
+  display: none;
+  padding: 12px 0;
+  color: #000;
+  background: #EAEAEA;
+  border-radius: 2px;
+  -webkit-animation: appear-top .2s forwards; animation: appear-top .2s forwards;
+  }
+.site-header .dd-able .dropdown .dd-menu:before {
+  content: '';
+  position: absolute; top: -7px; right: 25px;
+  border-right: 6px solid transparent; border-bottom: 7px solid #EAEAEA; border-left: 6px solid transparent;
+  }
+
+/* Open */
+.site-header .dd-able:hover .dropdown { pointer-events: all; }
+.site-header .dd-able:hover .dropdown .dd-menu { display: block; }
+
+.site-header .dd-able .dropdown .dd-menu li:not(.dd-menu-sep) {
+  height: 29px;
+  margin: -3px 0;
+  font-size: 14px; line-height: 29px; white-space: nowrap; text-overflow: ellipsis;
+  list-style: none;
+  overflow: hidden;
+  }
+.site-header .dd-able .dropdown .dd-menu a {
+  display: block;
+  padding: 0 20px;
+  color: #000; text-decoration: none;
+  transition: color .05s, background .05s;
+  }
+.site-header .dd-able .dropdown .dd-menu a:hover { color: #FFF; background: #4FC281; }
+
+.site-header .dd-able .dropdown .dd-menu .dd-menu-sep {
+  position: relative;
+  height: 13px;
+  list-style: none;
+  }
+.site-header .dd-able .dropdown .dd-menu .dd-menu-sep:before {
+  content: '';
+  position: absolute; top: 9px; right: 0; left: 0;
+  height: 1px;
+  background: #F6F6F6;
+  opacity: 0.65;
+  }
+
+@-webkit-keyframes appear-top {
+  from { -webkit-transform: translateY(-3px); opacity: 0; }
+  to { -webkit-transform: translateY(0); opacity: 1; }
+  }
+@keyframes appear-top {
+  from { transform: translateY(-3px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+  }
+
+@media only screen and (max-width: 1315px) {
+  .site-header .header-search {
+    position: absolute; top: 0; left: 177px;
+    margin: 0;
+    width: auto;
+    }
+  }
+
+@media only screen and (max-width: 1090px) {
+  .site-header .header-search .search-query { width: calc(539px - 36px); }
+  }
+
+
+/* Transprent Mod
+***************** */
+.site-header.site-header-transparent { margin-bottom: -46px; background: transparent; }
+.site-header.site-header-transparent .site-logo { background-position: 0 -135px; }
+.site-header.site-header-transparent .up-item .up-item-title { color: #FFF; }
+.site-header.site-header-transparent .userpanel .up-admin,
+.site-header.site-header-transparent .userpanel .up-currency,
+.site-header.site-header-transparent .userpanel .up-lang { border-left-color: transparent; }

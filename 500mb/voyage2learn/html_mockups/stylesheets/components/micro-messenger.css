@@ -1,0 +1,131 @@
+.micro-messenger {
+  position: fixed; right: 5%; bottom: 0; z-index: 9998;
+  width: 300px; height: 363px;
+  background: #CCC;
+  box-sizing: border-box;
+  }
+.micro-messenger + .micro-messenger:nth-child(3) { right: calc(5% + 300px + 20px) }
+.micro-messenger + .micro-messenger:nth-child(4) { right: calc(5% + (300px + 20px)*2) }
+.micro-messenger + .micro-messenger:nth-child(5) { right: calc(5% + (300px + 20px)*3) }
+.micro-messenger + .micro-messenger:nth-child(6) { right: calc(5% + (300px + 20px)*4) }
+.micro-messenger + .micro-messenger:nth-child(7) { right: calc(5% + (300px + 20px)*5) }
+
+/* Title
+******** */
+.micro-messenger .micro-title {
+  position: relative;
+  height: 30px;
+  padding: 14px 47px 0 16px;
+  font-weight: normal; font-size: 16px; color: #FFF; white-space: nowrap; text-overflow: ellipsis; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  }
+.micro-messenger .micro-title .micro-close {
+  position: absolute; top: 13px; right: 15px;
+  width: 18px; height: 18px;
+  text-indent: -999em;
+  cursor: pointer;
+  transition: opacity .2s;
+  }
+.micro-messenger .micro-title .micro-close:hover { opacity: 0.7; }
+
+.micro-messenger .micro-title .micro-close:before,
+.micro-messenger .micro-title .micro-close:after {
+  content: '';
+  position: absolute; top: -2px; left: 7px;
+  width: 4px; height: 22px;
+  background: #FFF;
+  }
+.micro-messenger .micro-title .micro-close:before { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.micro-messenger .micro-title .micro-close:after { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+/* Thread
+********* */
+.micro-messenger .micro-thread {
+  height: 232px;
+  margin: 0 2px;
+  overflow-x: hidden; overflow-y: auto;
+  background: #FFF;
+  }
+.micro-messenger .micro-thread ul { margin: 10px 4%; }
+.micro-messenger .micro-thread li { clear: both; list-style: none; }
+
+/* Message */
+.micro-messenger .micro-message {
+  position: relative;
+  width: 70%;
+  margin-top: 15px; padding: 1px 12px;
+  background: #F4F4F4;
+  border-radius: 5px;
+  box-sizing: border-box;
+  }
+.micro-messenger .micro-message:after {
+  content: '';
+  position: absolute; top: 9px;
+  width: 8px; height: 8px;
+  background: #F4F4F4;
+  -webkit-transform: rotate(45deg); transform: rotate(45deg);
+  }
+.micro-messenger .micro-message p {
+  margin-top: 0.5em;
+  font-size: 14px; line-height: 24px;
+  }
+.micro-messenger .micro-message p:first-child { margin-top: 0; }
+
+/* Us VS Them */
+.micro-messenger .micro-message.micro-them { float: left; }
+.micro-messenger .micro-message.micro-them:after { left: -4px; }
+.micro-messenger .micro-message.micro-them + .micro-them { margin-top: 5px; }
+.micro-messenger .micro-message.micro-us { float: right; }
+.micro-messenger .micro-message.micro-us:after { right: -4px; }
+.micro-messenger .micro-message.micro-us + .micro-us { margin-top: 5px; }
+
+/* Timestamp */
+.micro-messenger .micro-timestamp {
+  position: relative; top: 8px;
+  font-size: 10px; color: #ADADAD; text-align: center;
+  }
+
+/* Indicator */
+.micro-messenger .micro-indicator {
+  float: left;
+  margin-top: 8px; padding: 0 0 5px 4px;
+  }
+.micro-messenger .micro-indicator i {
+  display: inline-block;
+  width: 9px; height: 9px;
+  margin-right: 7px;
+  background: #CCC;
+  border-radius: 50%;
+  opacity: 0.5;
+  -webkit-animation: micro-indicator 1.2s infinite linear; animation: micro-indicator 1.2s infinite linear;
+  }
+.micro-messenger .micro-indicator i:nth-child(2) { -webkit-animation-delay: .4s; animation-delay: .4s; }
+.micro-messenger .micro-indicator i:nth-child(3) { -webkit-animation-delay: .8s; animation-delay: .8s; }
+@-webkit-keyframes micro-indicator {
+  0% { opacity: 1; }
+  33% { opacity: .5; }
+  }
+@keyframes micro-indicator {
+  0% { opacity: 1; }
+  33% { opacity: .5; }
+  }
+
+/* Reply
+******** */
+.micro-messenger .micro-reply {
+  height: 84px;
+  margin: 0 2px;
+  background: #FFF;
+  border-top: 1px solid #C9C9C9;
+  }
+.micro-messenger .micro-reply textarea {
+  display: block;
+  width: 100%; height: 100%;
+  margin: 0; padding: 12px 17px;
+  font: 14px/20px 'Roboto', sans-serif; color: #2D2D2D;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  resize: none;
+  outline: none;
+  }

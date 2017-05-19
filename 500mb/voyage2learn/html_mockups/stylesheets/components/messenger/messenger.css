@@ -1,0 +1,100 @@
+.messenger-page { background: linear-gradient(to right, #E7E7E7 300px, #FFF 300px) 50% 0 / 960px 100% no-repeat; }
+
+.messenger-page > .wrap > .gr { height: calc(100vh - 46px); }
+
+/* Messages Thread
+****************** */
+.messenger-page .messenger-thread {
+  height: 100%;
+  padding: 0 0 260px;
+  box-sizing: border-box;
+  }
+.messenger-page .messenger-thread .messenger-thread-wrap {
+  height: 100%;
+  overflow-y: auto;
+  }
+.messenger-page .messenger-thread .thread-message { margin-bottom: 27px; }
+.messenger-page .messenger-thread .thread-message:first-child { padding-top: 30px; }
+.messenger-page .messenger-thread .thread-message .message-author { margin-bottom: -6px; }
+.messenger-page .messenger-thread .thread-message .message-body { margin-left: 63px; }
+.messenger-page .messenger-thread .thread-message .message-body p {
+  margin-bottom: .8em;
+  font-size: 14px; line-height: 22px; color: #626262;
+  }
+
+/* Timestamp */
+.messenger-page .messenger-thread .thread-timestamp {
+  margin: 45px 0 32px;
+  font-size: 11px; text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #868686;
+  overflow: hidden;
+  }
+.messenger-page .messenger-thread .thread-timestamp .time { position: relative; }
+.messenger-page .messenger-thread .thread-timestamp .time:before,
+.messenger-page .messenger-thread .thread-timestamp .time:after {
+  content: '';
+  position: absolute; top: 5px;
+  width: 500px; height: 1px;
+  margin: 0 18px;
+  background: #C9C9C9;
+  }
+.messenger-page .messenger-thread .thread-timestamp .time:before { left: 100%; }
+.messenger-page .messenger-thread .thread-timestamp .time:after { right: 100%; }
+
+/* Reply */
+.messenger-page .messenger-thread .thread-reply-form {
+  position: absolute; right: 0; bottom: 30px; left: 0;
+  border: 1px solid #CDCDCD; border-radius: 2px;
+  }
+.messenger-page .messenger-thread .thread-reply-form .reply-form-message {
+  display: block;
+  width: 100%; height: 170px;
+  margin: 0; padding: 4px 8px;
+  font: 14px/22px 'Roboto', sans-serif; color: #5A5A5A;
+  border: none;
+  box-sizing: border-box;
+  resize: none;
+  outline: none;
+  }
+.messenger-page .messenger-thread .thread-reply-form .reply-actions { border-top: 1px solid #E1E1E1; }
+.messenger-page .messenger-thread .thread-reply-form .reply-actions:after { content: ''; clear: both; display: table; }
+
+.messenger-page .messenger-thread .thread-reply-form .reply-actions .reply-attach {
+  position: relative;
+  float: left;
+  height: 32px;
+  padding: 10px 20px 0;
+  font-size: 14px; color: #B8B8B8;
+  overflow: hidden;
+  }
+.messenger-page .messenger-thread .thread-reply-form .reply-actions .reply-attach:after {
+  content: '';
+  display: inline-block;
+  width: 18px; height: 21px;
+  margin-left: 10px;
+  vertical-align: -6px;
+  background: url(../../../images/sprite.png) -282px 0 / 300px auto no-repeat;
+  }
+.messenger-page .messenger-thread .thread-reply-form .reply-actions .reply-attach:hover:after { background-position: -282px -26px; }
+.messenger-page .messenger-thread .thread-reply-form .reply-actions .reply-attach input {
+  display: block;
+  position: absolute; top: 0; left: 0;
+  width: 300px; height: 300px;
+  opacity: 0;
+  cursor: pointer;
+  }
+
+.messenger-page .messenger-thread .thread-reply-form .reply-actions .reply-submit {
+  float: right;
+  width: 148px; height: 42px;
+  margin: 0; padding: 0;
+  font: bold 14px/1 'Roboto', sans-serif; color: #FFF; text-align: center; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  background: #4FC281;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  }
+
+/* Promo Column
+*************** */
+.messenger-promo { padding-top: 30px; }

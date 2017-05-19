@@ -1,0 +1,36 @@
+.index-header {
+  position: relative; z-index: 50;
+  height: 613px;
+  padding-top: 181px;
+  color: #FFF; text-align: center; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  }
+.index-header > * { position: relative; z-index: 2; }
+
+/* Tagline
+********** */
+.index-header h1 {
+  margin-bottom: 50px;
+  font-weight: normal; font-size: 62px; line-height: 76px;
+  }
+
+/* Learn More Button
+******************** */
+.index-header .learn-more-btn { width: 190px; }
+.index-header .learn-more-btn span { color: inherit; }
+
+/* Search
+********* */
+.index-header .search-query { margin-top: 107px; }
+
+/* Backdrop
+*********** */
+.index-header .index-header-bg {
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1;
+  background-position: center; background-size: cover;
+  }
+.index-header .index-header-bg:before {
+  content: '';
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0,0,0,.55);
+  }

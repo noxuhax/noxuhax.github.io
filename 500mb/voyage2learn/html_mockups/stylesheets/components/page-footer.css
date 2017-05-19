@@ -1,0 +1,58 @@
+.page-footer {
+  padding: 104px 0 108px;
+  color: #B3B3B3; -webkit-font-smoothing: antialised; -moz-osx-font-smoothing: grayscale;
+  background: #2E2D2D;
+  }
+
+.page-footer h3 { margin-bottom: 29px; }
+
+.page-footer li { list-style: none; }
+
+.page-footer a { color: #B3B3B3; text-decoration: none; }
+.page-footer a:hover { color: #FFF; }
+
+/* Footer Links */
+.page-footer .footer-links { margin-bottom: 90px; }
+.page-footer .footer-links li {
+  margin-bottom: 17px;
+  font-size: 14px; line-height: 17px;
+  }
+
+/* Footer Socials */
+.page-footer .footer-social-links li { display: inline-block; }
+.page-footer .footer-social-links li:not(:first-child) { margin-left: 15px; }
+.page-footer .footer-social-links a {
+  position: relative;
+  display: block;
+  width: 35px; height: 35px;
+  text-indent: 999em;
+  background: #373737;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: background .3s;
+  }
+.page-footer .footer-social-links a:before,
+.page-footer .footer-social-links a:after {
+  content: '';
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+  background: url(../../images/sprite.png) 0 0 / 300px auto no-repeat;
+  transition: opacity .3s;
+  }
+.page-footer .footer-social-links a:hover:before,
+.page-footer .footer-social-links a:after { opacity: 0; }
+.page-footer .footer-social-links a:hover:after { opacity: 1; }
+.page-footer .footer-social-links .social-tw a:before { background-position: -138px 0; }
+.page-footer .footer-social-links .social-tw a:after { background-position: -138px -35px; }
+.page-footer .footer-social-links .social-tw a:hover { background: #91C8F3; }
+.page-footer .footer-social-links .social-vk a:before { background-position: -173px 0; }
+.page-footer .footer-social-links .social-vk a:after { background-position: -173px -35px; }
+.page-footer .footer-social-links .social-vk a:hover { background: #728AA3; }
+.page-footer .footer-social-links .social-insta a:before { background-position: -208px 0; }
+.page-footer .footer-social-links .social-insta a:after { background-position: -208px -35px; }
+.page-footer .footer-social-links .social-insta a:hover { background: #B69F74; }
+.page-footer .footer-social-links .social-fb a:before { background-position: -243px 0; }
+.page-footer .footer-social-links .social-fb a:after { background-position: -243px -35px; }
+.page-footer .footer-social-links .social-fb a:hover { background: #687BA4; }
+
+/* Footer Likes */
+.page-footer .footer-likes { float: right; }

@@ -1,0 +1,12 @@
+.mini.field input { font-size: 10px !important; }
+.small.field input { font-size: 13px !important; }
+.large.field input { font-size: 16px !important; }
+.big.field input { font-size: 18px !important; }
+.huge.field input { font-size: 20px !important; }
+.massive.field input { font-size: 24px !important; }
+
+.ui.images .ui.image img { margin: 0; vertical-align: top; }
+
+.ui.form:not(:first-child) .dividing.header { margin-top: 20px; }
+
+.ui[class*="very padded"].segment { padding: 3em; }

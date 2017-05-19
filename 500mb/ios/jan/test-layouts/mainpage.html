@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<style>
+@import url("test-layouts.css");
+@import url("http://fnt.webink.com/wfs/webink.css/?project=1c77aef5-bd8a-49ee-9b4f-8e6362bbccd4&fonts=99B90B52-FC86-D532-91E2-93D2FC4AE03D:f=FuturaPTBook-Reg,F9035255-CE32-045E-9AB2-4032D913936F:f=FuturaPTWebCondMedium,C65CFDCF-329E-C2D3-A0CE-2DE9D7D6FEF6:f=FuturaPTWebMedium,BEE048AF-F74F-572E-AC88-22BFF1F23D13:f=FuturaNewBoldRegular");
+</style>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/swipe.min.js"></script>
+<script type="text/javascript" src="js/hammer.js"></script>
+<script type="text/javascript" src="js/jquery.hammer.js"></script>
+<script type="text/javascript" src="js/dust-full-1.0.0.min.js"></script>
+<script type="text/javascript" src="js/dust-handlers.js"></script>
+<script type="text/javascript" src="js/dust-filters.js"></script>
+<script type="text/javascript" src="js/_comment.js"></script>
+<script type="text/javascript" src="js/i18n.js"></script>
+<script type="text/javascript" src="js/i18n-rules.js"></script>
+<script type="text/javascript" src="js/i18n-translations.js"></script>
+<script type="text/javascript">
+var I18n = I18n || {};
+I18n.defaultLocale = "ru";
+I18n.locale = "ru";
+
+var LAM = {
+      DustGlobals: {
+        lazy_img: false
+      }
+    },
+    dustContext = dust.makeBase(dust.handlers || {}).push(LAM.DustGlobals);
+</script>
+</head>
+
+<body>
+<div class="outer-wrap">
+  <div class="body-moovin">
+    <div class="navigation">
+      <div class="menu">
+        <a href="#" class="button" onclick="document.getElementsByTagName('body')[0].className='nav-opened';return false;"></a>
+        <a href="#" class="hide-nav" onclick="document.getElementsByTagName('body')[0].className='';getElementById('city_picker').className='';return false;"></a>
+        <div class="nav-drop">
+          <div id="city_picker">
+            <ul class="city-list">
+              <li><a href="#" onclick="getElementById('city_picker').className='';return false;"><span>Москва</span></a></li>
+              <li><a href="/" onclick="getElementById('city_picker').className='';return false;">Петербург</a></li>
+              <li><a href="/" onclick="getElementById('city_picker').className='';return false;">Киев</a></li>
+            </ul>
+            <span class="city-picker-open" onclick="getElementById('city_picker').className='city-picker-opened';return false;"></span>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#">Ситуация</a></li>
+            <li><a href="#">Город</a></li>
+            <li><a href="#">Услуги и покупки</a></li>
+            <li><a href="#">Еда</a></li>
+            <li><a href="#">Культура</a></li>
+            <li><a href="#">Люди</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+
+      <div class="post-list" style="display: none;">
+        <div class="post-item f">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/c3/86/122441/post-image_featured-default.00a2ba49-a6f9-498d-b2f1-c723a97213f4.jpg');"></div>
+          <h6 class="post-flow">Культура</h6>
+          <h2>Фильмы недели: «Отверженные», «Неудержимый», «Гайд-парк на Гудзоне»</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o">
+          <div class="post-preview" style="background-image: url('http://assets1.the-village.ru/assets/post-image/24/e7/122377/post-image-big.917ffb4a-fcac-4f12-987e-73cb5f2e4002.jpg');"></div>
+          <h6 class="post-flow">Еда</h6>
+          <h2>Рецепты шефов: Пулькоги</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item f">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/35/74/122285/post-image_featured-default.b3f2e05c-ea31-41c5-9933-b5d4c9096337.jpg');"></div>
+          <h6 class="post-flow">Еда</h6>
+          <h2>Вы мне мешаете: Секретные бары Москвы</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o">
+          <div class="post-preview" style="background-image: url('http://assets2.the-village.ru/assets/post-image/b7/16/122429/post-image-big.81e3b4a6-4e20-4ded-b4b5-375e87f2712f.png');"></div>
+          <h6 class="post-flow">Еда</h6>
+          <h2>Новое место: Бутербродная «Бутербро»</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item f">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/b5/e4/122203/post-image_featured-default.a19c9237-1389-4575-8700-fd17985e9b15.jpg');"></div>
+          <h6 class="post-flow">Услуги и покупки</h6>
+          <h2>Гид по иностранным онлайн-магазинам</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o">
+          <div class="post-preview" style="background-image: url('http://assets2.the-village.ru/assets/post-image/b7/16/122429/post-image-big.81e3b4a6-4e20-4ded-b4b5-375e87f2712f.png');"></div>
+          <h6 class="post-flow">Ситуация</h6>
+          <h2>Идеи для города: Барные стойки на улицах Нью-Йорка</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item sf">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/e0/7f/122367/post-image_featured-default.d424aead-091b-414a-93a3-1eb819a8aa83.png');"></div>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o">
+          <div class="post-preview" style="background-image: url('http://assets2.the-village.ru/assets/post-image/b7/16/122429/post-image-big.81e3b4a6-4e20-4ded-b4b5-375e87f2712f.png');"></div>
+          <h6 class="post-flow">Еда</h6>
+          <h2>Новое место: Бутербродная «Бутербро»</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item f">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/b5/e4/122203/post-image_featured-default.a19c9237-1389-4575-8700-fd17985e9b15.jpg');"></div>
+          <h6 class="post-flow">Услуги и покупки</h6>
+          <h2>Гид по иностранным онлайн-магазинам</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o">
+          <div class="post-preview" style="background-image: url('http://assets2.the-village.ru/assets/post-image/b7/16/122429/post-image-big.81e3b4a6-4e20-4ded-b4b5-375e87f2712f.png');"></div>
+          <h6 class="post-flow">Ситуация</h6>
+          <h2>Идеи для города: Барные стойки на улицах Нью-Йорка</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+      </div>
+
+      <div class="post-list" style="display: none;">
+        <div class="post-item f alt">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/c3/86/122441/post-image_featured-default.00a2ba49-a6f9-498d-b2f1-c723a97213f4.jpg');"></div>
+          <h6 class="post-flow">Культура</h6>
+          <h2>Фильмы недели: «Отверженные», «Неудержимый», «Гайд-парк на Гудзоне»</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o alt">
+          <div class="post-preview" style="background-image: url('http://assets1.the-village.ru/assets/post-image/24/e7/122377/post-image-big.917ffb4a-fcac-4f12-987e-73cb5f2e4002.jpg');"></div>
+          <h6 class="post-flow">Еда</h6>
+          <h2>Рецепты шефов: Пулькоги</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item f alt">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/35/74/122285/post-image_featured-default.b3f2e05c-ea31-41c5-9933-b5d4c9096337.jpg');"></div>
+          <h6 class="post-flow">Еда</h6>
+          <h2>Вы мне мешаете: Секретные бары Москвы</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o alt">
+          <div class="post-preview" style="background-image: url('http://assets2.the-village.ru/assets/post-image/b7/16/122429/post-image-big.81e3b4a6-4e20-4ded-b4b5-375e87f2712f.png');"></div>
+          <h6 class="post-flow">Еда</h6>
+          <h2>Новое место: Бутербродная «Бутербро»</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item f alt">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/b5/e4/122203/post-image_featured-default.a19c9237-1389-4575-8700-fd17985e9b15.jpg');"></div>
+          <h6 class="post-flow">Услуги и покупки</h6>
+          <h2>Гид по иностранным онлайн-магазинам</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o alt">
+          <div class="post-preview" style="background-image: url('http://assets2.the-village.ru/assets/post-image/b7/16/122429/post-image-big.81e3b4a6-4e20-4ded-b4b5-375e87f2712f.png');"></div>
+          <h6 class="post-flow">Ситуация</h6>
+          <h2>Идеи для города: Барные стойки на улицах Нью-Йорка</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item sf">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/e0/7f/122367/post-image_featured-default.d424aead-091b-414a-93a3-1eb819a8aa83.png');"></div>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o alt">
+          <div class="post-preview" style="background-image: url('http://assets2.the-village.ru/assets/post-image/b7/16/122429/post-image-big.81e3b4a6-4e20-4ded-b4b5-375e87f2712f.png');"></div>
+          <h6 class="post-flow">Еда</h6>
+          <h2>Новое место: Бутербродная «Бутербро»</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item f alt">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/b5/e4/122203/post-image_featured-default.a19c9237-1389-4575-8700-fd17985e9b15.jpg');"></div>
+          <h6 class="post-flow">Услуги и покупки</h6>
+          <h2>Гид по иностранным онлайн-магазинам</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o alt">
+          <div class="post-preview" style="background-image: url('http://assets2.the-village.ru/assets/post-image/b7/16/122429/post-image-big.81e3b4a6-4e20-4ded-b4b5-375e87f2712f.png');"></div>
+          <h6 class="post-flow">Ситуация</h6>
+          <h2>Идеи для города: Барные стойки на улицах Нью-Йорка</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+      </div>
+
+      <div class="post-list">
+        <div class="post-item f">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/c3/86/122441/post-image_featured-default.00a2ba49-a6f9-498d-b2f1-c723a97213f4.jpg');"></div>
+          <h6 class="post-flow">Культура</h6>
+          <h2>Фильмы недели: «Отверженные», «Неудержимый», «Гайд-парк на Гудзоне»</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o alt">
+          <div class="post-preview" style="background-image: url('http://assets1.the-village.ru/assets/post-image/24/e7/122377/post-image-big.917ffb4a-fcac-4f12-987e-73cb5f2e4002.jpg');"></div>
+          <h6 class="post-flow">Еда</h6>
+          <h2>Рецепты шефов: Пулькоги</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item f">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/35/74/122285/post-image_featured-default.b3f2e05c-ea31-41c5-9933-b5d4c9096337.jpg');"></div>
+          <h6 class="post-flow">Еда</h6>
+          <h2>Вы мне мешаете: Секретные бары Москвы</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o alt">
+          <div class="post-preview" style="background-image: url('http://assets2.the-village.ru/assets/post-image/b7/16/122429/post-image-big.81e3b4a6-4e20-4ded-b4b5-375e87f2712f.png');"></div>
+          <h6 class="post-flow">Еда</h6>
+          <h2>Новое место: Бутербродная «Бутербро»</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item f">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/b5/e4/122203/post-image_featured-default.a19c9237-1389-4575-8700-fd17985e9b15.jpg');"></div>
+          <h6 class="post-flow">Услуги и покупки</h6>
+          <h2>Гид по иностранным онлайн-магазинам</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o alt">
+          <div class="post-preview" style="background-image: url('http://assets2.the-village.ru/assets/post-image/2d/2d/122133/post-image-big.80f66f50-3bf1-4c4a-a9e5-ead4fad6d2ca.jpg');"></div>
+          <h6 class="post-flow">Ситуация</h6>
+          <h2>Идеи для города: Барные стойки на улицах Нью-Йорка</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item sf">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/e0/7f/122367/post-image_featured-default.d424aead-091b-414a-93a3-1eb819a8aa83.png');"></div>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item f">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image_featured/68/bb/122357/post-image_featured-default.22e26887-e93e-4059-8a51-54919084462d.jpg');"></div>
+          <h6 class="post-flow">Город</h6>
+          <h2>Личный опыт: Кристофер Муравьёв-Апостол о реставрации родовой усадьбы</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o alt">
+          <div class="post-preview" style="background-image: url('http://assets3.the-village.ru/assets/post-image/c6/f9/122147/post-image-big.7b8f2e2d-421f-497d-8f02-87a797ba5af8.jpg');"></div>
+          <h6 class="post-flow">Еда</h6>
+          <h2>Новое место: Лапшичная «Марукамэ»</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item f">
+          <div class="post-preview" style="background-image: url('http://assets1.the-village.ru/assets/post-image_featured/e5/53/122273/post-image_featured-default.a0487209-fda3-46b0-9ab7-d22d57f8dc31.jpg');"></div>
+          <h6 class="post-flow">Город</h6>
+          <h2>Квартира недели (Киев)</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item sf">
+          <div class="post-preview" style="background-image: url('http://assets2.the-village.ru/assets/post-image_featured/e4/3a/122153/post-image_featured-default.b587cac5-7668-4f0b-bf8d-d645144a406d.jpg');"></div>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+
+        <div class="post-item o alt">
+          <div class="post-preview" style="background-image: url('http://assets0.the-village.ru/assets/post-image/08/32/122299/post-image-big.b11423ed-10e8-4e27-8ce7-17de70a75b7a.jpg');"></div>
+          <h6 class="post-flow">Люди</h6>
+          <h2>Внешний вид: Наталья Истомина, фоторедактор</h2>
+          <a href="#" class="linktopost" onclick="return false;"></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+.custom_slide {
+  background: red;
+}
+.swiped {
+  -webkit-transform: translate3d(80px, 0, 0);
+  -moz-transform: translate3d(80px, 0, 0);
+  -o-transform: translate3d(80px, 0, 0);
+  -ms-transform: translate3d(80px, 0, 0);
+  transform: translate3d(80px, 0, 0);
+}
+.comment {
+  position: relative;
+}
+.comment .comment_panel {
+  width: 80px;
+  background: #333;
+  position: absolute;
+  left: -90px;
+  top: 0;
+  bottom: 0;
+}
+.comment_panel [role="comment:write"] {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+}
+
+</style>
+<script type="application/x-javascript">
+      var Fullscreen = function () {
+        this.tmpl = '<div class="fullscreen"></div>';
+      };
+      Fullscreen.prototype = {
+        open: function () {
+          $('body')
+            .addClass('modal')
+            .append(this.tmpl);
+
+          $(window)
+            .on('scroll', function (e) {
+              if ($('body').hasClass('modal')) {
+                e.preventDefault();
+              }
+            });
+          $('body').bind('touchmove', function (e) {
+            if ($('body').hasClass('modal')) {
+              e.preventDefault();
+            }
+          });
+        }
+      };
+      window.lam_fullscreen = new Fullscreen();
+
+  void function ($) {
+    $.fn.swiper = function (options) {
+      var options = options || {};
+
+      this.each(function () {
+        var $this = $(this),
+            swiper_cache, swiper, current_el, total_el;
+
+        if (options.custom_slide) {
+          $this.find('div:first').append('<div class="custom_slide" style="display: none;"></div>')
+            .on('click', '.custom_slide', function (e) {
+              options.custom_slide(swiper);
+              return false;
+            });
+
+        }
+
+        swiper_cache = $this.clone();
+
+        $this.append('<div class="slideshow-counter"><span class="current"></span> / <span class="total"></span></div>');
+        current_el = $this.find('.current');
+        total_el = $this.find('.total');
+
+        swiper = new Swipe(this, {
+          callback: function (event, index, elem) {
+            current_el.text(index + 1);
+          }
+        });
+
+        current_el.text(swiper.getPos() + 1);
+        total_el.text(swiper.length);
+
+        if (options.fullscreen !== false) {
+          $this.on('click', function () {
+            var fullscreen_swiper, fl_sw;
+
+            lam_fullscreen.open();
+
+            fullscreen_swiper = swiper_cache.clone();
+
+            $('.fullscreen')
+              .on('click', function () {
+                $('.fullscreen').remove();
+                $('body').removeClass('modal');
+              })
+              .on('click', '.custom_slide', function (e) {
+                options.custom_slide(fl_sw);
+                return false;
+              })
+              .append(fullscreen_swiper);
+
+            fl_sw = new Swipe(fullscreen_swiper.get(0), {
+              startSlide: swiper.getPos(),
+              callback: function (event, index, elem) {
+                swiper.slide(index);
+              }
+            });
+          });
+        }
+      });
+
+    };
+  } (jQuery);
+
+  $('.js-slidernofs').swiper({
+    fullscreen: false
+  });
+  $('.js-slider').swiper({
+    custom_slide: function (swiper) {
+      swiper.slide(0);
+    }
+  });
+</script>
+
+
+<script type="text/javascript">
+  var Comments = function (options) {
+    this.options = $.extend({
+        url: '/comments'
+      }, options);
+
+    this.root_el = $(this.options.el || '[role="comments"]');
+    this.resource_type = this.root_el.data('type');
+    this.resource_id = this.root_el.data('id');
+
+    this.root_el
+      .append('<button role="load_comments">Load comments</button>')
+      .on('click', '[role="load_comments"]', $.proxy(this.load, this))
+      .on('click', '[role="comment:write"]', $.proxy(this.show_comment_form, this))
+      .on('click', '[role="answer"] button', $.proxy(this.send_answer, this));
+
+  };
+
+  Comments.prototype = {
+    load: function () {
+      // $.ajax({
+      //   // url: this.options.url + '?resource_type=' + this.resource_type + '&resource_id=' + this.resource_id + this.uri_random_component(),
+      //   url: './js/comments.json',
+      //   dataType: 'json',
+      //   success: $.proxy(this.load_success_handler, this)
+      // });
+      this.load_success_handler({"comments":[{"id":1514673,"rating":4,"parent_id":null,"full_name":"Nastya Ko","user":"nastya-ko","userpic":"http://lookatme.dev/assets/user-userpic/7c/d5/257903/user-userpic-thumb.cd96fd1d-b7f9-4022-9945-a7e1c4030e43.jpg","body":"<p>так есть захотелось</p>","datetime":"2012-03-28T15:57:15+04:00"},{"id":1514675,"rating":0,"parent_id":null,"full_name":"Luba Konf","user":"luba-konf","userpic":"http://lookatme.dev/6533130945/images/default/village/userpic-thumb.png","body":"<p>Значит после этой статьи можно не воспринимать  всерьез некоторые посты из раздела \"Еда\"?</p>","datetime":"2012-03-28T16:10:12+04:00"},{"id":1514677,"rating":0,"parent_id":1514675,"full_name":"Игорь Садреев","user":"sadreev","userpic":"http://lookatme.dev/assets/user-userpic/9c/49/261239/user-userpic-thumb.b0deffd0-3a07-4f63-a13a-f3fcb13326c1.jpg","body":"<p>Например?</p>","datetime":"2012-03-28T16:12:22+04:00"},{"id":1514683,"rating":0,"parent_id":null,"full_name":"Георгий","user":"jbravo","userpic":"http://lookatme.dev/6533130945/images/default/village/userpic-thumb.png","body":"<p> Все так и есть. Помимо этого были тренды на стейки, пан-азиатскую кухню и молекульярную гатрономию. Думаю, на очереди тренд на cuisine a la sovok. </p>","datetime":"2012-03-28T16:15:28+04:00"},{"id":1514699,"rating":5,"parent_id":null,"full_name":"dmitry pesenka","user":"pesenka","userpic":"http://lookatme.dev/assets/user-userpic/d5/91/236/user-userpic-thumb.f5f93ca3-28f2-4d8b-965f-a542a20f1407.jpg","body":"<p>ну Чентрале, предположим, не поэтому в хинкальную переделалось, а потому как у них было слабое подобие итальянской кухни по достаточно ебическим ценам и мало кто там ел. А так - все правда, спасибо, Роман. Пойду поем.</p>","datetime":"2012-03-28T17:07:15+04:00"},{"id":1514729,"rating":5,"parent_id":null,"full_name":"Elena Volova","user":"volova","userpic":"http://lookatme.dev/assets/user-userpic/4f/12/283153/user-userpic-thumb.ff5cd734-f9a3-4eea-9497-f49967f33159.jpg","body":"<p>Хорошая статья!</p><p>Как по мне тяжелая в хорошем смысле этого слова.</p><p>Написана в чрезвычайном публицистическом стиле. Читалось с удовольствием.</p>","datetime":"2012-03-28T17:43:03+04:00"},{"id":1514775,"rating":0,"parent_id":null,"full_name":"Алина Локтева","user":"alineo","userpic":"http://lookatme.dev/6533130945/images/default/village/userpic-thumb.png","body":"<p>а я ем дома! и всем советую...</p>","datetime":"2012-03-28T18:29:17+04:00"},{"id":1514777,"rating":0,"parent_id":1514775,"full_name":"Алина Локтева","user":"alineo","userpic":"http://lookatme.dev/6533130945/images/default/village/userpic-thumb.png","body":"<p>хотя это походу тоже тренд</p>","datetime":"2012-03-28T18:29:37+04:00"},{"id":1514779,"rating":0,"parent_id":1514777,"full_name":"Игорь Садреев","user":"sadreev","userpic":"http://lookatme.dev/assets/user-userpic/9c/49/261239/user-userpic-thumb.b0deffd0-3a07-4f63-a13a-f3fcb13326c1.jpg","body":"<p>Еще какой!</p>","datetime":"2012-03-28T18:31:13+04:00"},{"id":1514833,"rating":0,"parent_id":null,"full_name":"beach_bunny","user":"beach_bunny","userpic":"http://lookatme.dev/assets/user-userpic/4b/27/268469/user-userpic-thumb.7ad49a7d-f8f4-43cf-960e-de26b6b4b173.jpg","body":"<p>в ближайшем будущем - ставлю на русскую кухню)</p>","datetime":"2012-03-28T20:43:53+04:00"},{"id":1514861,"rating":0,"parent_id":null,"full_name":"Янина","user":"umka_yana","userpic":"http://lookatme.dev/assets/user-userpic/70/2a/27732/user-userpic-thumb.jpg","body":"<p>за азиатскую лапшу обидно</p>","datetime":"2012-03-28T21:53:48+04:00"},{"id":1514875,"rating":0,"parent_id":1514775,"full_name":"Алиса По","user":"vice_versa","userpic":"http://lookatme.dev/assets/user-userpic/27/2d/8003/user-userpic-thumb.jpg","body":"<p>а что плохого в том, чтобы есть не дома?)</p>","datetime":"2012-03-29T00:14:12+04:00"}],"deleted":[],"votes":{}});
+    },
+
+    load_success_handler: function (data) {
+      var comments = this.generate_tree(data.comments);
+
+      $.each(comments, $.proxy(this.append_comment, this));
+
+      this.root_el.find('[role="comment"]')
+        .hammer()
+        .on('swipe', function (e) {
+          $(this).toggleClass('swiped');
+        });
+    },
+
+    append_comment: function (k, v) {
+      var _this = this;
+
+      var compiled = dust.compile("<div>Hello {login}!</div>", "intro");
+      dust.loadSource(compiled);
+
+      dust.render("intro", dustContext.push(v), function (error, html) {
+        console.log(arguments);
+        if (error) console.log(error);
+        else {
+          _this.root_el.append($(html).append('<div class="comment_panel"><i role="comment:write"></i></div>'));
+        }
+      });
+    },
+
+    generate_tree: function (comments) {
+      var _this = this,
+          tree = [];
+
+      $.each(comments, function (k, v) {
+        if (v.parent_id !== null) {
+          tree.splice(_this.find_parent_index(tree, v.parent_id) + 1, 0, v);
+        } else {
+          tree.push(v);
+        }
+      });
+
+      return tree;
+    },
+
+    find_parent_index: function (t, id) {
+      var index = null;
+      $.each(t, function (k, v) {
+        if (v.id === id) index = k;
+      });
+      return index;
+    },
+
+    show_comment_form: function (e) {
+      var $comment = $(e.currentTarget).closest('.comment');
+
+      if (!$comment.next().is('[role="answer"]')) {
+        $comment.after('<div role="answer"><input type="text" /><button>Comment</button></div>');
+      }
+    },
+
+    send_answer: function (attribute) {
+
+    },
+
+    uri_random_component: function () {
+      return '&_=' + Math.floor(Math.random() * 1000000);
+    }
+  };
+
+
+  new Comments();
+</script>
+</body>
+</html>

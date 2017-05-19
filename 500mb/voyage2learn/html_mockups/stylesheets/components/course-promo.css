@@ -1,0 +1,24 @@
+/* Narrow Vertical Promo
+************************ */
+.narrow-vertical-promo-item {
+  position: relative;
+  margin-bottom: 33px;
+  }
+.narrow-vertical-promo-item .promo-link { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 10; }
+
+.narrow-vertical-promo-item .promo-item-preview img {
+  display: block;
+  border-radius: 2px;
+  transition: opacity .3s;
+  }
+.narrow-vertical-promo-item .promo-school-rating {
+  margin: 11px 0 12px;
+  text-align: center;
+  }
+.narrow-vertical-promo-item .promo-school-rating .rating-stars { vertical-align: top; }
+.narrow-vertical-promo-item .promo-course-name {
+  font-weight: 500; font-size: 14px; text-align: center;
+  }
+
+/* Hover */
+.narrow-vertical-promo-item .promo-link:hover ~ .promo-item-preview img { opacity: .49; }
